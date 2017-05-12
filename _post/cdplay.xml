@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cdcata.xsl"?>
+<notebook>
+<note name="a">
+<to>zhou</to>
+<from>yu</from>
+<mess>take care</mess>
+<an>write</an>
+</note>
+<note name="b">
+<to>zhou</to>
+<from>yu</from>
+<mess>take care</mess>
+<an>write</an>
+</note>
+<note name="c">
+<to>zhou</to>
+<from>yu</from>
+<mess>take care</mess>
+<an>write</an>
+</note>
+<note name="d">
+<to>zhou</to>
+<from>yu</from>
+<mess>take care</mess>
+<an>write</an>
+</note>
+<note name="e">
+<to>zhou</to>
+<from>yu</from>
+<mess>take care</mess>
+<an>write</an>
+</note>
+
+
+</notebook>
