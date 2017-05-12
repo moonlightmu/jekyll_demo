@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+body{
+background-color:#008009;
+font-family:serif,sens-serif;
+}
+div{
+border:2px dotted black;
+padding:10px 10px 10px 10px;
+margin:0 10%;
+background-color:#006002;
+text-align:left;
+letter-spacing:2px;
+font-size:18px;
+line-height:23px;
+}
+p{
+color:maroon;
+}
+p.blueberry{
+	color:purple;
+}
+p.raspberry{
+	color:blue;
+}
+p.greentea{
+	color:#408080;
+}
+.greentea{
+	color:#408080;
+}
+blockquote{	
+background-color:pink;
+text-align:left;
+}
+li{
+color:grey;
+font-weight:bold;
+line-style:none;
+}
+h1{
+color:#cc6600;
+font-family:fantasy;
+font-size:23px;
+font-weight:bold;
+border-bottom:2px solid grey;
+font-style:italic;
+}
+h2{
+	color:#cc6600;
+	font-family:cursive;
+	font-size:17px;
+	font-weight:bold;
+	font-style:oblique;
+}
+em{
+	border-bottom:1px dotted black;
+	text-decoration:none;
+font-family:serif;
+}

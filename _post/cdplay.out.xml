@@ -1,0 +1,10 @@
+<html>
+<body>
+<h2>A chat use xml</h2>
+<table border="1">
+<tr bgcolor="#9acd32">
+<th align="left">To</th><th align="left">From</th>
+</tr>
+</table>
+</body>
+</html>
