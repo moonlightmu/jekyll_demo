@@ -37,7 +37,7 @@ div{
 	background-color:#b7cbdb;
 }
 .guarantee{
-	border:3px solid pink;
+    border:3px solid pink;
     padding:25px;
     margin:20px;
     color:#444444;
@@ -63,7 +63,7 @@ width:100%;
 }
 ul{
 text-align:center;
-padding:0;
+padding:0px;
 }
 li {
 display:inline-block;
@@ -73,10 +73,3 @@ font-weight:300;
 margin:0px 20px;
 text-transform:upppercase;
 }
-
-
-
-
-
-
-
