@@ -53,12 +53,12 @@ div{
 	margin:20px;
 	background-color:#c0c0c0;
 }
-.navigation {
+div.navigation {
 background-color:rgba(255,255,255,0.9);
 position:fixed;
-left:-10%;
+left:0px;
 width:100%;
-top:-10%;
+top:0px;
 text-align:center;
 z-index:10000;
 padding:0;
