@@ -2,14 +2,11 @@
 layout: default
 title: Code Garden
 ---
-<div>
-<h1>{{ page.title }}</h1>
-<h2>List of paper</h2>
+<frameset cols="20%,80%">
+<frame src="{{ site.url }}{{ site.baseurl }}/The-seven-page.html"noresize="noresize"/>
+<frame src="c.html"id="right" name="rightframe"/>
+</frameset>
 
-{% for post in site.posts %}
 
-<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
-<p>{{ site.baseurl }}{{ post.url }}</p>
-{% endfor %}
 
-</div>
+
