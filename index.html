@@ -48,7 +48,7 @@ title: Code Garden
 		<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 		</li>
 		{% endfor %}
-		</ul>
+        </ul>
 {% endfor %}
 
 
@@ -66,9 +66,9 @@ title: Code Garden
 	{% capture ym %}{{ post.date | date:"%Y Äê %m ÔÂ" }}{% endcapture %}
 	{% if yearmonth != ym %}
 		{% assign yearmonth = ym %}
-		</ul>
-		<blockquote id="{{ ym }}">{{ ym }}</blockquote>
 		<ul>
+		<blockquote id="{{ ym }}">{{ ym }}</blockquote>
+		</ul>
 	{% endif %}
 	<li>
 	<time datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time>
