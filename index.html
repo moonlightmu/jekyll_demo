@@ -4,13 +4,12 @@ title: Code Garden
 ---
 <div>
 <h2>{{ page.title }}</h2>
-<p>List of heart</p>
+<p>List of paper</p>
 
-
-{% for post in paginator.posts %}
-    <a href="{{ post.url }}">{{ post.title }}</a><hr>
-    <p> {{ post.excerpt | strip_html }} </p>
-    <a href="">{{ post.date | date_to_string }}</a> 
+{% for post in site.posts %}
+<a href="{{ post.url }}">{{ post.title }}</a><br>
+<p>{{ post.excerpt | remove: '<p>' | remove: '</p>'  }}</p>
+<a href="">{{ post.date | date_to_string }}</a>
 {% endfor %}
 
 
