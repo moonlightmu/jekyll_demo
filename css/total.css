@@ -3,7 +3,7 @@ body{
 	font-family:serif,sans-serif;
 	font-size:small;
 	line-height:1.6em;
-	background-image:url({{ site.url }}{{ site.baseurl }}/img/back.jpg);
+	background-image:url(https://moonlightmu.github.io/jekyll_demo/img/back.jpg);
 }
 h1,h2{
 	color:#007e7e;
