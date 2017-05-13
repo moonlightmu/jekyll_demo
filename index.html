@@ -7,6 +7,6 @@ title: Code Garden
 <h2>List of paper</h2>
 
 {% for post in site.posts %}
-<a href="{{ post.url }}">{{ post.date | date_to_string }}{{ post.title }}{{ post.url }}{{ page.url }}</a><br>
+<p><a href="{{ post.url }}">{{ post.date | date_to_string }}{{ post.title }}{{ post.url }}{{ page.url }}</a></p>
 {% endfor %}
 </div>
