@@ -5,10 +5,78 @@ title: Code Garden
 <div>
 <h2>{{ page.title }}</h2>
 <p>List of heart</p>
-<ul>
+
+
+{% for post in paginator.posts %}
+    <a href="{{ post.url }}">{{ post.title }}</a><hr>
+    <p> {{ post.excerpt | strip_html }} </p>
+    <a href="">{{ post.date | date_to_string }}</a> 
+{% endfor %}
+
+
+
+{% if paginator.previous_page %}
+	{% if paginator.page == 2 %}
+		<a href="../"> 上一页</a>
+	{% else %}
+		<a href="/page{{ paginator.previous_page }}"> 上一页</a>
+	{% endif %}
+{% else %}
+	<a> 上尽头</a>
+{% endif %}
+{% if paginator.next_page %}
+	<a href="/page{{ paginator.next_page }}">下一页 </a>
+{% else %}
+	<a>下尽头  </a>
+{% endif %}
+
+
+
+{% for tag in site.tags %}
+    <a href="#{{ tag[0] }}" 
+        title="{{ tag[0] }}" 
+        style="font-size: {{ tag[1].size | divided_by:5 | times:20 | plus:100 }}%;">{{ tag[0] }}({{ tag[1].size }})</a>
+{% endfor %}
+
+
+{% for tag in site.tags %}
+	<blockquote id="{{ tag[0] }}">{{ tag[0] }}</blockquote>
+	<ul>
+		{% for post in tag[1] %}
+		<li>
+		<time datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string}}</time>
+		<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+		</li>
+		{% endfor %}
+		</ul>
+{% endfor %}
+
 
 {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% capture ym %}
+		{{ post.date | date:"%Y 年 %m 月" }}
+	{% endcapture %}
+	{% if yearmonth != ym %}
+		{% assign yearmonth = ym %}
+	<li><a href="#{{ ym }}">{{ ym }}</a></li>
+	{% endif %}
 {% endfor %}
-</ul>
+
+{% for post in site.posts %}
+	{% capture ym %}{{ post.date | date:"%Y 年 %m 月" }}{% endcapture %}
+	{% if yearmonth != ym %}
+		{% assign yearmonth = ym %}
+		</ul>
+		<blockquote id="{{ ym }}">{{ ym }}</blockquote>
+		<ul>
+	{% endif %}
+	<li>
+	<time datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time>
+	<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+	</li>
+{% endfor %}
+
+
+
+
 </div>
