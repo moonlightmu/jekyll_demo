@@ -3,11 +3,13 @@ layout: default
 title: Code Garden
 ---
 <div>
-<h2>{{ page.title }}</h2>
-<p>List of paper</p>
+<h1>{{ page.title }}</h1>
+<h2>List of paper</h2>
 
 {% for post in site.posts %}
-<a href="{{ post.url }}">{{ post.date | date_to_string }}{{ post.title }}</a>
-<br>
+
+<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
+<p>{{ site.baseurl }}{{ post.url }}</p>
 {% endfor %}
+
 </div>
