@@ -56,8 +56,9 @@ div{
 .navigation {
 background-color:rgba(255,255,255,0.9);
 position:fixed;
-left:-100px;
-top:-200px;
+left:-10%;
+width:100%;
+top:-10%;
 text-align:center;
 z-index:10000;
 }
