@@ -86,19 +86,15 @@ padding:0px;
 }
 
 div.cover-content-left{
-	display:inline-block;
-	padding:10% 5% 100% 5%;
+	padding:10% 5% 10% 5%;
 	background-color:rgba(255,255,255,0.8);
 	border:1px solid black;
-        margin-right:5%;
-	
-	
+	margin-bottom:0px;
+	display:inline-block;
 }
 div.cover-content-right{
-	display:inline-block;
-	padding:10% 5% 100% 5%;
+	padding:10% 5% 10% 5%;
 	background-color:rgba(255,255,255,0.8);
 	border:1px solid black;
-	position:absolute;
-	
+	display:inline-block;
 }
