@@ -74,3 +74,11 @@ margin:0px 20px;
 padding:0px 0px;
 line-style:none;
 }
+
+div.cover{
+	background-image:url(https://moonlight.github.io/jekyll_demo/img/2-450.jpg);
+	margin:0px;
+}
+div.cover-content{
+	background-color:rgba(255,255,255,0.8);
+}
