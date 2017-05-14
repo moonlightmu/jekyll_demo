@@ -85,18 +85,17 @@ padding:0px;
 
 div.cover-content-left{
 	display:inline-block;
-	margin-right:10px;
-	margin-left:10px;
-        margin-top:30px;
-	padding:50% 10%;
+	padding:10% 10% 100% 10%;
 	background-color:rgba(255,255,255,0.8);
 	border:1px solid black;
+    position:absolute;
 	
 }
 div.cover-content-right{
 	display:inline-block;
-	margin-left:0px;
-        margin-top:0px;
+	margin-left:450px;
+	padding:10% 10% 100% 10%;
 	background-color:rgba(255,255,255,0.8);
 	border:1px solid black;
+	position:absolute;
 }
