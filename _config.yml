@@ -24,11 +24,7 @@ paginate:5
 paginate_path:"page:num"
 
 
-
-kramdown:
-auto_ids:true,
-footnote_nr:1
-
+kramdown:auto_ids:true,footnote_nr:1
 entity_output:as_char
 
 toc_levels:1..6
