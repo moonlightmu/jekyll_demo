@@ -1,57 +1,57 @@
 baseurl:/jekyll_demo
-permalink: /blog/:year/:month/:title.html 
+permalink:/blog/:year/:month/:title.html 
 
-include: ['.htaccess']
+include:['.htaccess']
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
 
-markdown: kramdown
+markdown:kramdown
 
-highlights: pygments
+highlights:pygments
 
 url: 
 
-cdn_url: 7u2t01.com1.z0.glb.clouddn.com
+cdn_url:7u2t01.com1.z0.glb.clouddn.com
 
-lsi: false
+lsi:false
 
-safe: true
+safe:true
 
-timezone: Asia/Chongqing
-auto: false 
+timezone:Asia/Chongqing
+auto:false 
 
 
-paginate: 5
+paginate:5
 
-paginate_path: "page:num"
+paginate_path:"page:num"
 
 
 
 kramdown:
   
-auto_ids: true,
+auto_ids:true,
   
-footnote_nr: 1
+footnote_nr:1
   
-entity_output: as_char
+entity_output:as_char
   
-toc_levels: 1..6
+toc_levels:1..6
   
-use_coderay: false
+use_coderay:false
 
 
-JB :
-  IMAGE_PATH : http://coolshell.info/images
+JB:
+IMAGE_PATH:http://coolshell.info/images
 
 
 # presonal config
 
-domain: http://coolshell.info
+domain:http://coolshell.info
 
-title: Code_Garden Xiaomu Zhou
-description: Draw my life with code
+title:Code_Garden Xiaomu Zhou
+description:Draw my life with code
 
-author: Xiaomu.Zhou
-email: 363850855@qq.com
+author:Xiaomu.Zhou
+email:363850855@qq.com
 github:Xiaomu Zhou
 
 
