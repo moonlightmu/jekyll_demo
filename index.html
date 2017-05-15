@@ -5,7 +5,17 @@ title: Code Garden
 <div class="cover-content-right">
 <h1>{{ page.title }}</h1>
 <h2>List of paper</h2>
-<h3><a>next</a><a>before</a></h3>
+<h3>{{ paginator.per_page }}</h3>
+<h3>{{ paginator.posts }}</h3>
+<h3>{{ paginator.total_posts }}</h3>
+<h3>{{ paginator.total_pages }}</h3>
+<h3>{{ paginator.page }}</h3>
+<h3>{{ paginator.paginator.previous_page }}</h3>
+<h3>{{ paginator.paginator.next_page }}</h3>
+
+<h3><a href="{{ paginator.next_page_path }}>next</a></h3>
+<h3><a href="{{ paginator.previous_page_path }}>before</a></h3>
+
 {% for post in site.posts %}
 
 <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
