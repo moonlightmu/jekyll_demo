@@ -3,7 +3,8 @@ permalink:/blog/:year/:month/:title.html
 
 include:['.htaccess']
 
-exclude:[".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
+exclude:
+[".rvmrc",".rbenv-version","README.md","Rakefile","changelog.md","CNAME", "Gemfile","Gemfile.lock"]
 
 markdown:kramdown
 
@@ -60,5 +61,3 @@ js_dir:
 img_dir:
 
 css_dir:
-
-
