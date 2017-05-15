@@ -17,11 +17,6 @@ title: Code Garden
 <h3><a href="{{ paginator.next_page_path }}">next</a></h3>
 <h3><a href="{{ paginator.previous_page_path }}">before</a></h3>
 
-{% for post in site.posts %}
-
-<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
-<p>{{ site.baseurl }}{{ post.url }}</p>
-{% endfor %}
 
 
 {% for post in paginator.posts %}
