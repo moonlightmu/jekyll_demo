@@ -9,8 +9,7 @@ markdown:kramdown
 
 highlights:pygments
 
-url:
-cdn_url:7u2t01.com1.z0.glb.clouddn.com
+url:cdn_url:7u2t01.com1.z0.glb.clouddn.com
 
 lsi:false
 
@@ -27,7 +26,7 @@ paginate_path:"page:num"
 
 
 kramdown:
- 
+
 auto_ids:true,
   
 footnote_nr:1
@@ -42,7 +41,7 @@ use_coderay:false
 JB:IMAGE_PATH:http://coolshell.info/images
 
 
-# presonal config
+#presonal config
 
 domain:http://coolshell.info
 
@@ -59,7 +58,7 @@ config:
 js_dir:
 
 img_dir:
- 
+
 css_dir:
 
 
