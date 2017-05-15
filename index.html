@@ -9,9 +9,10 @@ title: Code Garden
 <li>	
 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 <span class="date">{{ post.date | date_to_string }}</span>
-<hr>
-<p>{% if post.excerpt.size > 32 %}{
-{ post.excerpt }}
+
+<p>
+{% if post.excerpt.size > 32 %}
+{{ post.excerpt }}
 {% else %}
 {{ post.content | strip_html | strip_newlines | truncate: 160 }}
 {% endif %}
@@ -19,7 +20,7 @@ title: Code Garden
 <p> 
 <a href="{{ post.url }}"><span >read all &raquo; </span></a>
 </p>
-<hr>
+
 </li>
 {% endfor %}
 </ul>
