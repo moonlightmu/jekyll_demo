@@ -3,118 +3,71 @@ layout: default
 title: Code Garden
 ---
 <div class="cover-content-right">
-<h1>{{ page.title }}</h1>
-<h2>List of paper</h2>
-<h3>{{ page.tags }}</h3>
-<h3>{{ paginator.per_page }}</h3>
-<h3>{{ paginator.posts }}</h3>
-<h3>{{ paginator.total_posts }}</h3>
-<h3>{{ paginator.total_pages }}</h3>
-<h3>{{ paginator.page }}</h3>
-<h3>{{ paginator.paginator.previous_page }}</h3>
-<h3>{{ paginator.paginator.next_page }}</h3>
+<div id="index" class="row">
+    <div class="post-area">
+     	 <div class="post-list-body">
+        <div post-cate="All">
+        <ul class="posts">
+	{% for post in paginator.posts %}
+	<li>	
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<span class="date">{{ post.date | date_to_string }}</span>
+	
+	<hr>
+	<p>{% if post.excerpt.size > 32 %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 160 }}{% endif %}</p>
+		<p> <a href="{{ post.url }}"><span >ÔÄ¶ÁÈ«ÎÄ &raquo; </span></a></p>
+	<hr>
+	</li>
+	{% endfor %}
+	</ul>
+	<!-- Pager indicator -->
+	<ul class="pager">
+	  {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
+	  <li class="previous">
+	    <a href="{{ site.url }}/">
+	      &larr; Older
+	    </a>
+	  </li>
+	  {% else %}
+	  <li class="previous">
+	    <a href="{{ site.url }}/page{{ paginator.previous_page }}">
+	      &larr; Older
+	    </a>
+	  </li>
+	  {% endif %} {% endif %} {% if paginator.next_page %}
+	  <li class="next">
+	    <a href="{{ site.url }}/page{{ paginator.next_page }}">
+	      Newer &rarr;
+	    </a>
+	  </li>
+	  {% endif %}
+	</ul>
+	</div>
+	
 
-<h3><a href="{{ paginator.next_page_path }}">next</a></h3>
-<h3><a href="{{ paginator.previous_page_path }}">before</a></h3>
-
-
-
-<ul>
-<li>paginator has many useful word which can use in the index.html</li>
-<li>{{ paginator.per_page }}</li>
-<li>{{ paginator.posts }}</li>
-<li>{{ paginator.total_posts }}</li>
-<li>{{ paginator.total_pages }}</li>
-<li>{{ paginator.page }}</li>
-<li>{{ paginator.previous_page }}</li>
-<li>{{ paginator.previous_page_path }}</li>
-<li>{{ paginator.next_page }}</li>
-<li>{{ paginator.next_page_path }}</li>
-</ul>
-
-
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
-{% endfor %}
-
-
-<div class="pagination">
-<ul class="posts">
-	
-{% for post in paginator.posts %}
-	
-<li>	
-	
-<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-	
-<span class="date">{{ post.date | date_to_string }}</span>
-	
-	
-<hr>
-	
-<p>{% if post.excerpt.size > 32 %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 160 }}{% endif %}</p>
-		
-<p> <a href="{{ post.url }}"><span >read allpaper &raquo; </span></a></p>
-	
-<hr>
-	
-</li>
-	
-{% endfor %}
-	
-</ul>
-
-
-<ul class="pager">
-	  
-{% if paginator.previous_page %}{% if paginator.previous_page == 1 %}
-	  
-<li class="previous">
-	    
-<a href="{{ site.url }}/">
-	      
-&larr; Older
-	   
-</a>
 	 
-</li>
-	  
-{% else %}
-	  
-<li class="previous">
-	    
-<a href="{{ site.url }}/page{{ paginator.previous_page }}">
-	      
-&larr; Older
-	    
-</a>
-	  
-</li>
-	  
-{% endif %}{% endif %}{% if paginator.next_page %}
-	  
-<li class="next">
-	    
-<a href="{{ site.url }}/page{{ paginator.next_page }}">
-	      
-Newer &rarr;
-	    
-</a>
-	  
-</li>
-	  
-{% endif %}
-	
-</ul>
+       {% for category in site.categories %}
+	<div post-cate="{{category | first}}">
 
+          <ul class="posts">
+            {% for posts in category  %}
+              {% for post in posts %}
+                {% if post.url %}
+		<li>
+                  <a href="{{ post.url }}" class="post-list-item">
+                    <h2>{{ post.title }}</h2>
+                    <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                  </a>
+		</li>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </ul>
+	</div>
+        {% endfor %}
+	
+	 </div>
 
 </div>
-
-
+</div>
 </div>
