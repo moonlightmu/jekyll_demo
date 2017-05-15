@@ -17,6 +17,11 @@ title: Code Garden
 <h3><a href="{{ paginator.next_page_path }}">next</a></h3>
 <h3><a href="{{ paginator.previous_page_path }}">before</a></h3>
 
+{% for post in site.posts %}
+
+<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
+<p>{{ site.baseurl }}{{ post.url }}</p>
+{% endfor %}
 
 
 {% for post in paginator.posts %}
@@ -28,6 +33,21 @@ title: Code Garden
     {{ post.content }}
   </div>
 {% endfor %}
+
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
 
 </div>
 
