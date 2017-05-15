@@ -23,4 +23,11 @@ title: Code Garden
 <p>{{ site.baseurl }}{{ post.url }}</p>
 {% endfor %}
 
+{% for post in paginator.posts %}
+
+<p><a href="{{ site.baseurl }}{{ post.url }}">click{{ post.title }}</a></p>
+<p>{{ site.baseurl }}{{ post.url }}</p>
+{% endfor %}
+
+
 </div>
