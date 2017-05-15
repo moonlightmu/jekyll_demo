@@ -11,13 +11,7 @@ title: Code Garden
 <li>	
 <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ post.url }}</a></h2>
 <span class="date">{{ post.date | date_to_string }}</span>
-{{ post.excerpt }}
 
-{% if post.excerpt.size > 32 %}
-{{ post.excerpt }}
-{% else %}
-{{ post.content | strip_html | strip_newlines | truncate: 160 }}
-{% endif %}
 	
 <p> 
 <a href="{{ post.url }}"><span >read all &raquo; </span></a>
