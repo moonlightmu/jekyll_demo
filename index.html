@@ -17,17 +17,28 @@ title: Code Garden
 <h3><a href="{{ paginator.next_page_path }}">next</a></h3>
 <h3><a href="{{ paginator.previous_page_path }}">before</a></h3>
 
+
+
+<ul>
+<li>paginator has many useful word which can use in the index.html</li>
+<li>{{ paginator.per_page }}</li>
+<li>{{ paginator.posts }}</li>
+<li>{{ paginator.total_posts }}</li>
+<li>{{ paginator.total_pages }}</li>
+<li>{{ paginator.page }}</li>
+<li>{{ paginator.previous_page }}</li>
+<li>{{ paginator.previous_page_path }}</li>
+<li>{{ paginator.next_page }}</li>
+<li>{{ paginator.next_page_path }}</li>
+</ul>
+
 {% for post in site.posts %}
 
 <p><a href="{{ site.baseurl }}{{ post.url }}">click{{ post.title }}</a></p>
 <p>{{ site.baseurl }}{{ post.url }}</p>
 {% endfor %}
 
-{% for post in paginator.posts %}
 
-<p><a href="{{ site.baseurl }}{{ post.url }}">click{{ post.title }}</a></p>
-<p>{{ site.baseurl }}{{ post.url }}</p>
-{% endfor %}
 
 
 </div>
