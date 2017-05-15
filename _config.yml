@@ -3,8 +3,7 @@ permalink:/blog/:year/:month/:title.html
 
 include:['.htaccess']
 
-exclude:
-[".rvmrc",".rbenv-version","README.md","Rakefile","changelog.md","CNAME", "Gemfile","Gemfile.lock"]
+exclude:[".rvmrc",".rbenv-version","README.md","Rakefile","changelog.md","CNAME", "Gemfile","Gemfile.lock"]
 
 markdown:kramdown
 
@@ -27,20 +26,15 @@ paginate_path:"page:num"
 
 
 kramdown:
-
 auto_ids:true,
-  
 footnote_nr:1
-  
+
 entity_output:as_char
-  
+
 toc_levels:1..6
-  
+
 use_coderay:false
-
-
 JB:IMAGE_PATH:http://coolshell.info/images
-
 
 #presonal config
 
@@ -52,8 +46,6 @@ description:Draw my life with code
 author:Xiaomu.Zhou
 email:363850855@qq.com
 github:Xiaomu Zhou
-
-
 config:
 
 js_dir:
