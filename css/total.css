@@ -114,3 +114,6 @@ img{
 #paginator{
 padding:5% 5% 5% 5%;
 }
+.current-page{
+color:blue;
+}
