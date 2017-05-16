@@ -84,7 +84,6 @@ margin-top:0px;
 padding:0px;
 height:1000px;
 overflow:hidden;
-	
 }
 
 div.cover-content-left{
@@ -93,8 +92,7 @@ div.cover-content-left{
 	border:1px solid black;
 	display:inline-block;  
         margin:0px;  
-max-height:100%;   
-max-width:100%; 
+ 
 }
 div.cover-content-right{
         margin:0px;
@@ -102,9 +100,7 @@ div.cover-content-right{
 	background-color:rgba(255,255,255,0.8);
 	border:1px solid black;
 	display:inline-block;
-        position:absolute;
-       max-height:100%; 
-max-width:100%;
+       
 }
 img{
  width:auto;
