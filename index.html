@@ -5,10 +5,14 @@ title: Code Garden
 <div class="cover-content-right">
 <h1>Code Garden</h1>
 <h2>list of paper</h2>
+
+<div id="paginator">
+<div class="pagenavi">
 {% for post in paginator.posts %}
 <a href="">{{ post.title }}</a>
 {% endfor %}
-
+</div>
+</div>
 
 <ul>
 {% for post in site.posts %}
