@@ -10,13 +10,12 @@ title: Code Garden
 <div id="paginator">
 <div class="pagenavi">
 <span class="page_number">The {{ paginator.page }}/Total{{ paginator.total_pages }}</span>
-<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}">The first</a>
+<a href="{{ "/index.html" | prepend: site.baseurl | replace: '//', '/' }}">The first</a>
 {% if paginator.previous_page %}
    {% if paginator.previous_page == 1 %}
         <span>&laquo; Prev</span>
    {% else %}
        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/index.html">&laquo; Prev</a>
-<br>
    {% endif %}
    {% for count in (1..paginator.total_pages)limit:88 %}
        {% if count == paginator.page %}
@@ -26,7 +25,6 @@ title: Code Garden
        {% endif%}
     {% endfor %}
 {% endif %}
-<br>
 {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/index.html">Next &raquo;</a>
 {% else %}
