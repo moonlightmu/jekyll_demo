@@ -17,7 +17,7 @@ title: Code Garden
    {% else %}
        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/index.html">&laquo; Prev</a>
    {% endif %}
-   {% for count in (1..paginator.total_pages)limit:8 %}
+   {% for count in (1..paginator.total_pages)limit:88 %}
        {% if count == paginator.page %}
             <span class="current-page"><li>{{ count }}</li></span>
        {% else %}
