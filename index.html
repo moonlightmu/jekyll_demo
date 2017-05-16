@@ -2,34 +2,40 @@
 layout: default
 title: Code Garden
 ---
+
+
+<div class="cover-content-right">
+<h1>Code Garden</h1>
+<h2>list of paper</h2>
+
+
 <div id="paginator">
 <div class="pagenavi">
 <span class="page_number">The {{ paginator.page }}/All{{ paginator.total_pages }}</span>
 <a href="">The first</a>
 {% if paginator.previous_page %}
-{% if paginator.previous_page == 1 %}
-<a href="/" class="current"><<The previous</a>
-{% else %}
-<a href="/"><<The previous</a>
-{% endif %}
-{% for count in (2..paginator.total_pages)limit:5 %}
-{% if count == paginator.page %}
-<span class="current-page">{{ count }}</span>
-{% else %}
-<a href="/page{{ count }}">{{ count }}</a>
-{% endif%}
-{% endfor %}
+   {% if paginator.previous_page == 1 %}
+       <a href="/" class="current"><<The previous</a>
+   {% else %}
+       <a href="/"><<The previous</a>
+   {% endif %}
+   {% for count in (2..paginator.total_pages)limit:5 %}
+       {% if count == paginator.page %}
+            <span class="current-page">{{ count }}</span>
+       {% else %}
+            <a href="/page{{ count }}">{{ count }}</a>
+       {% endif%}
+    {% endfor %}
 {% if paginator.next_page %}
-<a href="/page{{ paginator.next_page }}">The back</a>
+    <a href="/page{{ paginator.next_page }}">The back</a>
 {% else %}
-<span>The back</span>
+    <span>The back</span>
 {% endif %}
-<a href="/page{{ paginator.total_pages }}The last</a>
+   <a href="/page{{ paginator.total_pages }}The last</a>
+   </div>
 </div>
-</div>
-<div class="cover-content-right">
-<h1>Code Garden</h1>
-<h2>list of paper</h2>
+
+
 
 <ul>
 {% for post in site.posts %}
