@@ -114,9 +114,6 @@ img{
 #paginator{
 padding:5% 5% 5% 5%;
 }
-.current-page li{
-color:pink;
-}
 .pagenavi li{
 background-color:grey;
 display:inline-block;
@@ -127,4 +124,7 @@ margin:0px 20px;
 padding:0px 5px;
 line-style:none;
 font-size:150%;
+}
+.current-page li{
+color:pink;
 }
