@@ -99,6 +99,7 @@ margin:0px;
 	border:1px solid black;
 	display:inline-block;
         position:absolute;
+overflow:hidden;
 }
 img{
 width:auto;
