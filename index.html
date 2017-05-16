@@ -24,6 +24,7 @@ title: Code Garden
             <a href="/page{{ count }}">{{ count }}</a>
        {% endif%}
     {% endfor %}
+{% endif %}
 {% if paginator.next_page %}
     <a href="/page{{ paginator.next_page }}">The back</a>
 {% else %}
@@ -31,7 +32,7 @@ title: Code Garden
 {% endif %}
 
    <a href="/page{{ paginator.total_pages }}">The last</a>
-{% endif %}
+
    </div>
 </div>
 
