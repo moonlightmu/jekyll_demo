@@ -16,6 +16,7 @@ title: Code Garden
         <span>&laquo; Prev</span>
    {% else %}
        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/index.html">&laquo; Prev</a>
+<br>
    {% endif %}
    {% for count in (1..paginator.total_pages)limit:88 %}
        {% if count == paginator.page %}
@@ -28,6 +29,7 @@ title: Code Garden
 {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/index.html">Next &raquo;</a>
 {% else %}
+    <br>
     <span>Next &raquo;</span>
 {% endif %}
 
