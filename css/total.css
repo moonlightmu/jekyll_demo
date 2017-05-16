@@ -120,11 +120,12 @@ display:inline-block;
 color:black;
 font-size:100%;
 font-weight:300px;
-margin:0px 3%px;
+margin:0px 2%px;
 padding:0px 10%px;
 line-style:none;
 font-size:150%;
 width:25px;
+text-align:center;
 }
 .current-page li{
 color:pink;
