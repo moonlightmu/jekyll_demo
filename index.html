@@ -15,18 +15,18 @@ title: Code Garden
    {% if paginator.previous_page == 1 %}
         <span>&laquo; Prev</span>
    {% else %}
-       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/index.html">&laquo; Prev</a>
    {% endif %}
    {% for count in (1..paginator.total_pages)limit:8 %}
        {% if count == paginator.page %}
             <span class="current-page">{{ count }}</span>
        {% else %}
-            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}"}">{{ count }}</a>
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}/index.html">{{ count }}</a>
        {% endif%}
     {% endfor %}
 {% endif %}
 {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/index.html">Next &raquo;</a>
 {% else %}
     <span>Next &raquo;</span>
 {% endif %}
