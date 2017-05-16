@@ -26,10 +26,10 @@ title: Code Garden
        {% endif%}
     {% endfor %}
 {% endif %}
+<br>
 {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/index.html">Next &raquo;</a>
 {% else %}
-    <br>
     <span>Next &raquo;</span>
 {% endif %}
 
