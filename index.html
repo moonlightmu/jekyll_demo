@@ -9,7 +9,7 @@ title: Code Garden
 <h2>list of paper</h2>
 <div id="paginator">
 <div class="pagenavi">
-<span class="page_number">The {{ paginator.page }}/Total{{ paginator.total_pages }}</span>
+<span class="page_number"><h2>The {{ paginator.page }}/Total{{ paginator.total_pages }}</h2></span>
 <a href="">The first</a>
 {% if paginator.previous_page %}
    {% if paginator.previous_page == 1 %}
@@ -19,9 +19,9 @@ title: Code Garden
    {% endif %}
    {% for count in (1..paginator.total_pages)limit:8 %}
        {% if count == paginator.page %}
-            <span class="current-page">{{ count }}</span>
+            <span class="current-page"><h3>{{ count }}</h3></span>
        {% else %}
-            <a href="{{ site.paginate_path |  prepend: "/" | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}/index.html">{{ count }}</a>
+            <a href="{{ site.paginate_path |  prepend: "/" | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}/index.html"><h3>{{ count }}</h3></a>
        {% endif%}
     {% endfor %}
 {% endif %}
