@@ -115,13 +115,24 @@ img{
 padding:5% 5% 5% 5%;
 }
 .current-page li{
-background-color:grey;
+background-color:pink;
 display:inline-block;
-color:#142130;
+color:red;
 font-size:100%;
 font-weight:300px;
 margin:0px 20px;
-padding:0px 0px;
+padding:0px 3px;
+line-style:none;
+font-size:150%;
+}
+.pagenavi li{
+background-color:grey;
+display:inline-block;
+color:red;
+font-size:100%;
+font-weight:300px;
+margin:0px 20px;
+padding:0px 3px;
 line-style:none;
 font-size:150%;
 }
