@@ -25,6 +25,16 @@
 <div class="cover-content-left">
 <h1>CODE GARDEN</h1>
 <h2>JS,JAVA,CSS</h2>
+
+<ul>
+{% for post in site.posts %}
+<li>	
+<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+<span class="date">{{ post.date | date_to_string }}</span>
+</li>
+{% endfor %}
+</ul>
+
 </div>
 {{ content  }}
 
