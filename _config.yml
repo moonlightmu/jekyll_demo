@@ -2,7 +2,7 @@ baseurl:     /jekyll_demo
 gems:        [jekyll-paginator]
 encoding:    UTF-8
 paginate_path: 'page:num'
-paginate: 5
+paginate: 2
 
 
 
