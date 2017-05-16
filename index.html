@@ -10,7 +10,8 @@ title: Code Garden
 <div id="paginator">
 <div class="pagenavi">
 <span class="page_number">The {{ paginator.page }}/Total{{ paginator.total_pages }}</span>
-<a href="">The first</a>
+<br>
+<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}">The first</a>
 {% if paginator.previous_page %}
    {% if paginator.previous_page == 1 %}
         <span>&laquo; Prev</span>
