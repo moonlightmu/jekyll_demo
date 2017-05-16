@@ -2,8 +2,6 @@
 layout: default
 title: Code Garden
 ---
-
-
 <div class="cover-content-right">
 <h1>Code Garden</h1>
 <h2>list of paper</h2>
@@ -30,21 +28,16 @@ title: Code Garden
 {% else %}
     <span>Next &raquo;</span>
 {% endif %}
-
    <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}/index.html">The last</a>
-
    </div>
 </div>
-
-
 
 <ul>
 {% for post in paginator.posts %}
 <li>	
 <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ post.url }}</a></h2>
 <span class="date">{{ post.date | date_to_string }}</span>
-{{ post.excerpt | remove: 'cover-content-right' }}
-	
+{{ post.excerpt | remove: 'cover-content-right' }}	
 <p> 
 <a href="{{ site.baseurl }}{{ post.url }}"><span >read all &raquo; </span></a>
 </p>
