@@ -1,17 +1,8 @@
-source:      .
-destination: ./_site
-plugins:     ./_plugins
-
-include:     ['.htaccess']
-exclude:     []
-keep_files:  ['.git','.svn']
-gems:        []
+gems:        [jekyll-paginator]
 timezone:    nil
 encoding:    UTF-8
 
-future:      true
-show_drafts: nil
-limit_posts: 0
+
 highlighter: pygments
 
 permalink:     pretty
@@ -22,7 +13,7 @@ markdown:      maruku
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
 
-excerpt_separator: "\n\n"
+
 
 safe:        false
 watch:       false    # deprecated
