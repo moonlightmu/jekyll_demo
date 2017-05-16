@@ -113,7 +113,11 @@ img{
 }
 #paginator{
 margin:2%;
-padding:5% 5% 5% 5%;
+padding:1% 1% 1% 1%;
+}
+.panenavi{
+margin:2%;
+padding:1%;
 }
 .pagenavi li{
 background-color:rgba(0,100,255,0.9);
