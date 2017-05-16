@@ -21,7 +21,7 @@ title: Code Garden
        {% if count == paginator.page %}
             <span class="current-page">{{ count }}</span>
        {% else %}
-            <a href="{{ site.paginate_path | "/" | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}/index.html">{{ count }}</a>
+            <a href="/{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}/index.html">{{ count }}</a>
        {% endif%}
     {% endfor %}
 {% endif %}
