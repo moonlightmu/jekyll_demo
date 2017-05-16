@@ -82,7 +82,7 @@ div.cover{
 	background-image:url(https://moonlightmu.github.io/jekyll_demo/img/2-450.jpg);
 margin-top:0px;
 padding:0px;
-height:1000px;
+height:1500px;
 overflow:hidden;
 position:relative;
 }
@@ -93,17 +93,17 @@ div.cover-content-left{
 	border:1px solid black;
 	display:inline-block;  
         margin:0px;  
-margin-left:20px
+        margin-left:20px
  
 }
 div.cover-content-right{
         margin:0px;
-margin-left:10px;
+        margin-left:10px;
 	padding:10% 5% 10% 5%;
 	background-color:rgba(255,255,255,0.8);
 	border:1px solid black;
 	display:inline-block;
-       position:absolute;
+        position:absolute;
 }
 img{
  width:auto;
