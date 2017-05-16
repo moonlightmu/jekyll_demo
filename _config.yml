@@ -1,18 +1,13 @@
 baseurl:     /jekyll_demo
 gems:        [jekyll-paginator]
 encoding:    UTF-8
-permalink:     pretty
 paginate_path: 'page:num'
 paginate: 5
-
-markdown:      maruku
-markdown_ext:  markdown,mkd,mkdn,md
-textile_ext:   textile
 
 host:        0.0.0.0
 port:        4000
 baseurl:     /jekyll_demo
 url:         http://localhost:4000
-lsi:         false
+
 
 
