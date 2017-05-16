@@ -102,8 +102,7 @@ div.cover-content-right{
         overflow:hidden;
 }
 img{
-   width:auto;
+ width:auto;
  height:auto;
- max-width:80%;
- max-height:80%;
+ 
 }
