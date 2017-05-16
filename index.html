@@ -7,8 +7,6 @@ title: Code Garden
 <div class="cover-content-right">
 <h1>Code Garden</h1>
 <h2>list of paper</h2>
-
-
 <div id="paginator">
 <div class="pagenavi">
 <span class="page_number">The {{ paginator.page }}/All{{ paginator.total_pages }}</span>
@@ -31,7 +29,9 @@ title: Code Garden
 {% else %}
     <span>The back</span>
 {% endif %}
+
    <a href="/page{{ paginator.total_pages }}">The last</a>
+{% endif %}
    </div>
 </div>
 
