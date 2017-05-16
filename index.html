@@ -8,6 +8,22 @@ title: Code Garden
 
 <div id="paginator">
 <div class="pagenavi">
+<span class="page_number">The {{ paginator.page }}/All {{ paginator.total_pages }}</span>
+<a href="">The first</a>
+{% if paginator.previous_page %}
+{% if paginator.previous_page == 1 %}
+<a href="/" class="current"><<The previous</a>
+{% else %}
+<a href="/"><<The previous</a>
+{% endif %}
+{% endif %|
+
+
+
+
+
+
+
 {% for post in paginator.posts %}
 <a href="">{{ post.title }}</a>
 {% endfor %}
