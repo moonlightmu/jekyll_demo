@@ -152,7 +152,7 @@ function checkCookie()
     }
   }
 }
-function picturn{
+function picturn(){
 document.getElementById("4").src="{{ site.url }}{{ site.baseurl }}/img/4-450.jpg";
 }
 
