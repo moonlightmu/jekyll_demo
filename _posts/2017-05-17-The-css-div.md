@@ -10,11 +10,11 @@ title: Code Garden
 
 <p class="guarantee">
 <br>
-div{<br>
-position:relative;/*or absolute,or fixed*/<br>
-margin:0px;<br>
-padding:0px;<br>
-}<br>
+div{
+position:relative;/*or absolute,or fixed*/
+margin:0px;
+padding:0px;
+}
 </p>
 
 <h2>chinese</h2>
