@@ -7,7 +7,9 @@ layout: default
 <div class="all-posts" post-cate="All">
 <header>
 <h1>
-{{ page.title }}<div class="post-date"><a href="https://github.com/{{ site.github }}/{{ site.github }}.github.io/edit/master/{{ page.path }}" target="_blank">jiucuo</a>&nbsp;&nbsp;
+{{ page.title }}
+<div class="post-date">
+<a href="https://github.com/{{ site.github }}/{{ site.github }}.github.io/edit/master/{{ page.path }}" target="_blank">jiucuo</a>&nbsp;&nbsp;
 <span class="glyphicon glyphicon-time"></span>
 {{ page.date | date_to_string }}{% if page.author %}.{{ page.author }}{% endif %}{% if page.meta %}{{ page.meta }}{% endif %}
 </div>
@@ -16,7 +18,9 @@ layout: default
 <!-- Author -->
 <hr>
 <article>
+<div class="cover-content-right">
 {{ content }}
+</div>
 </article>
 <hr>
 <br/>
