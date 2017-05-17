@@ -7,12 +7,7 @@ one:"one",
 two:"two",
 three:"three"	
 }
-
 /**/
-
-
-
-
 /*检测email字段格式*/
 function validate_required(field,alerttxt){
 	with(field)
@@ -157,7 +152,8 @@ function checkCookie()
     }
   }
 }
-
-window.body.onLoad="createnode()";
+function picturn{
+body.getElementById(4).src="{{ site.url }}{{ site.baseurl }}/img/4-450.jpg }}";
+}
 
 
