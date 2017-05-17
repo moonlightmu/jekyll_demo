@@ -154,7 +154,8 @@ function checkCookie()
 }
 function picturn()
 {
-document.getElementById("four").src="{{ site.url }}{{ site.baseurl }}/img/4-450.jpg";
+ var c=document.getElementById("four");
+c.src="{{ site.url }}{{ site.baseurl }}/img/4-450.jpg";
 }
 
 
