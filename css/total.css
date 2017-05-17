@@ -90,7 +90,6 @@ position:relative;
 div.cover-content-left{
 	padding:10% 2% 10% 2%;
 	background-color:rgba(255,255,255,0.8);
-	border:1px solid black;
 	display:inline-block;  
         margin:0px;  
         margin-left:20px;
@@ -101,7 +100,6 @@ div.cover-content-right{
         margin-left:10px;
 	padding:10% 5% 10% 5%;
 	background-color:rgba(255,255,255,0.8);
-	border:1px solid black;
 	display:inline-block;
         position:absolute;
 }
