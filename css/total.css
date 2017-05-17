@@ -104,6 +104,7 @@ div.cover-content-right{
 	background-color:rgba(255,255,255,0.8);
 	display:inline-block;
         position:absolute;
+margin-top:70px;
 }
 img{
  width:auto;
