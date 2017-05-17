@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 
  */
 var data=new Array("1","2","3");
@@ -157,5 +157,7 @@ function checkCookie()
     }
   }
 }
+
+window.body.onLoad="createnode()";
 
 
