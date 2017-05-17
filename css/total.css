@@ -94,7 +94,7 @@ div.cover-content-left{
 	display:inline-block;  
         margin:0px;  
         margin-left:20px;
-        margin-top:70px;
+        margin-top:45px;
  
 }
 div.cover-content-right{
@@ -104,7 +104,7 @@ div.cover-content-right{
 	background-color:rgba(255,255,255,0.8);
 	display:inline-block;
         position:absolute;
-margin-top:70px;
+margin-top:45px;
 }
 img{
  width:auto;
