@@ -127,6 +127,16 @@ color:black;
 font-size:100%;
 font-weight:300px;
 margin:0px 1%;
+a:link{
+	color:#007e7e;
+}
+a:visited{
+	color:#333333;
+}
+a:hover{
+	background-color:#f88396;
+	color:#0d5353;
+}
 padding:0px 3%;
 line-style:none;
 font-size:150%;
