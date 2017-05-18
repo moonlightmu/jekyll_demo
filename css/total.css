@@ -89,7 +89,7 @@ position:relative;
 }
 
 div.cover-content-left{
-	padding:10% 2% 10% 2%;
+	padding:10% 2% 10% 5%;
 	background-color:rgba(255,255,255,0.8);
 	display:inline-block;  
         margin:0px;  
@@ -105,6 +105,7 @@ div.cover-content-right{
 	display:inline-block;
         position:absolute;
 margin-top:45px;
+margin-right:10%;
 }
 img{
  width:auto;
