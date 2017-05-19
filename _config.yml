@@ -1,10 +1,3 @@
-baseurl: /jekyll_demo
-gems: [jekyll-paginator]
-
-paginate_path: 'page:num'
-paginate: 1
-category: category
-
 markdown: kramdown
 kramdown:
   input: GFM
@@ -20,4 +13,9 @@ kramdown:
 highlighter: rouge
 encoding: UTF-8
 
+baseurl: /jekyll_demo
+gems: [jekyll-paginator]
 
+paginate_path: 'page:num'
+paginate: 1
+category: category
