@@ -94,7 +94,8 @@ div.cover-content-left{
         margin:0px;  
         margin-left:40px;
         margin-top:45px;
-float:left;
+        float:left;
+        overflow:scroll;
 
  
 }
