@@ -9,7 +9,7 @@ kramdown:
   syntax_highlighter: rouge
   coderay:
     coderay_line_numbers:  nil
-
+pygments:true;
 highlighter: rouge
 encoding: UTF-8
 
