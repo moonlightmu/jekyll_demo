@@ -154,3 +154,20 @@ a:hover{
 margin:0px;
 background-color:#f88390;
 }
+
+#main{
+	display:table-cell;
+	background-color:#cc6600;
+	font-size:150%;
+	padding:15px;
+    border:1px solid black;
+    vertical-align:top;
+}div#tableContainer{
+	display:table;
+	border-spacing:10px;
+}
+
+div#tableRow{
+	display:table-row;
+	border-spacing:10px;
+}
