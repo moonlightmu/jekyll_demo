@@ -167,12 +167,13 @@ background-color:#f88390;
 	display:table;
 	border-spacing:10px;
         padding:0px;
-margin:5%;
+        margin:0px;
 }
 
 div#tableRow{
 	display:table-row;
 	border-spacing:10px;
-padding:0px;
+        padding:0px;
+        margin:0px;
 
 }
