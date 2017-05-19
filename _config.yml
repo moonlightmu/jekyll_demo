@@ -18,6 +18,6 @@ kramdown:
     coderay_line_numbers:  nil
 
 highlighter: rouge
-encoding: utf-8
+encoding: UTF-8
 
 
