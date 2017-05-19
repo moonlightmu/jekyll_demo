@@ -159,13 +159,14 @@ background-color:#f88390;
 	display:table-cell;
 	background-color:#cc6600;
 	font-size:150%;
-	padding:25px;
-margin:0px;
-    border:1px solid black;
-    vertical-align:top;
+	padding:5px;
+        margin:0px;
+        border:1px solid black;
+        vertical-align:top;
 }div#tableContainer{
 	display:table;
 	border-spacing:10px;
+padding:10px;
 }
 
 div#tableRow{
