@@ -166,10 +166,12 @@ background-color:#f88390;
 }div#tableContainer{
 	display:table;
 	border-spacing:10px;
-padding:10px;
+        padding:0px;
 }
 
 div#tableRow{
 	display:table-row;
 	border-spacing:10px;
+padding:0px;
+
 }
