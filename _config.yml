@@ -17,5 +17,5 @@ baseurl: /jekyll_demo
 gems: [jekyll-paginator]
 
 paginate_path: 'page:num'
-paginate: 1
+paginate: 5
 category: category
