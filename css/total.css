@@ -151,7 +151,8 @@ a:hover{
 }
 .rightfloat{
 	float:right;
-margin:0px;
+        margin:0px;
+border-radius:45%;
 background-color:#f88390;
 }
 
