@@ -56,7 +56,7 @@ div{
 	background-color:#c0c0c0;
 }
 div.navigation {
-background-color:rgba(255,255,255,0.9);
+background-color:rgba(255,255,0,0.9);
 position:fixed;
 text-align:center;
 z-index:10000;
@@ -90,7 +90,7 @@ position:relative;
 
 div.cover-content-left{
 	padding:10% 2% 10% 5%;
-	background-color:rgba(255,255,0,0.8); 
+	background-color:rgba(255,255,255,0.8); 
         margin:0px;  
         margin-left:40px;
         margin-top:45px;
