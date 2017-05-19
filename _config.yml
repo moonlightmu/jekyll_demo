@@ -1,9 +1,15 @@
 baseurl: /jekyll_demo
 gems: [jekyll-paginator]
-encoding: utf-8
+
 paginate_path: 'page:num'
 paginate: 1
-markdown: kramdown
+category: category
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
+encoding: utf-8
 
 
