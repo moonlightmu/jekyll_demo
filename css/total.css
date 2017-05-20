@@ -4,7 +4,8 @@ body{
 	font-size:small;
 	line-height:1.6em;
 	background-image:url(https://moonlightmu.github.io/jekyll_demo/img/back.jpg);
-        
+        background-image:-webkit-linear-gradient(#FFD194,#BC1204);
+
 }
 h1,h2{
 	color:#007e7e;
