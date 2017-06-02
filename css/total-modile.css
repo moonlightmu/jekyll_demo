@@ -3,9 +3,8 @@ body{
 	font-family:serif,sans-serif;
 	font-size:small;
 	line-height:1.6em;
-	background-image:url(https://moonlightmu.github.io/jekyll_demo/img/back.jpg);
-        background-image:-webkit-linear-gradient(#FFD194,#BC1204);
-
+	background-color:#cc6600;
+        overflow:hidden;
 }
 h1,h2{
 	color:#007e7e;
@@ -30,7 +29,6 @@ a{
 	font-size:normal;
 	font-family:cursive;
 	font-weigth:bold;
-        text-decoration:none;
 }
 
 div{
@@ -62,30 +60,27 @@ background-color:rgba(255,255,255,0.9);
 position:fixed;
 text-align:center;
 z-index:10000;
-padding:0px;
-margin:0px;
+padding:0px 0px;
+margin:0px 0px;
 top:0px;
 width:100%;
-border:0px;
 }
 .navigation ul{
 text-align:center;
 }
 .navigation li {
-background-color:rgba(0,255,255,0.8);
 display:inline-block;
 color:#142130;
 font-size:100%;
 font-weight:300px;
-margin:10px;
-padding:20px 20px;
+margin:0px 20px;
+padding:0px 0px;
 line-style:none;
 font-size:150%;
-border:1px solid black;
 }
 
 div.cover{
-	background-image:url(https://moonlightmu.github.io/jekyll_demo/img/2-450.jpg);
+	background-color:#444444;
 margin-top:0px;
 padding:0px;
 height:1000px;
@@ -94,27 +89,24 @@ position:relative;
 }
 
 div.cover-content-left{
-	padding:10% 2% 10% 5%;
-	background-color:rgba(255,255,255,0.8); 
+	padding:10% 2% 10% 2%;
+	background-color:rgba(255,255,255,0.8);
+	display:inline-block;  
         margin:0px;  
-        margin-left:40px;
+        margin-left:20px;
         margin-top:45px;
-        float:left;
-        
-
  
 }
 div.cover-content-right{
         margin:0px;
         margin-left:10px;
 	padding:10% 5% 10% 5%;
-	background-color:rgba(255,255,255,0.8);    
+	background-color:rgba(255,255,255,0.8);
+	display:inline-block;
+        position:absolute;
 margin-top:45px;
-margin-left:25%;
-height:1000px; 
-overflow:scroll;
 }
-div.cover-content-right img{
+img{
  width:auto;
  height:auto;
  max-width:90%;
@@ -144,43 +136,3 @@ text-align:center;
 .current-page li{
 color:pink;
 }
-a:link{
-	color:#007e7e;
-}
-a:visited{
-	color:#333333;
-}
-a:hover{
-	color:#0d5353;
-        
-}
-.rightfloat{
-	float:right;
-        margin:0px;
-border-radius:45%;
-background-color:#f88390;
-}
-
-#main{
-	display:table-cell;
-	background-color:#cc6600;
-	font-size:150%;
-	padding:5px;
-        margin:0px;
-        border:1px solid black;
-        vertical-align:top;
-}div#tableContainer{
-	display:table;
-	border-spacing:10px;
-        padding:0px;
-        margin:0px;
-}
-
-div#tableRow{
-	display:table-row;
-	border-spacing:10px;
-        padding:0px;
-        margin:0px;
-
-}
-

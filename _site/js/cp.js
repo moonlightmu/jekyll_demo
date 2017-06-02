@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 
  */
 var data=new Array("1","2","3");
@@ -7,7 +7,12 @@ one:"one",
 two:"two",
 three:"three"	
 }
+
 /**/
+
+
+
+
 /*检测email字段格式*/
 function validate_required(field,alerttxt){
 	with(field)
@@ -151,11 +156,6 @@ function checkCookie()
       setCookie('username',username,365);
     }
   }
-}
-function picturn()
-{
- var c=document.getElementById("four");
-c.src="{{ site.url }}{{ site.baseurl }}/img/4-450.jpg";
 }
 
 

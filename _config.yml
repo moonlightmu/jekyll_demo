@@ -1,1 +1,21 @@
-baseurl:/jekyll_demo
+markdown: kramdown
+kramdown:
+  input: GFM
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+  use_coderay: true
+  syntax_highlighter: rouge
+  coderay:
+    coderay_line_numbers:  nil
+pygments: true;
+highlighter: rouge
+encoding: UTF-8
+
+baseurl: /jekyll_demo
+gems: [jekyll-paginator]
+
+paginate_path: 'page:num'
+paginate: 5
+category: category
