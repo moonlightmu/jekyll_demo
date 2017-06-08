@@ -4,6 +4,7 @@ body{
 	font-size:small;
 	line-height:1.6em;
         background-color:#008009;
+        padding:0px;
 }
 h1,h2{
 	color:#007e7e;
@@ -33,11 +34,11 @@ a{
 
 div{
 	border:3px dashed white;
-	margin:10%;
-	padding-left:10%;
-        padding-right:10%;
 	background-color:#008009;
         line-height:1.6em;
+        margin:10%;
+        margin-top:0pz;
+        
        
 }
 div.guarantee{
@@ -205,6 +206,8 @@ div#tableRow{
         margin:20px;
 }
 .headerbackphoto{
-        max-width:50%;
-        max-height:50%;
+        width:auto;
+        height:auto;
+        max-width:100%;
+        max-height:100%;
 }
