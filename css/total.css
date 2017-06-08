@@ -117,11 +117,11 @@ div.cover-td img{
        
 }
 div.myphoto{
-margin:auto;
+margin-top:10%;
 
 }
 div.myphoto img{
-padding:auto;
+padding:10%;
 width:100%;
 border-radius:45%;
 }
