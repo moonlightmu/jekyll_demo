@@ -5,6 +5,7 @@ body{
 	line-height:1.6em;
 	background-image:url(https://moonlightmu.github.io/jekyll_demo/img/back.jpg);
         background-image:-webkit-linear-gradient(#FFD194,#BC1204);
+        background-color:#008009;
 
 }
 h1,h2{
@@ -37,7 +38,7 @@ div{
 	border:3px dashed white;
 	margin:10% 10%;
 	padding:10% 10% 10% 10%;
-	background-color:#b7cbdb;
+	background-color:#006002;
         line-height:1.6em;
        
 }
