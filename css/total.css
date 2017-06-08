@@ -34,11 +34,7 @@ a{
 div{
 	border:3px dashed white;
 	background-color:#008009;
-        line-height:1.6em;
-        margin:10%;
-        margin-top:0pz;
-        
-       
+        line-height:1.6em;      
 }
 div.guarantee{
     border:3px solid pink;
@@ -82,28 +78,13 @@ div.navigation li {
        line-style:none;
        font-size:150%;
 }
-div.precover{
-margin-top:0px;
-padding:0px;
-border:0px;
-}
-div.headerback{
-margin:0px;
-padding:0px;
-border:0px;
-}
-div.headerbackphoto{
-        width:auto;
-        height:auto;
-        max-width:100%;
-        max-height:100%;
-}
+
 div.cover{
       display:table;
       margin-top:0px;
-      margin-left:0px;
-      margin-right:0px;
-      padding:0px;
+      margin-left:10%;
+      margin-right:10%;
+      padding:10px;
       width:100%;
       height:1000px;
       overflow:scroll;
@@ -118,15 +99,14 @@ div.cover-row{
 div.cover-td{
         display:table-cell;
 	background-color:rgba(255,255,255,0.8); 
-        overflow:scroll;
+       
 }
 
 div.cover-td ul li {
         line-style:none;
         font-size:150%;
         text-align:center;
-        margin:0px;
-        padding:0px;
+       
 }
 
 div.cover-td img{
@@ -135,6 +115,10 @@ div.cover-td img{
         max-width:70%;
         max-height:70%;
        
+}
+div.myphoto{
+margin:20px;
+width:100%;
 }
 #paginator{
         margin:4%;
