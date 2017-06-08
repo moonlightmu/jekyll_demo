@@ -30,7 +30,9 @@ a{
 	font-weigth:bold;
         text-decoration:none;
 }
-
+li{
+text-decoration:none;
+}
 div{
 	border:3px dashed white;
 	margin:10%;
@@ -106,7 +108,6 @@ font-size:150%;
 text-align:center;
 margin:0px;
 padding:0px;
-text-decoration:none;
 }
 div.cover-content-right{
 display:table-cell;
