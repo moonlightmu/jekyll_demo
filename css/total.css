@@ -87,6 +87,11 @@ div.precover{
 padding:0px;
  border:0px;
 }
+div.headerback{
+margin:0px;
+padding:0px;
+border:0px;
+}
 div.cover{
       display:table;
       margin-top:0px;
@@ -190,11 +195,7 @@ div#tableRow{
         vertical-align:top;
 }
 
-div.headerback{
-margin:0px;
-padding:0px;
 
-}
 .myphoto{
         width:auto;
         height:auto;
