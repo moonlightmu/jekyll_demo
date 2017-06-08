@@ -118,6 +118,7 @@ div.cover-td img{
 div.myphoto{
 margin:auto 10px;
 width:100%;
+border-radius:45%;
 }
 #paginator{
         margin:4%;
