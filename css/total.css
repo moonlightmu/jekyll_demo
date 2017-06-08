@@ -117,11 +117,12 @@ div.cover-row{
       display:table-row;
 margin:0px;
 padding:0px;
+border:0px;
 }
 div.cover-td{
         display:table-cell;
 	background-color:rgba(255,255,255,0.8); 
-       
+       border:0px;
 margin:0px;
 padding:0px;
 }
@@ -131,16 +132,19 @@ height: 100%;
 display: table;
 margin:0px;
 padding:0px;
+border:0px;
 }
 div.sub-cover-tr{
 display:table-row;
 margin:0px;
 padding:0px;
+border:0px;
 }
 div.sub-cover-td{
 display:table-cell;
 margin:0px;
 padding:0px;
+border:0px;
 }
 
 div.cover-td ul li {
