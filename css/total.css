@@ -113,7 +113,7 @@ div.cover-td img{
         height:auto;
         max-width:70%;
         max-height:70%;
-        border-radius:15%;
+        
        
 }
 div.myphoto{
@@ -133,7 +133,8 @@ background-color:rgba(255,255,255,0.8);
 border:0px;
 }
 div.cover-head img{
-width:100%;
+width:auto;
+max-width:120%;
 }
 #paginator{
         margin:4%;
