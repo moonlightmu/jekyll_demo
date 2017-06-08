@@ -85,6 +85,7 @@ div.navigation li {
 }
 div.precover{
 padding:0px;
+ border:0px;
 }
 div.cover{
       display:table;
@@ -96,7 +97,7 @@ div.cover{
       overflow:scroll;
       position:relative;
       background-color:#006002;
-      border:0px;
+      
 }
 div.cover-row{
       display:table-row;
