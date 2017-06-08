@@ -182,4 +182,9 @@ div#tableRow{
         margin:0px;
 
 }
-
+.myphoto{
+        width:auto;
+        height:auto;
+        max-width:70%;
+        max-height:70%;
+}
