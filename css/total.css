@@ -117,13 +117,20 @@ div.cover-td img{
        
 }
 div.myphoto{
-margin-top:10%;
+margin-top:0%;
 margin-bottom:10%;
 
 }
 div.myphoto img{
 padding:10%;
 border-radius:50%;
+}
+div.cover-head{
+margin-top:0px;
+margin-bottom:10%;
+}
+div.cover-head img{
+
 }
 #paginator{
         margin:4%;
