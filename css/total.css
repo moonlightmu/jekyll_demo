@@ -112,123 +112,8 @@ div.cover{
       
 }
 div.cover-row{
-      display:table-row;
-@CHARSET "UTF-8";
-body{
-	font-family:serif,sans-serif;
-	font-size:small;
-	line-height:1.6em;
-        background-color:#008009;
-}
-h1,h2{
-	color:#007e7e;
-}
-h1{
-        font-size:150%;	
-}
-h2{
-	font-size:130%;
-}
-h3.guarantee{
-	color:black;
-	font-size:160%;
-	font-family:fantasy;
-}
-h3.greentea{
-	color:black;
-	font-size:160%;
-	font-family:fantasy;
-}
-a{
-	font-size:normal;
-	font-family:cursive;
-	font-weigth:bold;
-        text-decoration:none;
-}
-
-div{
-	border:3px dashed white;
-	background-color:#008009;
-        line-height:1.6em;
-        margin:10%;
-        margin-top:0pz;
-        
-       
-}
-div.guarantee{
-    border:3px solid pink;
-    padding:25px;
-    margin:20px;
-    color:#444444;
-    background-color:#c0c0c0;
-	
-}
-div.greentea{
-	line-height:1.9em;
-	color:#555555;
-	border:3px solid yellow;
-	padding:25px;
-	margin:20px;
-	background-color:#c0c0c0;
-}
-div.navigation {
-       background-color:rgba(255,255,255,0.9);
-       position:fixed;
-       text-align:center;
-       z-index:10000;
-       padding:0px;
-       margin:0px;
-       top:0px;
-       width:100%;
-       border:0px;
-}
-div.navigation ul{
-       text-align:center;
-
-}
-div.navigation li {
-       background-color:rgba(0,255,255,0.8);
-       display:inline-block;
-       color:#142130;
-       font-size:100%;
-       font-weight:300px;
-       margin:10px;
-       padding:20px 20px;
-       line-style:none;
-       font-size:150%;
-}
-div.precover{
-margin-top:0px;
-padding:0px;
-border:0px;
-}
-div.headerback{
-margin:0px;
-padding:0px;
-border:0px;
-}
-div.headerbackphoto{
-        width:auto;
-        height:auto;
-        max-width:100%;
-        max-height:100%;
-}
-div.cover{
-      display:table;
-      margin-top:0px;
-      margin-left:0px;
-      margin-right:0px;
-      padding:0px;
-      width:100%;
-      height:1000px;
-      overflow:scroll;
-      position:relative;
-      background-color:#006002;
-      
-}
-div.cover-row{
-      display:table-row;
-border:0px;
+      display:table-row;;
+      border:0px;
 }
 div.cover-td{
         display:table-cell;
@@ -247,9 +132,9 @@ div.cover-td ul li {
 div.cover-td img{
         width:auto;
         height:auto;
-        max-width:90%;
-        max-height:90%;
-margin:0px;
+        max-width:70%;
+        max-height:70%;
+       
 }
 #paginator{
         margin:4%;
@@ -414,10 +299,3 @@ div#tableRow{
 }
 
 
-.myphoto{
-        width:auto;
-        height:auto;
-        max-width:50%;
-        max-height:50%;
-        margin:20px;
-}
