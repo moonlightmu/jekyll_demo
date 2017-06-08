@@ -131,7 +131,7 @@ border:0px;
 }
 div.cover-head img{
 max-width:150%;
-padding-left:10%;
+padding-left:0px;
 }
 #paginator{
         margin:4%;
