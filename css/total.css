@@ -9,7 +9,7 @@ h1,h2{
 	color:#007e7e;
 }
 h1{
-font-size:150%;	
+        font-size:150%;	
 }
 h2{
 	font-size:130%;
@@ -30,9 +30,7 @@ a{
 	font-weigth:bold;
         text-decoration:none;
 }
-li{
-text-decoration:none;
-}
+
 div{
 	border:3px dashed white;
 	margin:10%;
@@ -59,43 +57,42 @@ div.greentea{
 	background-color:#c0c0c0;
 }
 div.navigation {
-background-color:rgba(255,255,255,0.9);
-position:fixed;
-text-align:center;
-z-index:10000;
-padding:0px;
-margin:0px;
-top:0px;
-width:100%;
-border:0px;
+       background-color:rgba(255,255,255,0.9);
+       position:fixed;
+       text-align:center;
+       z-index:10000;
+       padding:0px;
+       margin:0px;
+       top:0px;
+       width:100%;
+       border:0px;
 }
 div.navigation ul{
-text-align:center;
+       text-align:center;
 }
 div.navigation li {
-background-color:rgba(0,255,255,0.8);
-display:inline-block;
-color:#142130;
-font-size:100%;
-font-weight:300px;
-margin:10px;
-padding:20px 20px;
-line-style:none;
-font-size:150%;
-
+       background-color:rgba(0,255,255,0.8);
+       display:inline-block;
+       color:#142130;
+       font-size:100%;
+       font-weight:300px;
+       margin:10px;
+       padding:20px 20px;
+       line-style:none;
+       font-size:150%;
 }
 
 div.cover{
-display:table;
-margin-top:0px;
-padding:0px;
-height:1000px;
-overflow:scroll;
-position:relative;
-background-color:#006002;
+      display:table;
+      margin-top:0px;
+      padding:0px;
+      height:1000px;
+      overflow:scroll;
+      position:relative;
+      background-color:#006002;
 }
 div.cover-row{
-display:table-row;
+      display:table-row;
 }
 div.cover-content-left{
         display:table-cell;
@@ -103,43 +100,42 @@ div.cover-content-left{
         padding:0px;
 }
 div.cover-content-left ul li {
-line-style:none;
-font-size:150%;
-text-align:center;
-margin:0px;
-padding:0px;
+        line-style:none;
+        font-size:150%;
+        text-align:center;
+        margin:0px;
+        padding:0px;
 }
 div.cover-content-right{
-display:table-cell;
+        display:table-cell;
 	background-color:rgba(255,255,255,0.8);    
         overflow:scroll;
 }
 div.cover-content-right img{
- width:auto;
- height:auto;
- max-width:90%;
- max-height:90%;
+        width:auto;
+        height:auto;
+        max-width:90%;
+        max-height:90%;
 }
 #paginator{
-margin:4%;
-padding:0px;
+        margin:4%;
+        padding:0px;
 }
 .panenavi{
-margin:0px;
-padding:0px;
+        margin:0px;
+        padding:0px;
 }
-.pagenavi li a{
-background-color:rgba(0,100,255,0.9);
-display:inline-block;
-color:white;
-font-size:100%;
-font-weight:300px;
-margin:0px 1%;
-padding:0px 3%;
-line-style:none;
-font-size:150%;
-width:13px;
-text-align:center;
+.pagenavi li{ 
+        background-color:rgba(0,100,255,0.9);
+        display:inline-block;
+        color:white;
+        font-size:150%;
+        font-weight:300px;
+        margin:0px 1%;
+        padding:0px 3%;
+        line-style:none;  
+        width:13px;
+        text-align:center;
 }
 .current-page li{
 color:pink;
