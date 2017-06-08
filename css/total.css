@@ -112,9 +112,7 @@ div.cover-td img{
         width:auto;
         height:auto;
         max-width:70%;
-        max-height:70%;
-        
-       
+        max-height:70%;  
 }
 div.myphoto{
 margin-top:0%;
@@ -129,13 +127,10 @@ border-radius:50%;
 div.cover-head{
 margin-top:0%;
 margin-bottom:10%;
-background-color:rgba(255,255,255,0.8); 
+background-image:url(night.jpg);
 border:0px;
 }
-div.cover-head img{
-width:auto;
-max-width:150%;
-}
+
 #paginator{
         margin:4%;
         padding:0px;
