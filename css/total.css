@@ -103,7 +103,7 @@ div.cover-td{
 
 div.cover-td ul li {
         line-style:none;
-        font-size:150%;
+        font-size:100%;
         
        
 }
@@ -116,7 +116,7 @@ div.cover-td img{
        
 }
 div.myphoto{
-margin:20px;
+margin:auto 10px;
 width:100%;
 }
 #paginator{
