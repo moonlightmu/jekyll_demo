@@ -116,7 +116,6 @@ div.myphoto{;
 border:0px;
 }
 div.myphoto img{
-
 }
 div.cover-head{
 border:0px;
@@ -125,6 +124,7 @@ overflow:hidden;
 }
 div.cover-head img{
 padding-left:0px;
+max-width:100%;
 }
 #paginator{
         margin:4%;
