@@ -4,7 +4,6 @@ body{
 	font-size:small;
 	line-height:1.6em;
         background-color:#008009;
-        padding:0px;
 }
 h1,h2{
 	color:#007e7e;
@@ -70,8 +69,7 @@ div.navigation {
 }
 div.navigation ul{
        text-align:center;
-padding:0px;
-       margin:0px;
+
 }
 div.navigation li {
        background-color:rgba(0,255,255,0.8);
@@ -87,12 +85,18 @@ div.navigation li {
 div.precover{
 margin-top:0px;
 padding:0px;
- border:0px;
+border:0px;
 }
 div.headerback{
 margin:0px;
 padding:0px;
 border:0px;
+}
+div.headerbackphoto{
+        width:auto;
+        height:auto;
+        max-width:100%;
+        max-height:100%;
 }
 div.cover{
       display:table;
@@ -100,6 +104,7 @@ div.cover{
       margin-left:0px;
       margin-right:0px;
       padding:0px;
+      width:100%;
       height:1000px;
       overflow:scroll;
       position:relative;
@@ -108,29 +113,32 @@ div.cover{
 }
 div.cover-row{
       display:table-row;
+margin:0px;
+padding:0px;
+border:0px;
 }
-div.cover-content-left{
+div.cover-td{
         display:table-cell;
 	background-color:rgba(255,255,255,0.8); 
-        padding:0px;
+       border:0px;
+margin:0px;
+padding:0px;
 }
-div.cover-content-left ul li {
+
+div.cover-td ul li {
         line-style:none;
         font-size:150%;
         text-align:center;
         margin:0px;
         padding:0px;
 }
-div.cover-content-right{
-        display:table-cell;
-	background-color:rgba(255,255,255,0.8);    
-        overflow:scroll;
-}
-div.cover-content-right img{
+
+div.cover-td img{
         width:auto;
         height:auto;
         max-width:90%;
         max-height:90%;
+margin:0px;
 }
 #paginator{
         margin:4%;
@@ -204,10 +212,4 @@ div#tableRow{
         max-width:50%;
         max-height:50%;
         margin:20px;
-}
-.headerbackphoto{
-        width:auto;
-        height:auto;
-        max-width:100%;
-        max-height:100%;
 }
