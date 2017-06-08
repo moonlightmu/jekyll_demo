@@ -98,7 +98,7 @@ display:table-row;
 div.cover-content-left{
         display:table-cell;
 	background-color:rgba(255,255,255,0.8); 
-padding:0px;
+        padding:0px;
 }
 div.cover-content-left ul li {
 line-style:none;
@@ -106,6 +106,7 @@ font-size:150%;
 text-align:center;
 margin:0px;
 padding:0px;
+text-decoration:none;
 }
 div.cover-content-right{
 display:table-cell;
