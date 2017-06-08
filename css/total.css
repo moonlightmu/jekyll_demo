@@ -81,7 +81,9 @@ div.navigation li {
        line-style:none;
        font-size:150%;
 }
-
+div.precover{
+padding:0px;
+}
 div.cover{
       display:table;
       margin-top:0px;
@@ -92,6 +94,7 @@ div.cover{
       overflow:scroll;
       position:relative;
       background-color:#006002;
+      border:none;
 }
 div.cover-row{
       display:table-row;
