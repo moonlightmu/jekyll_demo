@@ -34,13 +34,14 @@ a{
 
 div{
 	border:3px dashed white;
-	margin:10% 10%;
-	padding:10% 10% 10% 10%;
+	margin:10%;
+	padding-left:10%;
+        padding-right:10%;
 	background-color:#008009;
         line-height:1.6em;
        
 }
-.guarantee{
+div.guarantee{
     border:3px solid pink;
     padding:25px;
     margin:20px;
@@ -48,7 +49,7 @@ div{
     background-color:#c0c0c0;
 	
 }
-.greentea{
+div.greentea{
 	line-height:1.9em;
 	color:#555555;
 	border:3px solid yellow;
@@ -67,10 +68,10 @@ top:0px;
 width:100%;
 border:0px;
 }
-.navigation ul{
+div.navigation ul{
 text-align:center;
 }
-.navigation li {
+div.navigation li {
 background-color:rgba(0,255,255,0.8);
 display:inline-block;
 color:#142130;
@@ -80,38 +81,28 @@ margin:10px;
 padding:20px 20px;
 line-style:none;
 font-size:150%;
-border:1px solid black;
+
 }
 
 div.cover{
+display:table;
 margin-top:0px;
 padding:0px;
 height:1000px;
-overflow:hidden;
+overflow:scroll;
 position:relative;
 background-color:#006002;
 }
 
 div.cover-content-left{
-	padding:10% 2% 10% 5%;
+display:table-cell;
 	background-color:rgba(255,255,255,0.8); 
-        margin:0px;  
-        margin-left:40px;
-        margin-top:45px;
-        float:left;
-        
-
- 
 }
 div.cover-content-right{
-        margin:0px;
-        margin-left:10px;
+display:table-cell;
 	padding:10% 5% 10% 5%;
 	background-color:rgba(255,255,255,0.8);    
-margin-top:45px;
-margin-left:25%;
-height:1000px; 
-overflow:scroll;
+        overflow:scroll;
 }
 div.cover-content-right img{
  width:auto;
