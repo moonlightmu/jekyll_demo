@@ -4,7 +4,6 @@ body{
 	font-size:small;
 	line-height:1.6em;
         background-color:#008009;
-        padding:0px;
 }
 h1,h2{
 	color:#007e7e;
@@ -70,8 +69,7 @@ div.navigation {
 }
 div.navigation ul{
        text-align:center;
-padding:0px;
-       margin:0px;
+
 }
 div.navigation li {
        background-color:rgba(0,255,255,0.8);
