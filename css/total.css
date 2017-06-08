@@ -90,6 +90,7 @@ div.cover{
       overflow:scroll;
       position:relative;
       background-color:#006002;
+ border:0px;
       
 }
 div.cover-row{
