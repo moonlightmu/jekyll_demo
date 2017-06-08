@@ -36,7 +36,7 @@ div{
 	border:3px dashed white;
 	margin:10% 10%;
 	padding:10% 10% 10% 10%;
-	background-color:#006002;
+	background-color:#008009;
         line-height:1.6em;
        
 }
@@ -84,12 +84,12 @@ border:1px solid black;
 }
 
 div.cover{
-	background-image:url(https://moonlightmu.github.io/jekyll_demo/img/2-450.jpg);
 margin-top:0px;
 padding:0px;
 height:1000px;
 overflow:hidden;
 position:relative;
+background-color:#006002;
 }
 
 div.cover-content-left{

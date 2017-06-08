@@ -1,29 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-<title>{{ page.title }}</title>
-<link type="text/css" rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/total.css"
-media="screen and (min-device-width:800px)">
-<link type="text/css" rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/total-modile.css" media="screen and (max-device-width: 700px)">
-
-
-</head>
+{% include head.html %}
 <body>
-<div class="navigation">
-<ul>
-<li><img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-9/htmlcss1-img_logo-shiptoit.png" height="20px;"></li>
-<li><a href="{{ site.url }}{{ site.baseurl }}">HOME</a></li>
-<li><a href="{{ site.url }}{{ site.baseurl }}/link/picture.html">PICTURE</a></li>
-<li id="logo"><a>ABOUT ME</a></li>
-</ul>
-</div>
-
+{% include header.html %}
 <div class="cover">
 <div class="cover-content-left">
 <h1>CODE GARDEN</h1>
 <h2>JS,JAVA,CSS</h2>
-
 <ul>
 {% for post in site.posts %}
 <li>	
