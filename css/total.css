@@ -159,7 +159,19 @@ a:hover{
 border-radius:45%;
 background-color:#f88390;
 }
+div#tableContainer{
+	display:table;
+	border-spacing:10px;
+        padding:0px;
+        margin:0px;
+}
+div#tableRow{
+	display:table-row;
+	border-spacing:10px;
+        padding:0px;
+        margin:0px;
 
+}
 #main{
 	display:table-cell;
 	background-color:#cc6600;
@@ -168,23 +180,13 @@ background-color:#f88390;
         margin:0px;
         border:1px solid black;
         vertical-align:top;
-}div#tableContainer{
-	display:table;
-	border-spacing:10px;
-        padding:0px;
-        margin:0px;
 }
 
-div#tableRow{
-	display:table-row;
-	border-spacing:10px;
-        padding:0px;
-        margin:0px;
 
-}
 .myphoto{
         width:auto;
         height:auto;
-        max-width:70%;
-        max-height:70%;
+        max-width:50%;
+        max-height:50%;
+        margin:20px;
 }
