@@ -12,35 +12,6 @@ title: Code Garden
 <h1>Code Garden</h1>
 <h2>list of paper</h2>
 
-
-
-<div id="paginator">
-<div class="pagenavi">
-<span class="page_number">The {{ paginator.page }}/Total{{ paginator.total_pages }}</span>
-<a href="{{ site.baseurl | replace: "//", "/" }}/index.html">The first</a>
-{% if paginator.previous_page %}
-   {% if paginator.previous_page == 1 %}
-        <span>&laquo; Prev</span>
-   {% else %}
-       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">&laquo; Prev</a>
-   {% endif %}
-   {% for count in (2..paginator.total_pages)limit:88 %}
-       {% if count == paginator.page %}
-            <span class="current-page"><li>{{ count }}</li></span>
-       {% else %}
-            <a href="{{ site.paginate_path |  prepend: "/" | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}/index.html"><li>{{ count }}</li></a>
-       {% endif%}
-    {% endfor %}
-{% endif %}
-{% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">Next &raquo;</a>
-{% else %}
-    <span>Next &raquo;</span>
-{% endif %}
-   <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}/index.html">The last</a>
-   </div>
-</div>
-
 <ul>
 {% for post in paginator.posts %}
 <li>	

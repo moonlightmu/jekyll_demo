@@ -128,10 +128,10 @@ padding:0px;
 margin:0px;
 padding:0px;
 }
-.pagenavi li{
+.pagenavi li a{
 background-color:rgba(0,100,255,0.9);
 display:inline-block;
-color:black;
+color:white;
 font-size:100%;
 font-weight:300px;
 margin:0px 1%;
