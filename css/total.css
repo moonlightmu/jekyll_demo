@@ -69,6 +69,8 @@ div.navigation {
 }
 div.navigation ul{
        text-align:center;
+padding:0px;
+       margin:0px;
 }
 div.navigation li {
        background-color:rgba(0,255,255,0.8);
@@ -94,7 +96,7 @@ div.cover{
       overflow:scroll;
       position:relative;
       background-color:#006002;
-      border:none;
+      border:0px;
 }
 div.cover-row{
       display:table-row;
