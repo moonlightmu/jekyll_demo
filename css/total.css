@@ -130,7 +130,7 @@ margin-bottom:10%;
 border:0px;
 }
 div.cover-head img{
-width:150%;
+max-width:150%;
 }
 #paginator{
         margin:4%;
