@@ -94,6 +94,12 @@ margin:0px;
 padding:0px;
 border:0px;
 }
+div.headerbackphoto{
+        width:auto;
+        height:auto;
+        max-width:100%;
+        max-height:100%;
+}
 div.cover{
       display:table;
       margin-top:0px;
@@ -108,6 +114,9 @@ div.cover{
 }
 div.cover-row{
       display:table-row;
+}
+div.cover-head{
+display:table-cell;
 }
 div.cover-content-left{
         display:table-cell;
@@ -204,10 +213,4 @@ div#tableRow{
         max-width:50%;
         max-height:50%;
         margin:20px;
-}
-.headerbackphoto{
-        width:auto;
-        height:auto;
-        max-width:100%;
-        max-height:100%;
 }
