@@ -145,6 +145,7 @@ padding:0px;
 overflow:hidden;
 background-image:url(../img/night.jpg);
 vertical-align:top;
+border:0px;
 }
 
 
@@ -202,6 +203,7 @@ background-color:#ffffff;
 div.panenavi span{
         padding:10px;
         font-size:150%;
+border:0px;
 }
 div.pagenavi li{ 
         display:inline-block;
