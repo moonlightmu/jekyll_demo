@@ -9,25 +9,11 @@
 <div class="myphoto">
 <img src="{{ site.url }}{{ site.baseurl }}/img/photo.jpg"/>
 </div>
-<h1>CODE GARDEN</h1>
-<h2>JS,JAVA,CSS</h2>
-<ul>
-{% for post in site.posts %}
-<li>	
-<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-<span class="date">{{ post.date | date_to_string }}</span>
-</li>
-{% endfor %}
-</ul>
 </div>
 <div class="cover-td" style="width:55%;">
 <div class="cover-head">
 <img src="{{ site.url }}{{ site.baseurl }}/img/night.jpg"/>
 </div>
-{% include paginator.html %}
-<section id="post-content">
-{{ content  }}
-</section>
 </div>
 </div>
 <div class="cover-row">
