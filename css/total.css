@@ -176,6 +176,7 @@ div.pagenavi li{
         width:13px;
         text-align:center;
         line-height:1.0em;
+        border:0px;
 }
 div.pagenavi li a{
      color:white;
