@@ -160,30 +160,24 @@ div.panenavi{
         border:0px;
 }
 div.panenavi span{
-        margin:10px;
-        padding:10px;
         font-size:150%;
-        border:0px;
 }
 div.pagenavi li{ 
-        background-color:rgba(0,100,255,0.9);
         display:inline-block;
         color:white;
         font-size:150%;
         font-weight:bold;
-        margin:5px;
         padding:5px;
-        width:13px;
         text-align:center;
         line-height:1.0em;
         border:0px;
 }
 div.pagenavi li a{
      color:white;
-font-size:150%;
+     font-size:150%;
 }
 .current-page li{
-color:pink;
+      color:pink;
 }
 a:link{
 	color:#007e7e;
