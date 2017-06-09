@@ -184,36 +184,35 @@ div#tableRow{
         vertical-align:top;
 }
 div#paginator{
-        margin:4%;
+        margin-top:0px;
         padding:10px;
-        background-color:#cc6600;
+        font-size:150%;
+margin-bottom:40px;
+
        
 }
 div.panenavi{
-        margin:0px;
-        padding:10px;
-        font-size:100%;
-       
-background-color:#ffffff;
+       padding-bottom:20px;
+        
 }
 div.panenavi span{
+        margin:10px;
         padding:10px;
-        font-size:150%;
-
+       line-height:1.2em;
 }
 div.pagenavi li{ 
+margin:10px;
         display:inline-block;
         color:white;
-        font-size:150%;
         font-weight:bold;
         padding:10px;
         text-align:center;
-       
+       line-height:1.2em;
 }
 div.pagenavi li a{
 padding:10px;
      color:white;
-     font-size:150%;
+line-height:1.2em;
 }
 div.current-page li{
       color:pink;
