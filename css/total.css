@@ -159,6 +159,12 @@ div.panenavi{
         font-size:100%;
         border:0px;
 }
+div.panenavi span{
+        margin:10px;
+        padding:10px;
+        font-size:150%;
+        border:0px;
+}
 div.pagenavi li{ 
         background-color:rgba(0,100,255,0.9);
         display:inline-block;

@@ -1,6 +1,6 @@
 <div id="paginator">
 <div class="pagenavi">
-<span class="page_number">The {{ paginator.page }}/Total{{ paginator.total_pages }}</span>
+<h1><span class="page_number">The {{ paginator.page }}/Total{{ paginator.total_pages }}</span></h1>
 <h1><a href="{{ site.baseurl | replace: "//", "/" }}/index.html">The first</a></h1>
 {% if paginator.previous_page %}
    {% if paginator.previous_page == 1 %}
