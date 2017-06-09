@@ -190,6 +190,9 @@ div#tableRow img{
         border:1px solid black;
         vertical-align:middle;
 }
+.beanheading{
+text-align:center;
+}s
 div#paginator{
         margin-top:0px;
         padding:10px;
