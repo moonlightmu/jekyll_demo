@@ -189,15 +189,16 @@ div#tableRow img{
         margin:0px;
         border:1px solid black;
         vertical-align:middle;
+        text-align:center;
 }
 .beanheading{
-text-align:center;
+
 }
 div#paginator{
         margin-top:0px;
         padding:10px;
         font-size:150%;
-margin-bottom:40px;
+        margin-bottom:40px;
 
        
 }
@@ -211,7 +212,7 @@ div.panenavi span{
        line-height:1.2em;
 }
 div.pagenavi li{ 
-margin:10px;
+        margin:10px;
         display:inline-block;
         color:white;
         font-weight:bold;
@@ -220,9 +221,9 @@ margin:10px;
        line-height:1.2em;
 }
 div.pagenavi li a{
-padding:10px;
+      padding:10px;
      color:white;
-line-height:1.2em;
+     line-height:1.2em;
 }
 div.current-page li{
       color:pink;
