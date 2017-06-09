@@ -126,8 +126,7 @@ overflow:hidden;
 background-image:url(../img/night.jpg);
 }
 div.cover-head img{
-padding-left:0px;
-max-width:100%;
+
 }
 #paginator{
         margin:4%;
