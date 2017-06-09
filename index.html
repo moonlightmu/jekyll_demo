@@ -15,7 +15,7 @@ title: Code Garden
 <ul>
 {% for post in paginator.posts %}
 <li>	
-<h2>&#9730;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ post.url }}</a></h2>
+<h2>&#9730;&#9730;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ post.url }}</a></h2>
 <span class="date">{{ post.date | date_to_string }}</span>
 {{ post.excerpt | remove: 'cover-content-right' }}	
 <p> 
