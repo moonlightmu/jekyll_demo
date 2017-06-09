@@ -114,8 +114,7 @@ div.cover-td img{
 }
 div.myphoto{;
 border:0px;
-height:25%;
-width:25%;
+
 background-image:url(../img/photo.jpg);
 }
 div.myphoto img{
