@@ -114,7 +114,7 @@ div.cover-td img{
 }
 div.myphoto{;
 border:0px;
-background-image:url(img/photo.jpg);
+background-image:url(../img/photo.jpg);
 }
 div.myphoto img{
 
@@ -123,7 +123,7 @@ div.cover-head{
 border:0px;
 height:25%;
 overflow:hidden;
-background-image:url(img/night.jpg);
+background-image:url(../img/night.jpg);
 }
 div.cover-head img{
 padding-left:0px;
