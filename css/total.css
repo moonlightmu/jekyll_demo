@@ -109,7 +109,7 @@ div.cover-td{
 }
 
 div.cover-td ul li {
-        line-style:none;
+list-style-type:none£»
         font-size:100%;
         background-color:#efe5d0;
         padding:10px;
