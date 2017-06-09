@@ -5,15 +5,17 @@ body{
 	line-height:1.6em;
         background-color:#008009;
 }
-h1,h2{
-	color:#007e7e;
-}
+
 h1{
+        color:#954b4b;
         font-size:150%;	
 }
 h2{
+        color:#007e7e;
 	font-size:130%;
         text-align:center;
+        border-bottom:2px solid grey;
+        font-style:italic;
 }
 h3.guarantee{
 	color:black;
