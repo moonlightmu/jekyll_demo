@@ -229,11 +229,11 @@ div.current-page li{
       color:pink;
 }
 div.write{
-      margin:10%;
-      padding:10%;
+      margin:2%;
+      padding:2%;
        list-style-type:none£»
         font-size:100%;
         border:1px solid black;
  vertical-align:top;
-background-color:#006002;
+background-color:rgba(156,128,255,0.8);
 }
