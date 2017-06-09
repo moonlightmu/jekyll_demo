@@ -228,3 +228,12 @@ div.pagenavi li a{
 div.current-page li{
       color:pink;
 }
+div.write{
+      margin:10%;
+      padding:10%;
+       list-style-type:none£»
+        font-size:100%;
+        border:1px solid black;
+ vertical-align:top;
+background-color:#006002;
+}

@@ -26,6 +26,7 @@
 </ul>
 </div>
 <div class="cover-td" style="width:55%;">
+{% if{{ post.url }}=="index.html" %}
 {% include paginator.html %}
 <section id="post-content">
 {{ content  }}
