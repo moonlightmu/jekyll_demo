@@ -115,12 +115,14 @@ div.cover-td img{
 div.myphoto{;
 border:0px;
 height:25%;
+width:25%;
 background-image:url(../img/photo.jpg);
 }
 div.myphoto img{
 
 }
 div.cover-head{
+width:55%;
 border:0px;
 height:25%;
 overflow:hidden;
