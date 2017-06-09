@@ -15,11 +15,11 @@ title: Code Garden
 <ul>
 {% for post in paginator.posts %}
 <li>	
-<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ post.url }}</a></h2>
+<h2><a href="{{ site.baseurl }}{{ post.url }}">&#9730;{{ post.title }}{{ post.url }}</a></h2>
 <span class="date">{{ post.date | date_to_string }}</span>
 {{ post.excerpt | remove: 'cover-content-right' }}	
 <p> 
-<a href="{{ site.baseurl }}{{ post.url }}"><span >read all &raquo; </span></a>
+<a href="{{ site.baseurl }}{{ post.url }}"><span>&#127808;Read all &raquo; </span></a>
 </p>
 
 </li>
