@@ -147,40 +147,7 @@ background-image:url(../img/night.jpg);
 vertical-align:top;
 }
 
-div#paginator{
-        margin:4%;
-        padding:10px;
-        background-color:#cc6600;
-        border:0px;
-}
-div.panenavi{
-        margin:0px;
-        padding:10px;
-        font-size:100%;
-        border:0px;
-background-color:#ffffff;
-}
-div.panenavi span{
-        padding:10px;
-        font-size:150%;
-}
-div.pagenavi li{ 
-        display:inline-block;
-        color:white;
-        font-size:150%;
-        font-weight:bold;
-        padding:10px;
-        text-align:center;
-        border:0px;
-}
-div.pagenavi li a{
-padding:10px;
-     color:white;
-     font-size:150%;
-}
-.current-page li{
-      color:pink;
-}
+
 a:link{
 	color:#007e7e;
 }
@@ -218,4 +185,38 @@ div#tableRow{
         margin:0px;
         border:1px solid black;
         vertical-align:top;
+}
+div#paginator{
+        margin:4%;
+        padding:10px;
+        background-color:#cc6600;
+        border:0px;
+}
+div.panenavi{
+        margin:0px;
+        padding:10px;
+        font-size:100%;
+        border:0px;
+background-color:#ffffff;
+}
+div.panenavi span{
+        padding:10px;
+        font-size:150%;
+}
+div.pagenavi li{ 
+        display:inline-block;
+        color:white;
+        font-size:150%;
+        font-weight:bold;
+        padding:10px;
+        text-align:center;
+        border:0px;
+}
+div.pagenavi li a{
+padding:10px;
+     color:white;
+     font-size:150%;
+}
+div.current-page li{
+      color:pink;
 }
