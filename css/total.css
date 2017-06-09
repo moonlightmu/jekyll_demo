@@ -177,8 +177,9 @@ div.pagenavi li{
         text-align:center;
         line-height:1.0em;
 }
-div.pagenavi ul li a{
+div.pagenavi li a{
      color:white;
+font-size:150%;
 }
 .current-page li{
 color:pink;
