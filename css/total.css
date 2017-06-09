@@ -187,25 +187,24 @@ div#paginator{
         margin:4%;
         padding:10px;
         background-color:#cc6600;
+         font-size:150%;
        
 }
 div.panenavi{
         margin:10px;
         padding:10px;
-        font-size:100%;
+       
         background-color:#cc6600;
 }
 div.panenavi span{
 margin:10px;
         padding:10px;
-        font-size:150%;
 line-height:1.2em;
 }
 div.pagenavi li{ 
 margin:10px;
         display:inline-block;
         color:white;
-        font-size:150%;
         font-weight:bold;
         padding:10px;
         text-align:center;
@@ -214,7 +213,6 @@ margin:10px;
 div.pagenavi li a{
 padding:10px;
      color:white;
-     font-size:150%;
 line-height:1.2em;
 }
 div.current-page li{
