@@ -112,20 +112,19 @@ div.cover-td img{
         max-width:70%;
         max-height:70%;  
 }
-div.myphoto{;
+#myphoto{;
 border:0px;
-
+vertical-align:top;
 }
 div.myphoto img{
 
 }
-div.cover-head{
-margin:0px;
+#cover-head{
 padding:0px;
-height:100%;
 border:1px solid yellow;
 overflow:hidden;
 background-image:url(../img/night.jpg);
+vertical-align:top;
 }
 div.cover-head img{
 
