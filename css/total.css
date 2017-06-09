@@ -13,6 +13,7 @@ h1{
 }
 h2{
 	font-size:130%;
+        text-align:center;
 }
 h3.guarantee{
 	color:black;
@@ -29,6 +30,7 @@ a{
 	font-family:cursive;
 	font-weigth:bold;
         text-decoration:none;
+        line-height:1.0em;
 }
 
 div{
@@ -105,6 +107,7 @@ div.cover-td{
 div.cover-td ul li {
         line-style:none;
         font-size:100%;
+        background-color:#efe5d0;
 }
 
 div.cover-td img{
