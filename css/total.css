@@ -147,16 +147,17 @@ background-image:url(../img/night.jpg);
 vertical-align:top;
 }
 
-#paginator{
+div#paginator{
         margin:4%;
         padding:10px;
         background-color:#cc6600;
         border:0px;
 }
-.panenavi{
+div.panenavi{
         margin:0px;
         padding:10px;
         font-size:100%;
+        border:0px;
 }
 div.pagenavi li{ 
         background-color:rgba(0,100,255,0.9);
