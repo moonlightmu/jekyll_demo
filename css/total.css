@@ -150,25 +150,27 @@ vertical-align:top;
 #paginator{
         margin:4%;
         padding:0px;
+        background-color:#cc6600;
+        border:0px;
 }
 .panenavi{
         margin:0px;
-        padding:0px;
+        padding:5px;
 }
 div.pagenavi li{ 
         background-color:rgba(0,100,255,0.9);
         display:inline-block;
         color:white;
         font-size:150%;
-        font-weight:300px;
+        font-weight:bold;
         margin:0px 1%;
-        padding:0px 3%;
-        line-style:none;  
+        padding:0px 3%; 
         width:13px;
         text-align:center;
+        line-height:1.0em;
 }
 div.pagenavi ul li a{
-color:white;
+     color:white;
 }
 .current-page li{
 color:pink;
