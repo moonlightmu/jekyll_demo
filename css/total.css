@@ -9,12 +9,13 @@ body{
 h1{
         color:#954b4b;
         font-size:150%;	
+        border-bottom:2px solid grey;
 }
 h2{
         color:#007e7e;
 	font-size:130%;
         text-align:center;
-        border-bottom:2px solid grey;
+        border-bottom:1px solid grey;
         font-style:italic;
 }
 h3.guarantee{
