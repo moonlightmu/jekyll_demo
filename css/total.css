@@ -184,16 +184,15 @@ div#tableRow{
         vertical-align:top;
 }
 div#paginator{
-        margin-top:4%;
+        margin-top:0px;
         padding:10px;
         font-size:150%;
-margin-bottom:40%;
+
 
        
 }
 div.panenavi{
-        margin:40px;
-        padding:40px;
+       
         
 }
 div.panenavi span{
