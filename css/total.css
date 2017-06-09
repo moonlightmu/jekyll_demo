@@ -160,6 +160,7 @@ div.panenavi{
         border:0px;
 }
 div.panenavi span{
+padding:10px;
         font-size:150%;
 }
 div.pagenavi li{ 
@@ -173,6 +174,7 @@ div.pagenavi li{
         border:0px;
 }
 div.pagenavi li a{
+padding:10px;
      color:white;
      font-size:150%;
 }
