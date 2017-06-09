@@ -121,9 +121,7 @@ div.myphoto img{
 
 }
 div.cover-head{
-width:55%;
 border:0px;
-height:25%;
 overflow:hidden;
 background-image:url(../img/night.jpg);
 }
