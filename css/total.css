@@ -193,13 +193,12 @@ div.panenavi{
         margin:0px;
         padding:10px;
         font-size:100%;
-       
-background-color:#ffffff;
+        background-color:#cc6600;
 }
 div.panenavi span{
         padding:10px;
         font-size:150%;
-
+line-height:1.2em;
 }
 div.pagenavi li{ 
         display:inline-block;
@@ -208,12 +207,13 @@ div.pagenavi li{
         font-weight:bold;
         padding:10px;
         text-align:center;
-       
+       line-height:1.2em;
 }
 div.pagenavi li a{
 padding:10px;
      color:white;
      font-size:150%;
+line-height:1.2em;
 }
 div.current-page li{
       color:pink;
