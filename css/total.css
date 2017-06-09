@@ -94,13 +94,11 @@ div.cover{
       width:80%;
       height:1000px;
       position:relative;
-      border:0px;
       border-spacing:10px;
       
 }
 div.cover-row{
       display:table-row;
-      border:0px;
       border-spacing:10px;
 }
 div.cover-td{
@@ -134,7 +132,6 @@ div.cover-td img{
           
 }
 #myphoto{;
-border:0px;
 vertical-align:top;
 text-align:center;
 line-height:1.8em;
@@ -145,7 +142,6 @@ padding:0px;
 overflow:hidden;
 background-image:url(../img/night.jpg);
 vertical-align:top;
-border:0px;
 }
 
 
@@ -191,19 +187,19 @@ div#paginator{
         margin:4%;
         padding:10px;
         background-color:#cc6600;
-        border:0px;
+       
 }
 div.panenavi{
         margin:0px;
         padding:10px;
         font-size:100%;
-        border:0px;
+       
 background-color:#ffffff;
 }
 div.panenavi span{
         padding:10px;
         font-size:150%;
-border:0px;
+
 }
 div.pagenavi li{ 
         display:inline-block;
@@ -212,7 +208,7 @@ div.pagenavi li{
         font-weight:bold;
         padding:10px;
         text-align:center;
-        border:0px;
+       
 }
 div.pagenavi li a{
 padding:10px;
