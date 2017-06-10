@@ -82,7 +82,8 @@ div(.cover-id)->:paginator,section
 ---
 
 #对象连接
-window对象，document对象，ul对象，他们之间通过连接整合为一个Dom对象，连接方式：<br>
+window对象是全局对象<br>
+document对象就是普通对象例如ul对象连接整合为一个Dom对象，连接方式：<br>
 1. 属性为一个函数 其中onload属性指向一个函数<br>
 2. 属性为一个对象 document属性指向一个对象document<br>
 3. 方法调用一个对象，通过节点关系，子孙，父子
