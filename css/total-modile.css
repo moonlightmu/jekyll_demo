@@ -139,13 +139,13 @@ background-image:url(../img/night.jpg);
 vertical-align:top;
 }
 #mypost{
-display:hidden;
+display:none;
 }
 #myphoto{;
 vertical-align:top;
 text-align:center;
 line-height:1.8em;
-display:hidden;
+display:none;
 }
 
 a:link{
