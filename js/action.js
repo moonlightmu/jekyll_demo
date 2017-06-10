@@ -9,9 +9,25 @@ var phrase1=wordSet1[rand1];
 var phrase2=wordSet2[rand2];
 phraseElement1.innerHTML=phrase1;
 phraseElement2.innerHTML=phrase2;
+
+
+var button=document.getElementById("addButton");
+button.onclick=handleButtonClick;
+
+
+
+
 }
 window.onload=init;
 
 function handleButtonClick(){
+var textInput=document.getElementById("songTextInput");
+var songName=textInput.value;
+
+var li=document.createElement("li");
+li.innerHTML=songName;
+
+var ul=document.getElementById("playlist");
+ul.appendChild(li);
 
 }
