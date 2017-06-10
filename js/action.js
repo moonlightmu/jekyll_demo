@@ -6,6 +6,6 @@ var rand1=Math.floor(Math.random() * wordSet1.length);
 var rand2=Math.floor(Math.random() * wordSet2.length);
 var phrase=wordSet1[rand1]+""+wordSet2[rand2];
 var phraseElement.innerHTML=phrase;
-
+alert("hell");
 }
 window.onload=init;
