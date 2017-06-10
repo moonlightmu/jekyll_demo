@@ -5,28 +5,18 @@
 {% include header.html %}
 <div class="cover">
 <div class="cover-row">
-<div  id="myphoto" class="cover-td" style="width:25%;">
-<img src="{{ site.url }}{{ site.baseurl }}/img/photo.jpg"/>
-<h1>&hearts;<span id="phrase1"></span>&#10017;&#127775;</h1>
-<h1>&#10084;<span id="phrase2"></span>&#128151;&#9730;</h1>
-</div>
+{% include myinfo.html %}
 <div id="cover-head" class="cover-td" style="width:55%;">
 <h1 style="text-align:right;margin-top:30%;color:white;padding:30px;font-size:150%;line-height:1.6em;font-weight:bold;">Shake it off</h1>
 </div>
 </div>
 <div class="cover-row">
 <div class="cover-td" style="width:25%;">
-<ul>
-{% for post in site.posts %}
-<li>	
-<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-<span class="date">{{ post.date | date_to_string }}</span>
-</li>
-{% endfor %}
-</ul>
+{% include mypost.html %}
 </div>
 <div class="cover-td" style="width:55%;">
 {% include paginator.html %}
+{% include addsong.html %}
 <section id="post-content">
 {{ content  }}
 </section>

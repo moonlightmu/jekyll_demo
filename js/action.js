@@ -11,3 +11,7 @@ phraseElement1.innerHTML=phrase1;
 phraseElement2.innerHTML=phrase2;
 }
 window.onload=init;
+
+function handleButtonClick(){
+
+}
