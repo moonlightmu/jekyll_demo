@@ -1,3 +1,4 @@
+#大热身，熟悉
 #from ...to html5
 1. !DOCTYPE html
 2. meta charset="UTF-8"
@@ -59,3 +60,29 @@ do...
 
 ---
 
+#DOM
+document->html->:head,body
+head->:meta,title,link,script
+body->:div(.navigation),div(.cover>),
+div.navigation->ul:li,li,li,li
+li->:img
+li->:a
+li->:a
+li->:a
+div.cover->:div(.cover-row),div(.cover-row)
+div（.cover-row)->:div(#myphoto),div(#cover-head)
+div(.cover-row)->:div(.cover-id),div(.cover-id)
+div(#myphoto)->:img,h1,h1
+div(#cover-head)->:h1
+div(.cover-id)->ul
+ul->:postlist,li
+li->h2
+div(.cover-id)->:paginator,section
+
+---
+
+#对象连接
+window对象，document对象，ul对象，他们之间通过连接整合为一个Dom对象，连接方式：<br>
+1. 属性为一个函数 其中onload属性指向一个函数<br>
+2. 属性为一个对象 document属性指向一个对象document<br>
+3. 方法调用一个对象，通过节点关系，子孙，父子

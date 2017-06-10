@@ -131,11 +131,6 @@ div.cover-td img{
         max-height:70%;
           
 }
-#myphoto{;
-vertical-align:top;
-text-align:center;
-line-height:1.8em;
-}
 
 #cover-head{
 padding:0px;
@@ -143,7 +138,15 @@ overflow:hidden;
 background-image:url(../img/night.jpg);
 vertical-align:top;
 }
-
+#mypost{
+display:hidden;
+}
+#myphoto{;
+vertical-align:top;
+text-align:center;
+line-height:1.8em;
+display:hidden;
+}
 
 a:link{
 	color:#007e7e;
@@ -227,4 +230,13 @@ div.pagenavi li a{
 }
 div.current-page li{
       color:pink;
+}
+div.write{
+      margin:2%;
+      padding:2%;
+       list-style-type:none£»
+        font-size:100%;
+        border:1px solid black;
+ vertical-align:top;
+background-color:rgba(217,175,248,0.8);
 }
