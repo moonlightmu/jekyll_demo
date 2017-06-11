@@ -2,18 +2,15 @@ function init2(){
 var i;
 var j;
 for(j=0;j<4;j++){
+for(i=0;i<10;i++){
+var photos=["mobile1.jpg","mobile2.jpg","mobile3.jpg","mobile4.jpg","mobile5.jpg","mobile6.jpg",
+"mobile7.jpg","mobile8.jpg","mobile9.jpg","mobile10.jpg","mobile11.jpg","head1.jpg","head2.jpg",
+"head3.jpg","head4.jpg","photo.jpg"];
 var preDiv=document.createElement("div");
 preDiv.setAttribute("id","mains");
 
 var headDiv=document.getElementById("tableRow");
 headDiv.appendChild(preDiv);
-
-
-for(i=0;i<10;i++){
-var photos=["mobile1.jpg","mobile2.jpg","mobile3.jpg","mobile4.jpg","mobile5.jpg","mobile6.jpg",
-"mobile7.jpg","mobile8.jpg","mobile9.jpg","mobile10.jpg","mobile11.jpg","head1.jpg","head2.jpg",
-"head3.jpg","head4.jpg","photo.jpg"];
-
 var img1=document.createElement("img");
 var div1=document.createElement("div");
 var p1=document.createElement("p");
@@ -29,10 +26,8 @@ div1.appendChild(p1);
 var section1=document.getElementById("mains");
 section1.appendChild(img1);
 section1.appendChild(div1);
-section1.setAttribute("id","main");
-
-
 }
+section1.setAttribute("id","main");
 }
 }
 
