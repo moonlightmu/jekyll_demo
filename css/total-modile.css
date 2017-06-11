@@ -1,9 +1,9 @@
 @CHARSET "UTF-8";
 body{
 	font-family:serif,sans-serif;
-	font-size:small;
+	font-size:normal;
 	line-height:2.2em;
-        background-image:url(../img/mobile1.jpg);
+        background-image:url(../img/mobile6.jpg);
         background-position:0 0;
         background-size:cover;
         background-attachment:fixed
@@ -11,19 +11,19 @@ body{
 
 h1{
         color:#954b4b;
-        font-size:250%;	
+        	
         
 }
 h2{
         color:#007e7e;
-	font-size:230%;
+	
         text-align:center;
         border-bottom:1px solid grey;
         font-style:italic;
 }
 h3.guarantee{
 	color:black;
-	font-size:160%;
+	
 	font-family:fantasy;
 }
 h3.greentea{
@@ -32,11 +32,11 @@ h3.greentea{
 	font-family:fantasy;
 }
 a{
-	font-size:normal;
+	
 	font-family:cursive;
 	font-weigth:bold;
         text-decoration:none;
-        line-height:1.0em;
+        
 }
 p{
 color:maroon;
@@ -44,7 +44,7 @@ color:maroon;
 div{
 	border:0px;
 	background-color:rgba(0,96,2,0.0);
-        line-height:1.6em;      
+            
 }
 div.guarantee{
     border:3px solid pink;
@@ -55,7 +55,7 @@ div.guarantee{
 	
 }
 div.greentea{
-	line-height:1.9em;
+	
 	color:#555555;
 	border:3px solid yellow;
 	padding:25px;
@@ -86,9 +86,8 @@ div.navigation li {
        padding:0%;
        padding-left:5%;
        padding-right:5%;
-       line-style:none;
-       font-size:350%;
-     line-height:2.0em;
+       list-style-type:none;
+
 }
 
 div.cover{
@@ -100,7 +99,7 @@ div.cover{
       height:1000px;
       position:relative;
       border-spacing:10px;
-      font-size:250%;
+     
       
 }
 div.cover-row{
@@ -149,7 +148,7 @@ display:none;
 #myphoto{;
 vertical-align:top;
 text-align:center;
-line-height:1.8em;
+
 display:none;
 }
 
@@ -192,7 +191,7 @@ div#tableRow img{
 #main{
 	display:table-cell;
 	background-color:#cc6600;
-	font-size:150%;
+	
 	padding:5px;
         margin:0px;
         border:1px solid black;
@@ -226,12 +225,12 @@ div.pagenavi li{
         font-weight:bold;
         padding:10px;
         text-align:center;
-       line-height:1.2em;
+      
 }
 div.pagenavi li a{
       padding:10px;
      color:white;
-     line-height:1.2em;
+     
 }
 div.current-page li{
       color:pink;
@@ -243,5 +242,5 @@ div.write{
         font-size:100%;
         border:1px solid black;
  vertical-align:top;
-background-color:rgba(217,175,248,0.8);
+background-color:rgba(247,175,148,0.8);
 }
