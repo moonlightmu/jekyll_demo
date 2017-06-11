@@ -148,6 +148,7 @@ a:hover{
         background-color:#f88390;
 }
 div#tableContainer{
+border-spacing:10px;
       display:table;
        background-color:#006002;
      
