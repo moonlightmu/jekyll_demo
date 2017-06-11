@@ -159,8 +159,8 @@ div#tableRow{
 div#tableRow img{
 	width:auto;
        height:auto;
-      max-width:50%;
-     max-height:50%;
+   max-width:50%£»
+      max-height:50%;
 
 }
 #main{
@@ -220,5 +220,5 @@ div.write{
 background-color:rgba(217,175,248,0.8);
 }
 div.ok{
-width:100px;
+width:auto;
 }
