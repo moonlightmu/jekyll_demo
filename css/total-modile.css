@@ -124,7 +124,8 @@ div.cover-td ul.welcome li {
         border:1px solid black;
         padding:5%;
         margin:5%;
- font-size:200%;
+        font-size:200%;
+line-height:2.0em;
 }
 
 div.cover-td img{
