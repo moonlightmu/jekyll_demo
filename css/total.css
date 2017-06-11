@@ -161,7 +161,7 @@ div#tableRow img{
       max-width:100%;
       max-height:100%;
 }
-#main{
+div#main{
 	display:table-cell;
 	font-size:150%;
         width:150px;
@@ -170,7 +170,7 @@ div#tableRow img{
         text-align:center;
 
 }
-#main img{
+div#main img{
 	width:auto;
        height:auto;
       max-width:100%;
