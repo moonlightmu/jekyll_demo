@@ -153,7 +153,7 @@ div#tableContainer{
 div#tableRow{
 	display:table-row;
 	border-spacing:10px;
-       
+       background-color:#666600;
 
 }
 div#tableRow img{
@@ -165,7 +165,7 @@ div#tableRow img{
 }
 #main{
 	display:table-cell;
-	background-color:#cc6600;
+	
 	font-size:150%;
 	
         width:150px;
