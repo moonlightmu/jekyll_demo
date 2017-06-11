@@ -13,6 +13,8 @@ phraseElement2.innerHTML=phrase2;
 var button=document.getElementById("addButton");
 button.onclick=handleButtonClick;
 
+var button2=document.getElementById("Change");
+button2.onclick=handleButtonClick2;
 }
 window.onload=init;
 
