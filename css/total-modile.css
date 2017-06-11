@@ -7,13 +7,11 @@ body{
         background-position:0 0;
         background-size:cover;
         background-attachment:fixed
-font-size:200%;
+        font-size:200%;
 }
 
 h1{
-        color:#954b4b;
-        	
-        
+        color:#954b4b;      
 }
 h2{
         color:#007e7e;
@@ -29,7 +27,7 @@ h3.guarantee{
 }
 h3.greentea{
 	color:black;
-	font-size:160%;
+	
 	
 }
 a{
