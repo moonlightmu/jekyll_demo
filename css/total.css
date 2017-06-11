@@ -57,7 +57,7 @@ div.navigation {
 }
 div.navigation ul{
        text-align:center;
-
+ 
 }
 div.navigation li {
        background-color:rgba(0,255,255,0.8);
@@ -69,6 +69,7 @@ div.navigation li {
        padding:20px 20px;
        line-style:none;
        font-size:150%;
+ box-shadow:0 4px 8px rgba(0,0,0,0.2);
 }
 
 div.cover{
