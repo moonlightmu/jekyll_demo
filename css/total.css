@@ -167,14 +167,14 @@ div#tableRow img{
 	display:table-cell;
 	background-color:#cc6600;
 	font-size:150%;
-	padding:5px;
-       
+	
+        width:150px;
         border:1px solid black;
         vertical-align:middle;
         text-align:center;
 }
 .beanheading{
-
+max-width:100%;
 }
 div#paginator{
         
