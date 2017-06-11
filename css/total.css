@@ -111,8 +111,8 @@ div.cover-td ul.welcome li {
 }
 
 div.cover-td img{
-        width:auto;
-        height:auto;
+      width:auto;
+      height:auto;
       max-width:70%;
       max-height:70%;
           
@@ -168,6 +168,13 @@ div#tableRow img{
         border:1px solid black;
         vertical-align:middle;
         text-align:center;
+
+}
+#main img{
+	width:auto;
+       height:auto;
+      max-width:100%;
+      max-height:100%;
 
 }
 
