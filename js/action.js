@@ -15,7 +15,7 @@ div1.setAttribute("id","container");
 p1.innerHTML=photos[rand1];
 
 div1.appendChild(p1);
-img1.appendChild(div1);
+img1.insertBefore(div1,img1.nextSibling);
 
 var section1=document.getElementById("main");
 section1.appendChild(img1);
