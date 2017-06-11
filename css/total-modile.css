@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 body{
 	font-family:serif,sans-serif;
-	font-size:small;
+	font-size:normal;
 	line-height:1.6em;
         background-image:url(../img/mobile8.jpg);
         background-position:0 0;
@@ -31,7 +31,7 @@ h3.greentea{
 	
 }
 a{
-	font-size:300%;
+	font-size:200%;
 	font-weigth:bold;
         text-decoration:none;
         line-height:1.0em;
