@@ -7,9 +7,14 @@ body{
         background-position:0 0;
         background-size:cover;
         background-attachment:fixed;
+        list-style-type:none;
+        line-height:2.0em;
+        text-decoration:none;   
        
 }
-
+h1,h2,h3 {
+        text-align:center;
+}
 h1{
         color:#954b4b;
         font-size:200%;	
@@ -17,32 +22,24 @@ h1{
 }
 h2{
         color:#954b4b;
-	font-size:180%;
-        text-align:center;
-        border-bottom:1px solid grey;
-       
+	font-size:180%;    
 }
 h3.guarantee{
-	color:black;
-	
+	color:black;	
 }
 h3.greentea{
-	color:black;
-	
+	color:black;	
 }
 a{
 	font-size:200%;
 	font-weigth:bold;
-        text-decoration:none;
-        line-height:1.0em;
 }
 p{
-color:maroon;
+        color:maroon;
 }
 div{
 	border:0px;
-	background-color:rgba(0,96,2,0.0);
-        line-height:1.6em;      
+	background-color:rgba(0,96,2,0.0);      
 }
 div.guarantee{
     border:3px solid pink;
@@ -53,7 +50,6 @@ div.guarantee{
 	
 }
 div.greentea{
-	line-height:1.9em;
 	color:#555555;
 	border:3px solid yellow;
 	padding:25px;
@@ -69,11 +65,9 @@ div.navigation {
        margin:0px;
        top:0px;
        width:100%;
-       border:0px;
 }
 div.navigation ul{
-       text-align:center;
-
+       
 }
 div.navigation li {
        background-color:rgba(0,255,255,0.0);
@@ -84,9 +78,8 @@ div.navigation li {
        padding:0%;
        padding-left:5%;
        padding-right:5%;
-       line-style:none;
+       list-style-type:none;
        font-size:250%;
-     line-height:2.0em;
 }
 
 div.cover{
@@ -97,9 +90,7 @@ div.cover{
       width:100%;
       height:1000px;
       position:relative;
-      border-spacing:10px;
-     
-      
+      border-spacing:10px; 
 }
 div.cover-row{
       display:table-row;
@@ -109,8 +100,7 @@ div.cover-td{
         display:table-cell;
 	background-color:rgba(255,255,255,0.0); 
         vertical-align:top;
-        padding:2%;
-       
+        padding:2%;       
 }
 
 div.cover-td ul li {
@@ -125,32 +115,30 @@ div.cover-td ul.welcome li {
         padding:5%;
         margin:5%;
         font-size:200%;
-line-height:2.0em;
 }
 
 div.cover-td img{
         width:auto;
         height:auto;
         max-width:70%;
-        max-height:70%;
-          
+        max-height:70%;        
 }
 
 #cover-head{
-padding:0px;
-overflow:hidden;
-background-image:url(../img/night.jpg);
-vertical-align:top;
-display:none;
+        padding:0px;
+        overflow:hidden;
+        background-image:url(../img/night.jpg);
+        vertical-align:top;
+        display:none;
 }
 #mypost{
-display:none;
+        display:none;
 }
 #myphoto{
-vertical-align:top;
-text-align:center;
-line-height:1.8em;
-display:none;
+        vertical-align:top;
+        text-align:center;
+        line-height:1.8em;
+        display:none;
 }
 
 a:link{
@@ -217,7 +205,7 @@ div.panenavi{
 div.panenavi span{
         margin:10px;
         padding:10px;
-       line-height:1.2em;
+       
 }
 div.pagenavi li{ 
         margin:10px;
@@ -226,12 +214,12 @@ div.pagenavi li{
         font-weight:bold;
         padding:10px;
         text-align:center;
-       line-height:1.2em;
+      
 }
 div.pagenavi li a{
       padding:10px;
      color:white;
-     line-height:1.2em;
+     
 }
 div.current-page li{
       color:pink;
@@ -239,9 +227,8 @@ div.current-page li{
 div.write{
       margin:2%;
       padding:2%;
-       list-style-type:none£»
-        font-size:100%;
-        border:1px solid black;
- vertical-align:top;
-background-color:rgba(217,175,248,0.8);
+      list-style-type:none;
+      border:1px solid black;
+      vertical-align:top;
+      background-color:rgba(247,155,148,0.8);
 }
