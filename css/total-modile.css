@@ -85,7 +85,7 @@ div.navigation li {
        padding-left:5%;
        padding-right:5%;
        line-style:none;
-       font-size:350%;
+       font-size:250%;
      line-height:2.0em;
 }
 
@@ -98,7 +98,7 @@ div.cover{
       height:1000px;
       position:relative;
       border-spacing:10px;
-      font-size:200%;
+     
       
 }
 div.cover-row{
@@ -124,6 +124,7 @@ div.cover-td ul.welcome li {
         border:1px solid black;
         padding:5%;
         margin:5%;
+ font-size:200%;
 }
 
 div.cover-td img{
