@@ -75,7 +75,7 @@ div.navigation ul{
 
 }
 div.navigation li {
-       background-color:rgba(0,255,255,0.8);
+       background-color:rgba(0,255,255,0.0);
        display:inline-block;
        color:#142130;
        font-weight:300px;
