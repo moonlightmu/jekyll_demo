@@ -19,21 +19,21 @@ h2{
 	
         text-align:center;
         border-bottom:1px solid grey;
-        font-style:italic;
+       
 }
 h3.guarantee{
 	color:black;
 	
-	font-family:fantasy;
+	
 }
 h3.greentea{
 	color:black;
 	font-size:160%;
-	font-family:fantasy;
+	
 }
 a{
 	
-	font-family:cursive;
+	
 	font-weigth:bold;
         text-decoration:none;
         
@@ -239,7 +239,7 @@ div.write{
       margin:2%;
       padding:2%;
        list-style-type:none£»
-        font-size:100%;
+       
         border:1px solid black;
  vertical-align:top;
 background-color:rgba(247,175,148,0.8);
