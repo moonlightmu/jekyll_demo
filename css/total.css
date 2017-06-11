@@ -150,7 +150,7 @@ a:hover{
 div#tableContainer{
 	display:table;
        background-color:#006002;
-
+      border-space:10px;
 }
 div#tableRow{
 	display:table-row;
