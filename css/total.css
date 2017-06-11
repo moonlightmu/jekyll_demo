@@ -148,18 +148,18 @@ a:hover{
 div#tableContainer{
 	display:table;
 	border-spacing:10px;
-       
+       background-color:#666600;
 }
 div#tableRow{
 	display:table-row;
 	border-spacing:10px;
-       background-color:#666600;
+       
 
 }
 div#tableRow img{
 	width:auto;
        height:auto;
-   max-width:50%;
+      max-width:50%;
       max-height:50%;
 
 }
