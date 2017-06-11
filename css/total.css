@@ -1,3 +1,4 @@
+
 @CHARSET "UTF-8";
 body{
 	font-family:serif,sans-serif;
@@ -111,8 +112,8 @@ div.cover-td ul.welcome li {
 div.cover-td img{
         width:auto;
         height:auto;
-        max-width:70%;
-        max-height:70%;
+      max-width:70%£»
+      max-height:70%;
           
 }
 #myphoto{;
@@ -220,4 +221,7 @@ div.write{
         border:1px solid black;
  vertical-align:top;
 background-color:rgba(217,175,248,0.8);
+}
+div.ok{
+width:100px;
 }
