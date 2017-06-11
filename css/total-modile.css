@@ -80,7 +80,9 @@ div.navigation li {
        color:#142130;
        font-weight:300px;
        margin:0%;
-       padding:5%;
+       padding:0%;
+       padding-left:5%;
+       padding-right:5%;
        line-style:none;
        font-size:150%;
 line-height:2.4em;
