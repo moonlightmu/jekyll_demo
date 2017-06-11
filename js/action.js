@@ -1,3 +1,22 @@
+function init2(){
+var i;
+for(i=0;i<10;i++){
+var photos=["mobile1.jpg","mobile2.jpg","mobile3.jpg","mobile4.jpg","mobile5.jpg","mobile6.jpg",
+"mobile7.jpg","mobile8.jpg","mobile9.jpg","mobile10.jpg","mobile11.jpg"];
+var div1=document.createElement("div");
+var img1=document.createElement("img");
+var p1=document.createElement("p");
+div1.setAttribute("id","main");
+var rand1=Math.floor(Math.random() * photos.length);
+img1.setAttribute("src","{ site.url }}{{ site.baseurl }}/img/"+photos[rand1]);
+p1.innerHTML=photo[rand1];
+img1.appendChild(p1);
+div1.appendChild(img1);
+var section1=document.getElementById("tableRow");
+section1.appendChild(div1);
+}
+}
+
 function init(){
 var phraseElement1=document.getElementById("phrase1");
 var phraseElement2=document.getElementById("phrase2");
@@ -20,24 +39,6 @@ button2.onclick=handleButtonClick2;
 }
 window.onload=init;
 
-function init2(){
-var i;
-for(i=0;i<10;i++){
-var photos=["mobile1.jpg","mobile2.jpg","mobile3.jpg","mobile4.jpg","mobile5.jpg","mobile6.jpg",
-"mobile7.jpg","mobile8.jpg","mobile9.jpg","mobile10.jpg","mobile11.jpg"];
-var div1=document.createElement("div");
-var img1=document.createElement("img");
-var p1=document.createElement("p");
-div1.setAttribute("id","main");
-var rand1=Math.floor(Math.random() * photos.length);
-img1.setAttribute("src","{ site.url }}{{ site.baseurl }}/img/"+photos[rand1]);
-p1.innerHTML=photo[rand1];
-img1.appendChild(p1);
-div1.appendChild(img1);
-var section1=document.getElementById("tableRow");
-section1.appendChild(div1);
-}
-}
 function handleButtonClick(){
 var textInput=document.getElementById("songTextInput");
 var songName=textInput.value;
