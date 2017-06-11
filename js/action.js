@@ -12,7 +12,7 @@ var p1=document.createElement("p");
 var rand1=Math.floor(Math.random() * photos.length);
 img1.setAttribute("src","../img/"+photos[rand1]);
 div1.setAttribute("id","container");
-p.innerHTML=photos[rand1];
+p1.innerHTML=photos[rand1];
 
 div1.appendChild(p1);
 img1.appendChild(div1);
