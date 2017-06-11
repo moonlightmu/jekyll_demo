@@ -151,10 +151,13 @@ div#tableContainer{
 	display:table;
 	border-spacing:10px;
        background-color:#006002;
+padding:0px;
+margin:0px;
 }
 div#tableRow{
 	display:table-row;
-	
+	padding:0px;
+margin:0px;
        
 
 }
