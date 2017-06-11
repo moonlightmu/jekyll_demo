@@ -100,7 +100,7 @@ div.cover{
       height:1000px;
       position:relative;
       border-spacing:10px;
-      font-size:250%;
+      font-size:150%;
       
 }
 div.cover-row{
@@ -116,13 +116,13 @@ div.cover-td{
 }
 
 div.cover-td ul li {
-        list-style-type:none;
+        list-style-type:none£»
         background-color:#efe5d0;
         padding:5%;
         margin:5%;
 }
 div.cover-td ul.welcome li {
-        list-style-type:none;
+        list-style-type:none£»
         border:1px solid black;
         padding:5%;
         margin:5%;
