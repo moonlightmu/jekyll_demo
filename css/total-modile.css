@@ -5,7 +5,8 @@ body{
 	line-height:1.6em;
         background-image:url(../img/mobile11.jpg);
         background-position:0 0;
-background-size:cover;
+        background-size:cover;
+        background-attachment:fixed
 }
 
 h1{
@@ -141,6 +142,7 @@ padding:0px;
 overflow:hidden;
 background-image:url(../img/night.jpg);
 vertical-align:top;
+display:none;
 }
 #mypost{
 display:none;
