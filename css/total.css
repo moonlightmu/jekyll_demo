@@ -148,15 +148,12 @@ a:hover{
         background-color:#f88390;
 }
 div#tableContainer{
-	display:table;
+      display:table;
        background-color:#006002;
-      border-space:10px;
+     
 }
 div#tableRow{
-	display:table-row;
-
-       
-
+	display:table-row;    
 }
 div#tableRow img{
 	width:auto;
@@ -171,12 +168,9 @@ div#tableRow img{
         border:1px solid black;
         vertical-align:middle;
         text-align:center;
-padding:0px;
-margin:0px;
+
 }
-.beanheading{
-max-width:100%;
-}
+
 div#paginator{
         
         padding:10px;
