@@ -8,11 +8,11 @@ var img1=document.createElement("img");
 
 var rand1=Math.floor(Math.random() * photos.length);
 img1.setAttribute("src","../img/"+photos[rand1]);
-
+alert(img1.style.src);
 
 var section1=document.getElementById("main");
 section1.appendChild(div1);
-alert(img1.src);
+
 }
 }
 
