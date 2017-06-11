@@ -25,7 +25,7 @@ h2{
         color:#007e7e;
 	
         text-align:center;
-
+ text-shadow:5px,5px,5px,#ff0000;
        
 }
 h3.guarantee{
@@ -204,15 +204,16 @@ div#tableRow img{
      max-height:50%;
 
 }
-#main{
+div#main{
 	display:table-cell;
-	background-color:#cc6600;
-	
 	padding:5px;
         margin:0px;
-        border:1px solid black;
+        box-shadow:0 4px 8px rgba(0,0,0,0.2);
         vertical-align:middle;
         text-align:center;
+}
+div.container{
+padding:10px;
 }
 .beanheading{
 
