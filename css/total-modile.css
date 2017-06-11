@@ -205,6 +205,9 @@ margin:0px;
 .beanheading{
 
 }
+div.ok{
+box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
 div#paginator{
         margin-top:0px;
         padding:10px;
