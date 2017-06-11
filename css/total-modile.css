@@ -78,10 +78,9 @@ div.navigation li {
        background-color:rgba(0,255,255,0.8);
        display:inline-block;
        color:#142130;
-       font-size:100%;
        font-weight:300px;
-       margin:1%;
-       padding:2%;
+       margin:2%;
+       padding:1%;
        line-style:none;
        font-size:150%;
 }
