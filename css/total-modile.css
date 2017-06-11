@@ -206,7 +206,7 @@ div#tableRow img{
 }
 div#main{
 	display:table-cell;
-	padding:5px;
+	padding:0px;
         margin:0px;
         box-shadow:0 4px 8px rgba(0,0,0,0.2);
         vertical-align:middle;
