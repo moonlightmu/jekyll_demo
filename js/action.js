@@ -11,7 +11,7 @@ img1.setAttribute("src","../img/"+photos[rand1]);
 alert(img1.style.src);
 
 var section1=document.getElementById("main");
-section1.appendChild(div1);
+section1.appendChild(img1);
 
 }
 }
