@@ -41,7 +41,7 @@ color:maroon;
 }
 div{
 	border:0px;
-	 box-shadow:0 4px 8px rgba(0,0,0,0.2);
+	
 padding:0px;
 margin:0px;
             
@@ -102,6 +102,7 @@ div.cover-td ul li {
         background-color:#efe5d0;
         padding:10px;
         margin:10px;
+ box-shadow:0 4px 8px rgba(0,0,0,0.2);
 }
 div.cover-td ul.welcome li {
         list-style-type:none£»
@@ -122,6 +123,7 @@ div.cover-td img{
 vertical-align:top;
 text-align:center;
 line-height:1.8em;
+ box-shadow:0 4px 8px rgba(0,0,0,0.2);
 }
 
 #cover-head{
@@ -129,6 +131,7 @@ padding:0px;
 overflow:hidden;
 background-image:url(../img/night.jpg);
 vertical-align:top;
+ box-shadow:0 4px 8px rgba(0,0,0,0.2);
 }
 
 
