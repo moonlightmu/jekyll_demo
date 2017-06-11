@@ -154,7 +154,7 @@ div#tableContainer{
 }
 div#tableRow{
 	display:table-row;
-	border-spacing:10px;
+	
        
 
 }
@@ -163,13 +163,13 @@ div#tableRow img{
        height:auto;
       max-width:50%;
       max-height:50%;
+padding:0px;
+margin:0px;
 
 }
 #main{
 	display:table-cell;
-	
 	font-size:150%;
-	
         width:150px;
         border:1px solid black;
         vertical-align:middle;
