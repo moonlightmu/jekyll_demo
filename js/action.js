@@ -6,12 +6,21 @@ var photos=["mobile1.jpg","mobile2.jpg","mobile3.jpg","mobile4.jpg","mobile5.jpg
 "head3.jpg","head4.jpg"];
 
 var img1=document.createElement("img");
+var div1=document.createElement("div");
+var p1=document.createElement("p");
 
 var rand1=Math.floor(Math.random() * photos.length);
 img1.setAttribute("src","../img/"+photos[rand1]);
+div1.setAttribute("id","container");
+p.innerHTML=photos[rand1];
+
+div1.appendChild(p1);
+img1.appendChild(div1);
 
 var section1=document.getElementById("main");
 section1.appendChild(img1);
+
+
 
 }
 }
