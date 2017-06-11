@@ -198,15 +198,13 @@ div#main{
         vertical-align:top;
         width:30px;
 }
-div#main img{
-width:100%;
-}
+
 div.container{
    padding:10px;
 
 }
 .beanheading{
-
+width:100%;
 }
 div.ok{
 width:250px;
