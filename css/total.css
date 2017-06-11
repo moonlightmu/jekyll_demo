@@ -176,6 +176,15 @@ div#main{
         text-align:center;
 
 }
+div#mains{
+	display:table-cell;
+	font-size:150%;
+        width:150px;
+        box-shadow:0 4px 8px rgba(0,0,0,0.2);
+        vertical-align:top;
+        text-align:center;
+
+}
 div#main img{
 	width:auto;
        height:auto;
