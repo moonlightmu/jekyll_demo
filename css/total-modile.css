@@ -5,7 +5,7 @@ body{
 	line-height:1.6em;
         background-image:url(../img/mobile10.jpg);
         background-position:0 0;
-        background-size:cover;
+        background-size:contain;
         background-attachment:fixed
 }
 
