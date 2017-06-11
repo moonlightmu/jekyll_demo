@@ -165,27 +165,22 @@ a:hover{
 div#tableContainer{
 	display:table;
 	border-spacing:10px;
-        padding:0px;
-        margin:0px;
+      
 }
 div#tableRow{
 	display:table-row;
-	border-spacing:10px;
-        padding:0px;
-        margin:0px;
-
 }
 
 div#main{
 	display:table-cell;
-	padding:0px;
-        margin:0px;
+	
         box-shadow:0 4px 8px rgba(0,0,0,0.2);
         vertical-align:top;
         width:150px;
         text-align:center;
 }
 div#main img{
+ max-width:100%;
 max-height:100%;
 }
 
@@ -193,13 +188,8 @@ div.container{
    padding:10px;
 
 }
-.beanheading{
-  width:100%;
-}
-div.ok{
-width:250px;
-border:1px solid black;
-}
+
+
 div#paginator{
         margin-top:0px;
         padding:10px;

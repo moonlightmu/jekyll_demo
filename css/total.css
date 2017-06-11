@@ -165,8 +165,8 @@ div#main{
 	display:table-cell;
 	font-size:150%;
         width:150px;
-        border:1px solid black;
-        vertical-align:middle;
+        box-shadow:0 4px 8px rgba(0,0,0,0.2);
+        vertical-align:top;
         text-align:center;
 
 }
