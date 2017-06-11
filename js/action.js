@@ -26,11 +26,12 @@ div1.appendChild(p1);
 var section1=document.getElementById("mains");
 section1.appendChild(img1);
 section1.appendChild(div1);
-}
+if(i==9){
 section1.setAttribute("id","main");
 }
 }
-
+}
+}
 function init(){
 var phraseElement1=document.getElementById("phrase1");
 var phraseElement2=document.getElementById("phrase2");
