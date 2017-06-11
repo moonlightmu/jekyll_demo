@@ -5,15 +5,14 @@ var photos=["mobile1.jpg","mobile2.jpg","mobile3.jpg","mobile4.jpg","mobile5.jpg
 "mobile7.jpg","mobile8.jpg","mobile9.jpg","mobile10.jpg","mobile11.jpg"];
 
 var img1=document.createElement("img");
-var p1=document.createElement("p");
 
 var rand1=Math.floor(Math.random() * photos.length);
 img1.setAttribute("src","../img/"+photos[rand1]);
-p1.innerHTML=photos[rand1];
-img1.appendChild(p1);
+
 
 var section1=document.getElementById("main");
 section1.appendChild(div1);
+alert(img1.src);
 }
 }
 
