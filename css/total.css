@@ -84,14 +84,14 @@ border-spacing:10px;
 }
 div.cover-row{
       display:table-row;
-      border:1px solid red;
+     
       
 }
 div.cover-td{
         display:table-cell;
 	background-color:rgba(255,255,255,0.8); 
         vertical-align:top;
-        padding:15px;
+       
        
 }
 
