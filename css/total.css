@@ -41,7 +41,7 @@ color:maroon;
 }
 div{
 	border:0px;
-	background-color:#006002;
+	background-color:#336002;
 padding:0px;
 margin:0px;
             
@@ -79,6 +79,7 @@ div.cover{
       height:1000px;
       position:relative;
       border-spacing:10px;
+background-color:#006002;
       
 }
 div.cover-row{
