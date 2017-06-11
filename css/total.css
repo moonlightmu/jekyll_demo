@@ -80,6 +80,7 @@ div.cover{
       position:relative;
       border-spacing:10px;
 background-color:#006002;
+border:1px solid red;
       
 }
 div.cover-row{
