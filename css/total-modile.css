@@ -14,7 +14,7 @@ body{
         background-image:url(../img/mobile6.jpg);
         background-position:0 0;
         background-size:cover;
-        background-attachment:fixed
+        background-attachment:fixed;
        
 }
 
@@ -146,7 +146,7 @@ display:none;
 #mypost{
 display:none;
 }
-#myphoto{;
+#myphoto{
 vertical-align:top;
 text-align:center;
 display:none;
@@ -248,7 +248,7 @@ div.current-page li{
 div.write{
       margin:2%;
       padding:2%;
-       list-style-type:none£»  
+       list-style-type:none;  
         border:1px solid black;
  vertical-align:top;
 background-color:rgba(247,175,148,0.8);
