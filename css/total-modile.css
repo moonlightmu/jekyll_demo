@@ -128,13 +128,7 @@ div.cover-td ul.welcome li {
         margin:5%;
 }
 
-div.cover-td img{
-        width:auto;
-        height:auto;
-        max-width:70%;
-        max-height:70%;
-          
-}
+
 
 #cover-head{
 padding:0px;
@@ -181,15 +175,7 @@ div#tableRow{
         margin:0px;
 
 }
-div#tableRow img{
-	width:auto;
-       height:auto;
-      max-width:70%;
-     max-height:70%;
-margin:0px;
-padding:0px;
 
-}
 div#main{
 	display:table-cell;
 	padding:0px;
