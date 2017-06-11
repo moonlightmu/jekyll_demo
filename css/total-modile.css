@@ -3,7 +3,7 @@ body{
 	font-family:serif,sans-serif;
 	font-size:small;
 	line-height:1.6em;
-        background-color:#008009;
+        background-image:url(../img/mobile11.jpg);
 }
 
 h1{
@@ -80,8 +80,8 @@ div.navigation li {
        color:#142130;
        font-size:100%;
        font-weight:300px;
-       margin:10%;
-       padding:20%;
+       margin:1%;
+       padding:2%;
        line-style:none;
        font-size:150%;
 }
