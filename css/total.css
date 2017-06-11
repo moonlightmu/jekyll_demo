@@ -79,13 +79,13 @@ div.cover{
       height:1000px;
       position:relative;
 background-color:#006002;
-border:1px solid red;
+
       
 }
 div.cover-row{
       display:table-row;
       border-spacing:10px;
-border:1px solid yellow;
+      border:1px solid yellow;
 }
 div.cover-td{
         display:table-cell;
