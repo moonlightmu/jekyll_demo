@@ -3,7 +3,7 @@ var i;
 var j;
 for(j=0;j<4;j++){
 var preDiv=document.createElement("div");
-preDiv.setAttribute("id","main");
+preDiv.setAttribute("id","mains");
 
 var headDiv=document.getElementById("tableRow");
 headDiv.appendChild(preDiv);
@@ -26,9 +26,10 @@ p1.innerHTML=photos[rand1];
 div1.appendChild(p1);
 
 
-var section1=document.getElementById("main");
+var section1=document.getElementById("mains");
 section1.appendChild(img1);
 section1.appendChild(div1);
+section1.setAttribute("id","main");
 
 
 }
