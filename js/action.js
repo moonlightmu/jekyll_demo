@@ -28,7 +28,7 @@ section1.appendChild(img1);
 section1.appendChild(div1);
 if(i==9){
 section1.setAttribute("id","main");
-}
+    }
 }
 }
 }
@@ -63,5 +63,5 @@ var ul=document.getElementById("playlist");
 ul.appendChild(li);
 }
 function handleButtonClick2(){
-rand1=
+init2();
 }
