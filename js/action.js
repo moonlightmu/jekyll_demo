@@ -19,8 +19,7 @@ div1.appendChild(p1);
 
 var section1=document.getElementById("main");
 section1.appendChild(img1);
-
-img1.insertBefore(div1,img1.nextSibling);
+section1.appendChild(div1);
 
 
 
