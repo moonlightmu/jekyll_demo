@@ -196,11 +196,14 @@ div#main{
         margin:0px;
         box-shadow:0 4px 8px rgba(0,0,0,0.2);
         vertical-align:top;
-       
+        width:30%;
+}
+div#main img{
+width:100%;
 }
 div.container{
    padding:10px;
-margin:0px;
+
 }
 .beanheading{
 
