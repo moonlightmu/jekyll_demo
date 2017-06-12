@@ -38,7 +38,7 @@ var map;
 
 function displayMap(coords){
 var googleLatAndLong=new google.maps.LatLng(coords.latitude,coords.longitude);
-
+alert(googleLatAndLon);
 var mapOptions={
 zoom: 10,
 center: googleLatAndLong,
@@ -47,7 +47,7 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
 
 var mapDiv=document.getElementById("map");
 map=new google.maps.Map(mapDiv,mapOptions);
-alert(googleLatAndLon);
+alert(map);
 }
 
 function displayLocation(position){
