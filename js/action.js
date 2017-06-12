@@ -46,6 +46,7 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
 
 var mapDiv=document.getElementById("map");
 map=new google.maps.Map(mapDiv,mapOptions);
+alert("ok");
 }
 
 function displayLocation(position){
