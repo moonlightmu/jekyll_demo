@@ -13,7 +13,7 @@ var div=document.getElementById("location");
 div.innerHTML=errorMessage;
 }
 function displayLocation(position){
-var latitude=positio.coords.latitude;
+var latitude=position.coords.latitude;
 var longitude=position.coords.longitude;
 var div=document.getElementById("location");
 div.innerHTML="you are at latitude:"+latitude+",longitude:"+longitude;
