@@ -1,3 +1,9 @@
+funnction displayLocation(position){
+var latitude=positio.coords.latitude;
+var longitude=position.coords.longitude;
+var div=document.getElementById("location");
+div.innerHTML="you are at latitude:"+latitude+",longitude:"+longitude;
+}
 function init2(){
 var i;
 var j;
@@ -50,6 +56,16 @@ button.onclick=handleButtonClick;
 
 var button2=document.getElementById("Change");
 button2.onclick=handleButtonClick2;
+
+if(navigator.geolocation){
+navigator.geolocation.getCurrentPosition(displayLocation);
+}
+else{
+alert("oops,no geolocation support");
+}
+
+
+
 }
 window.onload=init;
 
