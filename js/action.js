@@ -40,6 +40,12 @@ div.innerHTML="you are at latitude:"+latitude+",longitude:"+longitude;
 }
 function displayError(error){}
 function init(){
+if(navigator.geolocation){
+navigator.geolocation.getCurrentPosition(displayLocation,displayError);
+}
+else{
+alert("oops,no geolocation support");
+}
 var phraseElement1=document.getElementById("phrase1");
 var phraseElement2=document.getElementById("phrase2");
 var wordSet1=["Java","Css","Javascript","C","Html","Php"];
@@ -54,12 +60,7 @@ var button=document.getElementById("addButton");
 button.onclick=handleButtonClick;
 var button2=document.getElementById("Change");
 button2.onclick=handleButtonClick2;
-if(navigator.geolocation){
-navigator.geolocation.getCurrentPosition(displayLocation,displayError);
-}
-else{
-alert("oops,no geolocation support");
-}
+
 init2();
 
 }
