@@ -32,12 +32,23 @@ section1.setAttribute("id","main");
 }
 }
 }
+var map;
+function displayMap(coords){
+var googleLatAndLong=new google.maps.LatLng(coords.latitude,coords.longitude);
+var mapOptions={
+zoom:10,
+center:googleLatAndLong,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+var mapDiv=document.getElementById("map");
+map=new.google.maps.Map(mapDiv,mapOptions);
+}
 function displayLocation(position){
 var latitude=position.coords.latitude;
 var longitude=position.coords.longitude;
 var div2=document.getElementById("location");
 div2.innerHTML="you are at latitude:"+latitude+",longitude:"+longitude;
-alert("ok");
+displayMap(position.coords);
 }
 function displayError(error){}
 
