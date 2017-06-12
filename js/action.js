@@ -1,4 +1,18 @@
-funnction displayLocation(position){
+function displayError(error){
+var errorTypes={
+0: "Unknown error",
+1: "Permission denied by user",
+2: "Position is not available",
+3: "Request timed out"
+};
+var errorMessage=errorTypes[error.code];
+if(error.code==0 || error.code==2){
+errorMessage=errorMessage+""+error.message;
+}
+var div=document.getElementById("location");
+div.innerHTML=errorMessage;
+}
+function displayLocation(position){
 var latitude=positio.coords.latitude;
 var longitude=position.coords.longitude;
 var div=document.getElementById("location");
@@ -58,7 +72,7 @@ var button2=document.getElementById("Change");
 button2.onclick=handleButtonClick2;
 
 if(navigator.geolocation){
-navigator.geolocation.getCurrentPosition(displayLocation);
+navigator.geolocation.getCurrentPosition(displayLocation,displayError);
 }
 else{
 alert("oops,no geolocation support");
