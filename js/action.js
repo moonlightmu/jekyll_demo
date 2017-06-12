@@ -35,11 +35,13 @@ section1.setAttribute("id","main");
 function displayLocation(position){
 var latitude=position.coords.latitude;
 var longitude=position.coords.longitude;
+alert("id");
 var div=document.getElementById("location");
 div.innerHTML="you are at latitude:"+latitude+",longitude:"+longitude;
-alert("id");
+
 
 }
+function displayError(error){}
 function init(){
 var phraseElement1=document.getElementById("phrase1");
 var phraseElement2=document.getElementById("phrase2");
