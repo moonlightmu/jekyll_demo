@@ -31,6 +31,7 @@ section1.setAttribute("id","main");
     }
 }
 }
+return;
 }
 
 var map;
