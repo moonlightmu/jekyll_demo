@@ -34,21 +34,18 @@ section1.setAttribute("id","main");
 return;
 }
 
+
 var map;
-
-function displayMap(coords){
-var googleLatAndLong=new google.maps.LatLng(coords.latitude,coords.longitude);
-
+function displayMap(coords)
+{
 var mapOptions={
-zoom: 10,
-center: googleLatAndLong,
-mapTypeId: google.maps.MapTypeId.ROADMAP
+zoom:10,
+center:new google.maps.LatLng(coords.latitude,coords.longitude),
+mapTypeId:google.maps.MapTypeId.ROADMAP
 };
 
-var mapDiv=document.getElementById("map");
+map=new google.maps.Map(document.getElementById("map"),mapOptions);
 
-map=new google.maps.Map(mapDiv,mapOptions);
-google.maps.event.addDomListener(window,'load',initialize);
 }
 
 function displayLocation(position){
