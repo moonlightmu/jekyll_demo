@@ -44,8 +44,9 @@ zoom: 10,
 center: googleLatAndLong,
 mapTypeId: google.maps.MapTypeId.ROADMAP
 };
-alert(mapOptions);
+
 var mapDiv=document.getElementById("map");
+
 map=new google.maps.Map(mapDiv,mapOptions);
 
 }
