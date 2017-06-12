@@ -72,6 +72,7 @@ var li=document.createElement("li");
 li.innerHTML=songName;
 var ul=document.getElementById("playlist");
 ul.appendChild(li);
+return;
 }
 function handleButtonClick2(){
 init2();
