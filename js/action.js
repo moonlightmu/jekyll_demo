@@ -38,7 +38,7 @@ var map;
 
 function displayMap(coords){
 var googleLatAndLong=new google.maps.LatLng(coords.latitude,coords.longitude);
-alert(googleLatAndLon);
+
 var mapOptions={
 zoom: 10,
 center: googleLatAndLong,
