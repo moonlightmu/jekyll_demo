@@ -72,6 +72,7 @@ var button2=document.getElementById("Change");
 button2.onclick=handleButtonClick2;
 
 if(navigator.geolocation){
+alert("hello");
 navigator.geolocation.getCurrentPosition(displayLocation,displayError);
 }
 else{
