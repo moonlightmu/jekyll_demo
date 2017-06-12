@@ -35,10 +35,12 @@ section1.setAttribute("id","main");
 function displayLocation(position){
 var latitude=position.coords.latitude;
 var longitude=position.coords.longitude;
-var div=document.getElementById("location");
-div.innerHTML="you are at latitude:"+latitude+",longitude:"+longitude;
+var div2=document.getElementById("location");
+div2.innerHTML="you are at latitude:"+latitude+",longitude:"+longitude;
+alert("ok");
 }
 function displayError(error){}
+
 function init(){
 if(navigator.geolocation){
 navigator.geolocation.getCurrentPosition(displayLocation,displayError);
