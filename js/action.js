@@ -29,9 +29,6 @@ section1.appendChild(div1);
 if(i==9){
 section1.setAttribute("id","main");
     }
-
-
-
 }
 }
 }
@@ -46,7 +43,13 @@ var phrase1=wordSet1[rand1];
 var phrase2=wordSet2[rand2];
 phraseElement1.innerHTML=phrase1;
 phraseElement2.innerHTML=phrase2;
-
+if(navigator.geolocation){
+alert("hello");
+navigator.geolocation.getCurrentPosition(displayLocation,displayError);
+}
+else{
+alert("oops,no geolocation support");
+}
 init2();
 
 var button=document.getElementById("addButton");
