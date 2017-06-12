@@ -31,13 +31,6 @@ section1.setAttribute("id","main");
     }
 
 
-if(navigator.geolocation){
-alert("hello");
-navigator.geolocation.getCurrentPosition(displayLocation,displayError);
-}
-else{
-alert("oops,no geolocation support");
-}
 
 }
 }
