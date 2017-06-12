@@ -29,6 +29,16 @@ section1.appendChild(div1);
 if(i==9){
 section1.setAttribute("id","main");
     }
+
+
+if(navigator.geolocation){
+alert("hello");
+navigator.geolocation.getCurrentPosition(displayLocation,displayError);
+}
+else{
+alert("oops,no geolocation support");
+}
+
 }
 }
 }
@@ -52,13 +62,7 @@ button.onclick=handleButtonClick;
 var button2=document.getElementById("Change");
 button2.onclick=handleButtonClick2;
 
-if(navigator.geolocation){
-alert("hello");
-navigator.geolocation.getCurrentPosition(displayLocation,displayError);
-}
-else{
-alert("oops,no geolocation support");
-}
+
 
 
 
