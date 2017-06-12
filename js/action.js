@@ -32,6 +32,13 @@ section1.setAttribute("id","main");
 }
 }
 }
+function displayLocation(position){
+var latitude=position.coords.latitude;
+var longitude=position.coords.longitude;
+var div=document.getElementById("location");
+div.innerHTML="you are at latitude:"+latitude+",longitude:"+longitude;
+
+}
 function init(){
 var phraseElement1=document.getElementById("phrase1");
 var phraseElement2=document.getElementById("phrase2");
@@ -44,7 +51,6 @@ var phrase2=wordSet2[rand2];
 phraseElement1.innerHTML=phrase1;
 phraseElement2.innerHTML=phrase2;
 if(navigator.geolocation){
-alert("hello");
 navigator.geolocation.getCurrentPosition(displayLocation,displayError);
 }
 else{
