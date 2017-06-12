@@ -37,6 +37,7 @@ var latitude=position.coords.latitude;
 var longitude=position.coords.longitude;
 var div=document.getElementById("location");
 div.innerHTML="you are at latitude:"+latitude+",longitude:"+longitude;
+alert("id");
 
 }
 function init(){
