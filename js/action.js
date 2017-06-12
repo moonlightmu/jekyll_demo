@@ -38,16 +38,16 @@ var map;
 
 function displayMap(coords){
 var googleLatAndLong=new google.maps.LatLng(coords.latitude,coords.longitude);
-alert(googleLatAndLong);
+
 var mapOptions={
 zoom: 10,
 center: googleLatAndLong,
 mapTypeId: google.maps.MapTypeId.ROADMAP
 };
-
+alert(mapOptions);
 var mapDiv=document.getElementById("map");
 map=new google.maps.Map(mapDiv,mapOptions);
-alert(map);
+
 }
 
 function displayLocation(position){
