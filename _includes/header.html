@@ -1,6 +1,6 @@
 <div class="navigation col-3">
 <h1><span>Looking</span></h1>
-<div class="navigation-content col-3">
+<div class="navigation-content col-12">
 <h2><a href="{{ site.url }}{{ site.baseurl }}">&#10026;HOME</a></h2>
 <h2><a href="{{ site.url }}{{ site.baseurl }}/link/picture.html">&#10014;PICTURE</a></h2>
 <h2><a href="{{ site.url }}{{ site.baseurl }}/link/map.html">&#36;MAP</a></h2>
@@ -10,7 +10,7 @@
 </div>
 <div class="navigation col-3">
 <h1><span>Catalog</span></h1>
-<div class="navigation-content col-3">
+<div class="navigation-content col-12">
 <h2><a href="{{ site.baseurl | replace: "//", "/" }}/index.html">&#10026;The first</a></h2>
 <h2><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">&#10014;Pre</a></h2>
 <h2><a href=""{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">&#36;Next</a></h2>
@@ -19,13 +19,13 @@
 </div>
 <div class="navigation col-3">
 <h1><span>Catalog</span></h1>
-<div class="navigation-content col-3">
+<div class="navigation-content col-12">
 {% include mypost.html %}
 </div>
 </div>
 <div class="navigation col-3">
 <h1><span>Catalog</span></h1>
-<div class="navigation-content col-3">
+<div class="navigation-content col-12">
 {% include myinfo.html %}
 </div>
 </div>
