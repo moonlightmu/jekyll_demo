@@ -48,14 +48,11 @@ margin:0px;
 }
 div.navigation {
        text-align:center;
-       z-index:10000;
-       top:0px;
        color:white;
-       padding:30px;
        border:1px solid white;
        width:150px;
        position:relative;
-display:block;
+       line-height:2.0em;
 }
 div.navigation-content{
 width:150px;
