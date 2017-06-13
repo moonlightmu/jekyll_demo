@@ -60,7 +60,6 @@ div.navigation ul{
  
 }
 div.navigation li {
-       background-color:rgba(0,255,255,0.8);
        display:inline-block;
        color:#142130;
        font-size:100%;
@@ -71,7 +70,9 @@ div.navigation li {
        font-size:150%;
  box-shadow:0 4px 8px rgba(0,0,0,0.2);
 }
-
+div.navigation a{
+background-color:rgba(0,255,255,0.8);
+}
 div.cover{
       display:table;
       margin-left:10%;
