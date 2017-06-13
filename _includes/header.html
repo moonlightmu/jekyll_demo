@@ -8,3 +8,12 @@
 <a>&#9730;ABOUT ME</a>
 </div>
 </div>
+<div class="navigation">
+<span>Catalog</span>
+<div class="navigation-content">
+<a href="{{ site.baseurl | replace: "//", "/" }}/index.html">&#10026;The first</a>
+<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">&#10014;Pre</a>
+<a href=""{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">&#36;Next</a>
+<a href=""{{ site.baseurl }}/page{{ paginator.total_pages }}/index.html">&#36;The last</a>
+</div>
+</div>
