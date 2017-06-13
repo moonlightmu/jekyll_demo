@@ -47,18 +47,17 @@ margin:0px;
             
 }
 div.navigation {
-       position:fixed;
        text-align:center;
        z-index:10000;
        top:0px;
        color:white;
        padding:30px;
-       display:block;
        border:1px solid white;
        width:50px;
-      
+       position:relative;
 }
 div.navigation-content{
+left:0px;
 display:none;
 position:absolute;
 background-color: #f9f9f9;
@@ -70,7 +69,6 @@ display:block;
 div.navigation a{
  margin:0px;
  padding:30px;
-background-color:rgba(0,255,255,0.8);
 list-style-type:none;
 }
 div.cover{
