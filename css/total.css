@@ -68,7 +68,8 @@ display:block;
 div.navigation ul{
        text-align:center;
        overflow:hidden;
-
+margin:0px;
+padding:0px;
 }
 div.navigation li {
        color:#142130;
