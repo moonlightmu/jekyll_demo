@@ -56,7 +56,7 @@ div.navigation {
        display:block;
        border:1px solid white;
        width:50px;
-       position:relative;
+      
 }
 div.navigation-content{
 display:none;
