@@ -83,7 +83,6 @@ div.navigation {
 float:left;
 }
 div.navigation-content{
-       width:150px;
        left:0px;
        display:none;
        position:absolute;
