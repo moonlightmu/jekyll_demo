@@ -70,6 +70,7 @@ div{
 border:0px;	
 padding:0px;
 margin:0px;
+background-color:rgba(255,255,255,0.8); 
             
 }
 div.navigation {
@@ -146,7 +147,7 @@ div.cover-td img{
 vertical-align:top;
 text-align:center;
 line-height:1.8em;
- 
+float:left;
 }
 
 #cover-head{
