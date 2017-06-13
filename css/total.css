@@ -47,25 +47,31 @@ margin:0px;
             
 }
 div.navigation {
-       background-color:rgba(255,255,255,0.9);
        position:fixed;
        text-align:center;
        z-index:10000;
        top:0px;
-       width:100%;
-       border:0px;
+       padding:30px;
+       display:block;
+       border:1px solid white;
+width:50px;
+}
+div.navigation-content{
+display:none;
+}
+div.navigation:hover .navigation-content{
+display:block;
 }
 div.navigation ul{
        text-align:center;
        overflow:hidden;
 }
 div.navigation li {
-       display:inline-block;
        color:#142130;
        font-weight:300px;
        line-style:none;
        font-size:150%;
- box-shadow:0 4px 8px rgba(0,0,0,0.2);
+       box-shadow:0 4px 8px rgba(0,0,0,0.2);
 }
 div.navigation a{
  margin:0px;
