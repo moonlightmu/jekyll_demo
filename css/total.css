@@ -80,6 +80,7 @@ div.navigation {
        width:150px;
        position:relative;
        line-height:2.0em;
+float:left;
 }
 div.navigation-content{
        width:150px;
