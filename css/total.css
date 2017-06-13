@@ -58,6 +58,7 @@ div.navigation {
 display:block;
 }
 div.navigation-content{
+width:50px;
 left:0px;
 display:none;
 position:absolute;
