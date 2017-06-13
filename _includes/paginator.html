@@ -2,14 +2,14 @@
 <div class="pagenavi">
 <span class="page_number">The {{ paginator.page }}/Total{{ paginator.total_pages }}</span>
 <a href="{{ site.baseurl | replace: "//", "/" }}/index.html">
-<input type="button">The first</input>
+<input type="button" value="The first"></input>
 </a>
 {% if paginator.previous_page %}
    {% if paginator.previous_page == 1 %}
         <span>&laquo; Prev</span>
    {% else %}
        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">
-<input type="button">&laquo; Prev</input>
+<input type="button" value="&laquo; Prev"</input>
 </a>
    {% endif %}
    {% for count in (2..paginator.total_pages)limit:88 %}
@@ -17,20 +17,20 @@
             <span class="current-page"><li>{{ count }}</li></span>
        {% else %}
             <a href="{{ site.paginate_path |  prepend: "/" | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}/index.html"><li>
-<input type="button">{{ count }}</input>
+<input type="button" value="{{ count }}"></input>
 </li></a>
        {% endif%}
     {% endfor %}
 {% endif %}
 {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">
-<input type="button">Next &raquo;</input>
+<input type="button" value="Next &raquo;"></input>
 </a>
 {% else %}
     <span>Next &raquo;</span>
 {% endif %}
    <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}/index.html">
-<input type="button">The last</input>
+<input type="button" value="The last"></input>
 </a>
    </div>
 </div>
