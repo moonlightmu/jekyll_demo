@@ -7,6 +7,7 @@
 <div class="cover-row">
 {% include myinfo.html %}
 <div id="cover-head" class="cover-td" style="width:55%;">
+{% include paginator.html %}
 <h1 style="text-align:right;margin-top:30%;color:white;padding:30px;font-size:150%;line-height:1.6em;font-weight:bold;">Shake it off</h1>
 </div>
 </div>
@@ -15,7 +16,6 @@
 {% include mypost.html %}
 </div>
 <div class="cover-td" style="width:55%;">
-{% include paginator.html %}
 <section id="post-content">
 {{ content  }}
 </section>
