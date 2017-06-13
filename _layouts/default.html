@@ -2,20 +2,20 @@
 <html>
 {% include head.html %}
 <body>
-<div class="cover">
-<div class="cover-row">
+<div class="cover col-8">
+<div class="cover-td col-3">
 {% include myinfo.html %}
-<div id="cover-head" class="cover-td" style="width:55%;">
+<div id="cover-head" class="cover-td col-7">
 {% include header.html %}
 <h1 style="text-align:right;margin-top:30%;color:white;padding:30px;font-size:150%;line-height:1.6em;font-weight:bold;">Shake it off</h1>
 {% include paginator.html %}
 </div>
 </div>
 <div class="cover-row">
-<div class="cover-td" style="width:25%;" id="mypost">
+<div class="cover-td col-3" id="mypost">
 {% include mypost.html %}
 </div>
-<div class="cover-td" style="width:55%;">
+<div class="cover-td col-7">
 <section id="post-content">
 {{ content  }}
 </section>
