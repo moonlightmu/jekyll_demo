@@ -39,7 +39,7 @@ var map;
 function displayMap(coords)
 {
 var mapOptions={
-zoom:15,
+zoom:5,
 center:new google.maps.LatLng(coords.latitude,coords.longitude),
 mapTypeId:google.maps.MapTypeId.ROADMAP
 };
