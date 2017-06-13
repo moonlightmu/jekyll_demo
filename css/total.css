@@ -68,12 +68,14 @@ display:block;
 div.navigation ul{
        text-align:center;
        overflow:hidden;
+
 }
 div.navigation li {
        color:#142130;
        font-weight:300px;
        font-size:150%;
        box-shadow:0 4px 8px rgba(0,0,0,0.2);
+list-style-type:none;
 }
 div.navigation a{
  margin:0px;
