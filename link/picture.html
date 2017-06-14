@@ -63,12 +63,6 @@ function displayError(error){}
 
 
 function init(){
-if(navigator.geolocation){
-navigator.geolocation.getCurrentPosition(displayLocation,displayError);
-}
-else{
-alert("oops,no geolocation support");
-}
 var phraseElement1=document.getElementById("phrase1");
 var phraseElement2=document.getElementById("phrase2");
 var wordSet1=["Java","Css","Javascript","C","Html","Php"];
@@ -79,7 +73,14 @@ var phrase1=wordSet1[rand1];
 var phrase2=wordSet2[rand2];
 phraseElement1.innerHTML=phrase1;
 phraseElement2.innerHTML=phrase2;
+
 init2();
+if(navigator.geolocation){
+navigator.geolocation.getCurrentPosition(displayLocation,displayError);
+}
+else{
+alert("oops,no geolocation support");
+}
 var button=document.getElementById("addButton");
 button.onclick=handleButtonClick;
 var button2=document.getElementById("Change");
