@@ -7,10 +7,10 @@ GO First
 <li>
 {% if paginator.previous_page %}
        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">Prev</a>
-   {% else %}
+{% else %}
       <a href="#">Prev</a>
-   {% endif %}
 {% endif %}
+
 <li>
 {% for count in (2..paginator.total_pages)limit:88 %}
        {% if count == paginator.page %}
