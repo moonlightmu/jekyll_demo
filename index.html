@@ -2,6 +2,7 @@
 layout: default
 title: Code Garden
 ---
+<div id="mypostlook">
 {% include paginator.html %}
 <ul class="welcome">
 {% for post in paginator.posts %}
@@ -19,6 +20,11 @@ title: Code Garden
 {% highlight ruby %}
 
 {% endhighlight %}
-
+</div>
+<style>
+ul{
+list-style-type:none;
+}
+</style>
 
 
