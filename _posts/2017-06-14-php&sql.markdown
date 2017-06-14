@@ -1,4 +1,4 @@
-#copy table
+>copy table
 在同一主机不同数据库中
 
     create table gwdb.mismatch_topic select * from mismatch mismatch_topic;
