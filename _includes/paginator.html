@@ -16,8 +16,7 @@ GO First
        {% if count == paginator.page %}
           <a>{{ count }}</a>
        {% else %}
-           <a href="{{ site.paginate_path |  prepend: "/" | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}/index.html">
-{{ count }}</a>
+           <a href="{{ site.paginate_path |  prepend: "/" | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}/index.html">{{ count }}</a>
        {% endif%}
 {% endfor %}
 </li>
