@@ -15,7 +15,7 @@ var div1=document.createElement("div");
 var p1=document.createElement("p");
 var rand1=Math.floor(Math.random() * photos.length);
 img1.setAttribute("src","../img/"+photos[rand1]);
-div1.setAttribute("id","container");
+div1.setAttribute("id","containerq");
 p1.innerHTML=photos[rand1];
 div1.appendChild(p1);
 var section1=document.getElementById("mains");
