@@ -5,6 +5,10 @@ title: Picture
 
 <lable>Change picture:</label>
 <input type="button" id="Change" value="Add More"></input>
+<div class="tableContainer">
+<div class="tableRow">
+</div>
+</div>
 <script>
 function init2()
 {
@@ -82,6 +86,7 @@ else{
 alert("oops,no geolocation support");
 }
 var button=document.getElementById("addButton");
+if(button.onclick)
 button.onclick=handleButtonClick;
 var button2=document.getElementById("Change");
 button2.onclick=handleButtonClick2;
