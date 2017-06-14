@@ -1,29 +1,5 @@
-
+{% include myinfo.html %}
 
 {% for post in site.posts %}	
 <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 {% endfor %}
-
-<ul class="pagination">
-<li>
-<a href="#">Prev</a>
-</li>
-<li>
-<a href="#">1</a>
-</li>
-<li>
-<a href="#">2</a>
-</li>
-<li>
-<a href="#">3</a>
-</li>
-<li>
-<a href="#">4</a>
-</li>
-<li>
-<a href="#">5</a>
-</li>
-<li>
-<a href="#">Next</a>
-</li>
-</ul>

@@ -1,36 +1,35 @@
-<div id="paginator">
-<div class="pagenavi">
-<span class="page_number">The {{ paginator.page }}/Total{{ paginator.total_pages }}</span>
+<ul class="pagination">
+<li>
 <a href="{{ site.baseurl | replace: "//", "/" }}/index.html">
-<input type="button" value="The first"></input>
+GO First
 </a>
+</li>
+<li>
 {% if paginator.previous_page %}
    {% if paginator.previous_page == 1 %}
-        <span>&laquo; Prev</span>
+       <a href="#">Prev</a>
    {% else %}
-       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">
-<input type="button" value="&laquo; Prev"</input>
-</a>
+       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">Prev</a>
    {% endif %}
-   {% for count in (2..paginator.total_pages)limit:88 %}
+{% endif %}
+<li>
+{% for count in (2..paginator.total_pages)limit:88 %}
        {% if count == paginator.page %}
-            <span class="current-page"><li>{{ count }}</li></span>
+          <a>{{ count }}</a>
        {% else %}
-            <a href="{{ site.paginate_path |  prepend: "/" | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}/index.html"><li>
-<input type="button" value="{{ count }}"></input>
-</li></a>
+           <a href="{{ site.paginate_path |  prepend: "/" | prepend: site.baseurl | replace: '//', '/' | replace: ':num', count }}/index.html">
+{{ count }}</a>
        {% endif%}
-    {% endfor %}
-{% endif %}
+{% endfor %}
+</li>
+<li>
 {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">
-<input type="button" value="Next &raquo;"></input>
-</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">Next &raquo;</a>
 {% else %}
-    <span>Next &raquo;</span>
+    <a>Next &raquo;</a>
 {% endif %}
-   <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}/index.html">
-<input type="button" value="The last"></input>
-</a>
-   </div>
-</div>
+</li>
+<li>
+   <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}/index.html">Go Last</a>
+</li>
+</ul>
