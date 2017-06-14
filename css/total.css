@@ -33,29 +33,20 @@ body{
         width: 100%;
     }
 }
-h1{
+div.cover h1{
         color:#954b4b;
         font-size:150%;	
         
 }
-h2{
+div.cover h2{
         color:#007e7e;
 	font-size:130%;
         text-align:center;
         border-bottom:1px solid grey;
         font-style:italic;
 }
-h3.guarantee{
-	color:black;
-	font-size:160%;
-	font-family:fantasy;
-}
-h3.greentea{
-	color:black;
-	font-size:160%;
-	font-family:fantasy;
-}
-a{
+
+div.cover a{
         display:block;
 	font-size:normal;
 	font-family:cursive;
@@ -63,16 +54,10 @@ a{
         text-decoration:none;
         line-height:2.0em;
 }
-p{
+div.cover p{
 color:maroon;
 }
-div{
-border:0px;	
-padding:0px;
-margin:0px;
-background-color:rgba(255,255,255,0.8); 
-            
-}
+          
 div.navigation {
        text-align:center;
        color:white;
@@ -143,14 +128,14 @@ div.cover-td img{
       max-height:70%;
            box-shadow:0 4px 8px rgba(0,0,0,0.2);
 }
-#myphoto{;
+div#myphoto{;
 vertical-align:top;
 text-align:center;
 line-height:1.8em;
 float:left;
 }
 
-#cover-head{
+div#cover-head{
 padding:0px;
 overflow:hidden;
 background-image:url(../img/night.jpg);
@@ -159,17 +144,17 @@ vertical-align:top;
 }
 
 
-a:link{
+div.cover a:link{
 	color:#007e7e;
 }
-a:visited{
+div.cover a:visited{
 	color:#333333;
 }
-a:hover{
+div.cover a:hover{
 	color:#0d5353;
         
 }
-.rightfloat{
+div.cover.rightfloat{
 	float:right;
      
         border-radius:45%;
