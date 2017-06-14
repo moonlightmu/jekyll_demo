@@ -2,8 +2,9 @@
 layout: default
 title: Code Garden
 ---
-
+<div id="myTabContent" class="tab-content">
 {% include paginator.html %}
+<div class="tab-pane fade in active" id="home">
 <ul class="welcome">
 {% for post in paginator.posts %}
 <li>
@@ -16,11 +17,9 @@ title: Code Garden
 </li>
 {% endfor %}
 </ul>
+</div>
+{% include piuture.html %}
+{% include map.html %}
 
-{% highlight ruby %}
-
-{% endhighlight %}
-
-
-
+</div>
 

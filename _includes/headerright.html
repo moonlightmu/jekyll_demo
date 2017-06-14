@@ -1,12 +1,12 @@
 <ul id="myTab" class="nav nav-tabs">
 <li class="active">
-<a href="{{ site.url }}{{ site.baseurl }}">HOME</a>
+<a href="{{ site.url }}{{ site.baseurl }}" data-toggle="tab">HOME</a>
 </li>
 <li>
-<a href="{{ site.url }}{{ site.baseurl }}/link/picture.html">PICTURE</a>
+<a href="{{ site.url }}{{ site.baseurl }}/link/picture.html" data-toggle="tab">PICTURE</a>
 </li>
 <li class="disabled">
-<a href="{{ site.url }}{{ site.baseurl }}/link/map.html">MAP</a>
+<a href="{{ site.url }}{{ site.baseurl }}/link/map.html" data-toggle="tab">MAP</a>
 </li>
 <li class="dropdown pull-right">
 <a href="#" data-toggle="dropdown" class="dropdown-toggle">down<strong class="caret"></strong></a>
@@ -29,8 +29,14 @@
 </li>
 </ul>
 <script>
-$('#myTab a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
+$(function(){
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+var activeTab = $(e.target).text(); 
+
+var previousTab = $(e.relatedTarget).text(); 
+$(".active-tab span").html(activeTab);
+$(".previous-tab span").html(previousTab);
+});
+});
 </script>
