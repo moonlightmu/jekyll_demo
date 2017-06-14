@@ -1,4 +1,4 @@
-<ul class="nav nav-tabs">
+<ul id="myTab" class="nav nav-tabs">
 <li class="active">
 <a href="{{ site.url }}{{ site.baseurl }}" data-toggle="tab">HOME</a>
 </li>
@@ -28,3 +28,9 @@
 </ul>
 </li>
 </ul>
+<script>
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
