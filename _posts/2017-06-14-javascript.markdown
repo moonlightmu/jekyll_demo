@@ -1,8 +1,8 @@
-#大热身#
+# 大热身 #
 >目标：完成博客picture瀑布流<br>
 >结果：已完成，待续
 
-#from ...to html5#
+# from ...to html5 #
 1. !DOCTYPE html
 2. meta charset="UTF-8"
 3. link rel="stylesheet" href="total.css"
@@ -11,7 +11,7 @@
     var a=true;
    /script
 
-#test-varibale#
+# test-varibale #
 1. var isEligible=false
    <br>*布尔值变量用is+n/adj作为名字*
 2. var winners=2
@@ -23,7 +23,7 @@
 7. 用有意义的名词，虽然在计算中会比较不容易看清楚规律，但是容易逻辑清楚，调理分明
 
 
-#test-litte function-表达式#
+# test-litte function-表达式 #
 （9/5）*tempC+32;
 Math.random()*10;
 2.123+3.2;
@@ -35,7 +35,7 @@ pet=="duck";
 toWrite(e)//function toWrite(..){}
 
 
-#do it#
+# do it #
 10. var y=(x=5);
 11. var scoops=10;
 12. var scoops=totalScoops/people;
@@ -52,7 +52,7 @@ toWrite(e)//function toWrite(..){}
 26. 可以这样包含保留字，var ifOnly;
 
 
-#每次一点，直到做完#
+# 每次一点，直到做完 #
 while(s){
 do...
 }
@@ -61,7 +61,7 @@ do...
 }
 
 
-#DOM#
+# DOM #
 document->html->:head,body
 head->:meta,title,link,script
 body->:div(.navigation),div(.cover>),
@@ -81,7 +81,7 @@ li->h2
 div(.cover-id)->:paginator,section
 
 
-#对象连接#
+# 对象连接 #
 window对象是全局对象<br>
 document对象就是普通对象例如ul对象连接整合为一个Dom对象，连接方式：<br>
 1. 属性为一个函数 其中onload属性指向一个函数<br>
@@ -90,13 +90,13 @@ document对象就是普通对象例如ul对象连接整合为一个Dom对象，�
 **4. ...这部分涉及到构造函数，函数，对象，在需要做更多联系，强化。**
 
 
-#设计瀑布流的简单方法#
+# 设计瀑布流的简单方法 #
 div中放置一个img,可以让div固定大小，img按照100%放置，可以做卡片效果，加上盒子阴影。<br>
 1. 从纵向上动态添加节点，可以做一列瀑布。**前提**是在***table-cell***的div中才可以纵向排列。通过循环添加3列瀑布效果即可。<br>
 2. 从横向上动态添加节点，前提是在table-rom的div下，可以做拼图形状的瀑布。通过循环也可以递增图片。<br>
 
 
-#未能完成的部分#
+# 未能完成的部分 #
 1. 根据屏幕滑动touch动作完成页面的加载
 2. 在图片数量不变的前提下，更新图片是否需要重载整个页面。
 3. init,与Init（）的不同
