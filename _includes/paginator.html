@@ -6,10 +6,9 @@ GO First
 </li>
 <li>
 {% if paginator.previous_page %}
-   {% if paginator.previous_page == 1 %}
-       <a href="#">Prev</a>
-   {% else %}
        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}/index.html">Prev</a>
+   {% else %}
+      <a href="#">Prev</a>
    {% endif %}
 {% endif %}
 <li>
