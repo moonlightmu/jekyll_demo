@@ -1,0 +1,140 @@
+#oracle
+> create user xiaoming idendified m123;<br>
+> password xiaoming修改密码<br>
+> conn xiaoming/m123;
+
+*
+> <br>grant系统权限（数据库操作，访问create session权限是访问的前提）
+> <br>grant对象权限（用户对其他用户的**数据对象**操作的权限）<br>
+> 角色是权限的批量制作,conncetion是一个预定义角色,dba是一个管理权限，resourc可以在sys空间任何地方建表查表<br>但是其他用户的表的查看需要grant select on emp to xiaoming,<br>其他用户表的修改
+>grant alter on emp to xiaoming.<br>
+>grant connect to xiaoming;<br>
+>revoke update on emp from xiaoming;<br>
+
+*
+> sqlplus<br>
+> connect/as sysdba
+
+*
+>
+* savepoint a;
+* rollback to a;
+
+*
+>
+* insert into emp values(1,'smith','m','17-5月-06',99.99);<br>
+* alter table stu add(id number(2));<br>
+* select distinct deptno from emp;
+* select ename from emp where ename like '__s%';
+
+*
+>
+* set timing on;<br>
+* 快速复制insert into emp(empno,ename,sal,comm)select * from emp;回车，继续，按照乘方递增。大小写区分。
+
+*
+>  nvl（）处理null值，防止表达式计算为null. 
+* 错select sal*13+comm*13 "年薪“ ename from emp;
+* 错select (sal+comm)*13 “年薪" ename from emp;
+* 对select sal*13+nvl(comm,0)*13 "年薪" enma from emp;
+
+*
+>第一步select deptno,avg(sal) mysal from emp group by deptno;<br>
+>第二步select a2.ename,a2.sal,a1.mysal from emp a2,(select deptno,avg(sal) mysal from emp group by deptno) a1 where a2.deptno=a1.deptno and a2.sal>a1.mysal;<br>
+
+*
+>分页<br>
+>第一步select * from emp;<br>
+>第二步select a1.*,rownum rn from (select * from emp)a1;<br>
+>第三步select a1.*,rownum rn from (select * from emp)a1 where rownum<=10;<br>
+>第四部select * from (select a1.*，rownum rn from (select * from emp)a1 where rownum<=10) where rn>=2;<br>
+>修改查询列,只需要修改第一步<br>
+>排序也只修改第一步<br>
+
+*
+>快速建表<br>
+>create table mytable (id,name,sal,job,deptno) 
+>as select empno,ename,sal from emp;<br>
+
+*
+>高级程序员才会使用的Union，minus,intersect
+
+*
+>dbca(database configation asb ..)在目录中选着的建立数据库工具删除工具
+
+*
+>插入多行数据<br>
+>insert into emp()select...<br>
+>更新多列数据<br>
+> update emp set(job,sal,comm)=(select job,sal,comm from emp where ename='lily')where ename='Jon';<br>
+
+*
+>java中链接数据库（类似Php链接数据库）<br>
+
+*pl/sql块
+>declare
+v_ename varchar2(10);
+v_sal number(6,2);
+begin
+  select ename,sal into v_ename,v_sal from emp where empno=&aa;
+  dbms_output.put_line('雇员:'||v_ename||'工资:'||v_sal);
+end;
+
+*
+>pl/sql块 异常处理
+>declare
+v_ename varchar2(10);
+v_sal number(6,2);
+begin
+  select ename,sal into v_ename,v_sal from emp where empno=&aa;
+  dbms_output.put_line('雇员:'||v_ename||'工资:'||v_sal);
+exception
+  when no_data_found then
+  dbms_output.put_line('insert again');
+end;
+
+*存储过程（类似函数）
+>create or replace procedure sp_pro1(spName varchar2,newSal number)is
+ begin--l类似括号，先写
+ update emp set sal=newSal where ename=spName;
+ end;<br>--类似括号，先写
+ call sp_pro1('lily',3455);
+<br>操作成功但是结果没有更新？
+
+*
+>创建函数create function ...return <br>
+>创建包create packgae...is<br>
+>创建包体create package body ... is<br>
+>包调用exec 某个package.某个fuction();
+
+*
+> 标量：是在一个=的前面<br>
+长了小眼睛，为什么呢？因为是常量
+
+*
+>类型%type
+>定义变量灵动的类型v_enmae emp.ename%type;
+>定义一个类型；也就是结构体为了便于变量管理<br>
+>type emp_record_type is record(emp.ename%type,emp.sal%type);<br>
+>定义一个数组类型<br>
+>type sp_table_type is table of emp.ename%type index by binary_interger;<br>
+>定义一个游标类型<br>
+>type type_cursor sp_emp_cursor;<br>
+>test_cursor sp_emp_cursor;<br>
+>open test_cursor for select ename,sal from emp where deptno=..<br>
+>loop<br>
+>fetch test_cursor into v_ename,v_sal; <br>
+>exit when test_cursor%notfound;
+>end loop;<br>
+
+
+*
+>loop+循环内容+end loop<br>
+>loop可以和while一起用<br>
+>while ...loop...end loop;
+>loop可以先执行，再判断条件<br>
+>loop....while...end loop;
+
+*
+>分页存储过程
+
