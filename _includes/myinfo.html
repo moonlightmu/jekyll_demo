@@ -8,7 +8,7 @@ text-align:center;
 <script>
 var img={"photo.jpg","mm.jpg"};
 
-for(var i=0;i<2;i++){
-setInterval("document.getElementById('change').src='{{ site.url }}{{ site.baseurl }}/img/'+img[i]+'",6000);
-}
+
+setTimeout("document.getElementById('change').src='{{ site.url }}{{ site.baseurl }}/img/'+img[i]+'",6000);
+
 </script>
