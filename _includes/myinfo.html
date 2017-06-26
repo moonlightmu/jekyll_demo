@@ -7,9 +7,8 @@ text-align:center;
 </style>
 <script>
 var img={"photo.jpg","mm.jpg"};
-while(1){
+
 for(var i=0;i<2;i++){
 setInterval("document.getElementById('change').src='{{ site.url }}{{ site.baseurl }}/img/'+img[i]+'",6000);
-}
 }
 </script>
