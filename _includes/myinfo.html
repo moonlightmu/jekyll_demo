@@ -7,12 +7,7 @@ text-align:center;
 </style>
 <script>
 window.onload=function(){
-var img={"mm.jpg","photo.jpg"};
-while(1){
-for(var i=0;i<2;i++){
-setInterval("document.getElementById('change').src='{{ site.url }}{{ site.baseurl }}/img/'"+img[i]+"'",10000);
-}
-}
+setTimeout("document.getElementById('change').src='{{ site.url }}{{ site.baseurl }}/img/+mm.jpg",2000);
 }
 
 
