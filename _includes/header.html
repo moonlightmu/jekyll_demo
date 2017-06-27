@@ -7,6 +7,7 @@ image1.src="{{ site.url }}{{ site.baseurl }}/img/night.jpg";
 
 var c=document.getElementById("mycanvas");
 var ctx=c.getContext("2d");
+var dtx=c.getContext("2d");
 var grd=ctx.createLinearGradient(0,0,600,0);
 grd.addColorStop(0,"red");
 grd.addColorStop(0.2,"yellow");
@@ -15,6 +16,7 @@ grd.addColorStop(0.5,"lightgreen");
 grd.addColorStop(0.7,"lightblue");
 ctx.font="50px Arial";
 ctx.fillStyle=grd;
+dtx.fillStyle="lightblue";
 ctx.strokeStyle=grd;
 ctx.textAlign="start";
 var w=Math.floor(Math.random()*40);
@@ -24,6 +26,7 @@ var y=Math.floor(Math.random()*(canvas.height-40));
  
 ctx.fillText("code garden",10,50);
 ctx.fillText("Knowledge & action,go hand in hand",10,110);
+
 ctx.fillRect(x,y,w,w);
 </script>
 
