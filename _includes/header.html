@@ -32,7 +32,8 @@ var x=Math.floor(Math.random()*(c.width-40));
 var y=Math.floor(Math.random()*(c.height-40));
 dtx.fillRect(x,y,w,w);
 dtx.beginPath();
-dtx.arc(x,y,w,0,degreesToRadians(270),true);
+dtx.fillStyle=grd;
+dtx.arc(x,y,w,0,degreesToRadians(180),true);
 dtx.fill();
 }
 }
