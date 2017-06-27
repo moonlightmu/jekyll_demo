@@ -19,15 +19,15 @@ ctx.fillStyle=grd;
 dtx.fillStyle="lightblue";
 ctx.strokeStyle=grd;
 ctx.textAlign="start";
-var w=Math.floor(Math.random()*40);
-var x=Math.floor(Math.random()*(canvas.width-40));//-40是保证方框不会超出边界
-var y=Math.floor(Math.random()*(canvas.height-40));
-
- 
 ctx.fillText("code garden",10,50);
 ctx.fillText("Knowledge & action,go hand in hand",10,110);
 
-ctx.fillRect(x,y,w,w);
+for(var i=0;i<20;i++){
+var w=Math.floor(Math.random()*40);
+var x=Math.floor(Math.random()*(c.width-40));
+var y=Math.floor(Math.random()*(c.height-40));
+dtx.fillRect(x,y,w,w);
+}
 </script>
 
 
