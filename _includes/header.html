@@ -17,8 +17,6 @@ ctx.strokeStyle=grd;
 ctx.textAlign="start";
 ctx.strokeText("code garden",10,50);
 ctx.strokeText("Knowledge & action,go hand in hand",10,110);
-ctx.fillText("code garden",10,50);
-ctx.fillText("Knowledge & action,go hand in hand",10,110);
 
 setInterval("draw()",1000);
 
@@ -29,7 +27,7 @@ dtx.fillStyle="lightpink";
 for(var i=0;i<20;i++)
 {
 dtx.fillStyle="lightpink";
-var w=Math.floor(Math.random()*20);
+var w=Math.floor(Math.random()*10);
 var x=Math.floor(Math.random()*(c.width-40));
 var y=Math.floor(Math.random()*(c.height-40));
 dtx.fillRect(x,y,w,w);
