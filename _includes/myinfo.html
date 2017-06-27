@@ -16,8 +16,14 @@ image1.class="img-circle img-responsive";
 
 var c=document.getElementById("mycanvas");
 var ctx=c.getContext("2d");
+ctx.drawImage(image1,50,150,image1.width/3,image1.height/3);	
 
-
+var grd=ctx.createLinearGradient(0,0,600,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(0.2,"yellow");
+grd.addColorStop(1,"black");
+grd.addColorStop(0.5,"lightgreen");
+grd.addColorStop(0.7,"lightblue");
 
 while(1){
 for(var i=0;i<2;i++){
