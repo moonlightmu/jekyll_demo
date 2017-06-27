@@ -17,11 +17,11 @@ grd.addColorStop(1,"black");
 grd.addColorStop(0.5,"lightgreen");
 grd.addColorStop(0.7,"lightblue");
 ctx.font="30px Arial";
-
-ctx.textAlign="start";      
-ctx.fillText("start",0,10);   
-
+ctx.fillStyle=grd;
 ctx.strokeStyle=grd;
+ctx.textAlign="start";
+      
+ctx.fillText("start",0,10);   
 ctx.strokeText("Hello World",10,50);
 
 
