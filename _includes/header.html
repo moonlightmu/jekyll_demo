@@ -2,9 +2,6 @@
 <canvas id="mycanvas" width="1000px";></canvas>
 </div>
 <script>
-var image1=new Image();
-image1.src="{{ site.url }}{{ site.baseurl }}/img/night.jpg";
-
 var c=document.getElementById("mycanvas");
 var ctx=c.getContext("2d");
 var dtx=c.getContext("2d");
@@ -21,13 +18,17 @@ ctx.strokeStyle=grd;
 ctx.textAlign="start";
 ctx.fillText("code garden",10,50);
 ctx.fillText("Knowledge & action,go hand in hand",10,110);
-
+setInterval("draw()",6000);
+function draw(){
 for(var i=0;i<20;i++){
 var w=Math.floor(Math.random()*40);
 var x=Math.floor(Math.random()*(c.width-40));
 var y=Math.floor(Math.random()*(c.height-40));
 dtx.fillRect(x,y,w,w);
 }
+}
+
+
 </script>
 
 
