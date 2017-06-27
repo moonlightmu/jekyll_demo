@@ -3,6 +3,9 @@
 <h1>code garden<small>Knowledge & action,go hand in hand</small></h1>
 </div>
 <script>
+var image1=new Image();
+image1.src="{{ site.url }}{{ site.baseurl }}/img/photo.jpg";
+
 var c=document.getElementById("mycanvas");
 var ctx=c.getContext("2d");
 ctx.drawImage(image1,0,0,image1.width/3,image1.height/3);	
