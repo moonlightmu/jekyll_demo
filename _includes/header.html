@@ -5,12 +5,15 @@
 var c=document.getElementById("mycanvas");
 var ctx=c.getContext("2d");
 var dtx=c.getContext("2d");
+var word={"CSS","HTML","JAVASCRIPT","ORACLE","PHP"};
 var grd=ctx.createLinearGradient(0,0,600,0);
+
 grd.addColorStop(0,"red");
 grd.addColorStop(0.2,"yellow");
 grd.addColorStop(1,"black");
 grd.addColorStop(0.5,"lightgreen");
 grd.addColorStop(0.7,"lightblue");
+
 ctx.font="50px Arial";
 ctx.fillStyle="lightgreen";
 ctx.strokeStyle=grd;
@@ -30,7 +33,7 @@ dtx.fillStyle="lightpink";
 var w=Math.floor(Math.random()*17);
 var x=Math.floor(Math.random()*(c.width-40));
 var y=Math.floor(Math.random()*(c.height-40));
-ctx.strokeText("code garden",x,y);
+ctx.strokeText(word[(x+y)%5],x,y);
 dtx.fillRect(x+2,y,w/5,w);
 dtx.beginPath();
 dtx.fillStyle=grd;
