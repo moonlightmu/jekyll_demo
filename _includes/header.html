@@ -36,7 +36,9 @@ dtx.arc(x,y,w,0,degreesToRadians(270),true);
 dtx.fill();
 }
 }
-
+function degreesToRadians(degrees){
+	return (degrees * Math.PI/180);
+}
 function fillbackground(dtx){
 dtx.fillStyle="white";
 dtx.fillRect(0,0,c.width,c.height);
