@@ -1,4 +1,4 @@
-<h3>&hearts;17723705213</h3>
+
 <img id="change"  onclick="showHide()" class="img-circle img-responsive" src="{{ site.url }}{{ site.baseurl }}/img/photo.jpg"/>
 
 <style>
@@ -6,13 +6,11 @@ h2{
 text-align:center;
 </style>
 <script>
-setTimeout("document.getElementById('change').src='{{ site.url }}{{ site.baseurl }}/img/mm.jpg'",2000);
-setTimeout("showHide()",10000);
+setTimeout("document.getElementById('change').src='{{ site.url }}{{ site.baseurl }}/img/mm.jpg'",1000);
+setTimeout("showHide()",1000);
 function showHide(){
 var oDiv=document.getElementById("change");
-if(oDiv.style.display=="none")
-oDiv.style.display="block";
-else
+if(oDiv.style.display=="block")
 oDiv.style.display="none";
 }
 </script>
