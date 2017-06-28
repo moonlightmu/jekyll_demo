@@ -10,15 +10,8 @@ text-align:center;
 }
 </style>
 <script>
-setTimeout("showHide()",2000);
-function showHide(){
-var oDiv=document.getElementById("change");
-var bDiv=document.getElementById("mypost");
-if(oDiv.style.display=="block")
-  {
-oDiv.style.display="none";
-bDiv.style.display="block";
-   }
-}
-
+if (!navigator.userAgent.match(/mobile/i)) {
+     $("#mypost").remove();
+ $("change").remove();
+ }
 </script>
