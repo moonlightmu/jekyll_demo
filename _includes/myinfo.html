@@ -7,5 +7,13 @@ text-align:center;
 </style>
 <script>
 setTimeout("document.getElementById('change').src='{{ site.url }}{{ site.baseurl }}/img/mm.jpg'",2000);
+function showHide(){
+var oDiv=document.getElementById("change");
+if(oDiv.style.display=="none")
+oDiv.style.display="block";
+else
+oDiv.style.display="none";
 
+
+}
 </script>
