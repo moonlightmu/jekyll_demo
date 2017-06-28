@@ -1,16 +1,17 @@
 
-<img id="change"  onclick="showHide()" class="img-circle img-responsive" src="{{ site.url }}{{ site.baseurl }}/img/photo.jpg"/>
+<img id="change" class="img-circle img-responsive" src="{{ site.url }}{{ site.baseurl }}/img/photo.jpg"/>
 
 <style>
 h2{
 text-align:center;
 </style>
 <script>
-setTimeout("document.getElementById('change').src='{{ site.url }}{{ site.baseurl }}/img/mm.jpg'",1000);
-setTimeout("showHide()",2000);
+setTimeout("showHide()",1000);
 function showHide(){
-var oDiv=document.getElementById("mygo");
+var oDiv=document.getElementById("change");
 if(oDiv.style.display=="block")
 oDiv.style.display="none";
+document.getElementById("mypost").style.display="block";
+}
 }
 </script>
