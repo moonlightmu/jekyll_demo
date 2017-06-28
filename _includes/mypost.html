@@ -7,7 +7,6 @@
 <style>
 div#mypost{
 text-align:center;
-display:none;
 }
 </style>
 <script>
@@ -15,7 +14,7 @@ setTimeout("showHide()",2000);
 function showHide(){
 var oDiv=document.getElementById("change");
 var bDiv=document.getElementById("mypost");
-if(oDiv.style.display=="block"&& bDiv.style.display="none")
+if(oDiv.style.display=="block")
   {
 oDiv.style.display="none";
 bDiv.style.display="block";
