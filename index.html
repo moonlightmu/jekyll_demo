@@ -5,7 +5,7 @@ title: Code Garden
 <div id="myTabContent" class="tab-content">
 
 <div id="home" class="tab-pane fade in active">
-
+{% include paginator.html %}
 <ul class="welcome">
 {% for post in paginator.posts %}
 <li>
