@@ -9,7 +9,7 @@ title: Code Garden
 <ul class="welcome">
 {% for post in paginator.posts %}
 <li>
-<h2>&#9730;&#9730;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+<h3>&#9730;&#9730;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 <span class="date"></span>
 {{ post.excerpt | remove: 'cover-content-right' }}	
 <p> 
