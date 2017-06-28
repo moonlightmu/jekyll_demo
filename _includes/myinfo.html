@@ -9,9 +9,12 @@ text-align:center;
 setTimeout("showHide()",1000);
 function showHide(){
 var oDiv=document.getElementById("change");
+var bDiv=document.getElementById("mypost");
 if(oDiv.style.display=="block")
+  {
 oDiv.style.display="none";
-document.getElementById("mypost").style.display="block";
+bDiv.style.display="block";
+   }
 }
-}
+
 </script>
