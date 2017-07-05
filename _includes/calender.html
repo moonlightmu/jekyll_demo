@@ -1,4 +1,3 @@
-
 <style>
 #tab{
 padding:10px;
@@ -27,18 +26,18 @@ window.onload=function()
 	var aLi=oDiv.getElementsByTagName('li');
 	var oTxt=oDiv.getElementsByTagName('div')[0] ;
 	var arr=[
-			"过年啦",
-			"2月情人节",
-			"3月植树节",
-			"4月愚人节",
-			"5月劳动节",
-			"6月儿童节",
-			"7月建军节",
-			"8月党的生日",
-			"9月教师节",
-			"10月国庆节",
-			"11月中秋节",
-			"12月圣诞节"
+			"New Year",
+			"Vanenties Day",
+			"Tree Day",
+			"Floos Day",
+			"Working Day",
+			"Childrens Day",
+			"Army Day",
+			"Cadamic Day",
+			"Teachers Day",
+			"Contries Day",
+			"Middle Day",
+			"Chiristmas Day"
 	];
 	for(var i=0;i<aLi.length;i++)
 	{
@@ -50,15 +49,11 @@ window.onload=function()
 				aLi[j].className='';
 			}
 			this.className='active';
-			oTxt.innerHTML="<h1>"+(this.index+1)+"月活动</h1><p>"+arr[this.index]+"</p>";
+			oTxt.innerHTML="<h1>"+(this.index+1)+"activities</h1><p>"+arr[this.index]+"</p>";
 		};
 	}
 };
-
-
 </script>
-
-
 <div id="tab" class="calendar">
 <ul>
 <li class="active"><h2>1</h2><p>JAN</p></li>
