@@ -1,0 +1,84 @@
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta name="viewport" content="initial-scale=1.0,width=device-width"/>
+<title>{{ page.title }}</title>
+<style>
+#tab{
+padding:10px;
+background:lightpink;
+}
+ul li{
+color:white;
+display:inline-block;
+border:1px solid lightpink;
+margin:10px;
+padding:20px;
+background:black;
+width:70px;
+height:70px;}
+ .active{
+background:white;color:black;border:1px solid black;
+}
+#tab div{
+background:lightgreen;
+}
+</style>
+<script>
+window.onload=function()
+{
+	var oDiv=document.getElementById('tab');
+	var aLi=oDiv.getElementsByTagName('li');
+	var oTxt=oDiv.getElementsByTagName('div')[0] ;
+	var arr=[
+			"过年啦",
+			"2月情人节",
+			"3月植树节",
+			"4月愚人节",
+			"5月劳动节",
+			"6月儿童节",
+			"7月建军节",
+			"8月党的生日",
+			"9月教师节",
+			"10月国庆节",
+			"11月中秋节",
+			"12月圣诞节"
+	];
+	for(var i=0;i<aLi.length;i++)
+	{
+		aLi[i].index=i;
+		aLi[i].onmouseover=function ()
+		{
+			for(var j=0;j<aLi.length;j++)
+			{
+				aLi[j].className='';
+			}
+			this.className='active';
+			oTxt.innerHTML="<h1>"+(this.index+1)+"月活动</h1><p>"+arr[this.index]+"</p>";
+		};
+	}
+};
+
+
+</script>
+
+</head>
+<body>
+<div id="tab" class="calendar">
+<ul>
+<li class="active"><h2>1</h2><p>JAN</p></li>
+<li><h2>2</h2><p>FER</p></li>
+<li><h2>3</h2><p>MAR</p></li>
+<li><h2>4</h2><p>APR</p></li>
+<li><h2>5</h2><p>JUN</p></li>
+<li><h2>6</h2><p>JUL</p></li>
+<li><h2>7</h2><p>AUG</p></li>
+<li><h2>8</h2><p>eight</p></li>
+<li><h2>9</h2><p>nine</p></li>
+<li><h2>10</h2><p>ten</p></li>
+<li><h2>11</h2><p>eleven</p></li>
+<li><h2>12</h2><p>12yue</p></li>
+</ul>
+<div></div>
+</div>
+</body>
+</html>
