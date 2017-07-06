@@ -5,3 +5,16 @@ title: Code Garden
 <div class="write">
 {{ content }}
 </div>
+<script>
+var oDiv2=document.getElementById('write');
+var aLi2=oDiv2.getElementsByTagName('p');
+for(var i=0;i<aLi2.length;i++){
+if(i%2==0){aLi2[i].style.background="grey";}
+else{
+aLi2[i].style.background="lightblue";}
+}
+
+}
+
+
+</script>
