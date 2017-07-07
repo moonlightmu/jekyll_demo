@@ -27,7 +27,7 @@ window.onload=function()
 	var oDiv=document.getElementById('tab');
 	var aLi=oDiv.getElementsByTagName('li');
 	var oTxt=oDiv.getElementsByTagName('div')[0];
-        var aImg=oDiv.getElementsByTagName('img');
+       
 	var arr=[
 			"New Year",
 			"Vanenties Day",
@@ -59,31 +59,11 @@ window.onload=function()
 			oTxt.innerHTML="<h1>"+(this.index+1)+"-activities</h1><p>"+arr[this.index]+"</p>";
 		};
 	}
-function kick(){
-		var oDate=new Date();
-		var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
-		for(var i=0;i<aImg.length;i++){
-			aImg[i].src=str.charAt(i)+".png";
-		}	
-	}
- setInterval(kick,1000);
-	kick();
+
 
 };
 </script>
 <div id="tab" class="calendar">
-<img src="{{ site.url }}{{ site.baseurl }}/img/0.png"/>
-<img src="{{ site.url }}{{ site.baseurl }}/img/0.png"/>
-:
-<img src="{{ site.url }}{{ site.baseurl }}/img/0.png"/>
-<img src="{{ site.url }}{{ site.baseurl }}/img/0.png"/>
-:
-<img src="{{ site.url }}{{ site.baseurl }}/img/0.png"/>
-<img src="{{ site.url }}{{ site.baseurl }}/img/0.png"/>
-
-
-
-
 <ul>
 <li class="active">
 <h3>1</h3><p>JAN</p></li>
