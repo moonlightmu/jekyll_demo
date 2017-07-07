@@ -14,7 +14,7 @@ var aImg=oDiv.getElementsByTagName('img');
 		var oDate=new Date();
 		var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
 		for(var i=0;i<aImg.length;i++){
-			aImg[i].src=str.charAt(i)+".png";
+			aImg[i].src="{{ site.url }}{{ site.baseurl }}/img/"+str.charAt(i)+".png";
 		}	
 	}
 	setInterval(kick,1000);
