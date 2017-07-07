@@ -47,10 +47,11 @@ var aImg=oDiv.getElementsByTagName('img');
 		var oDate=new Date();
 		var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
 		for(var i=0;i<aImg.length;i++){
-			aImg[i].src=str.charAt(i)+".png";//charAt()获取字符串某一位，用数组会不支持。
+			aImg[i].src=str.charAt(i)+".png";
 		}	
 	}
-
+setInterval(kick,1000);
+	kick();
 	for(var i=0;i<aLi.length;i++)
 	{
 		aLi[i].index=i;
@@ -64,8 +65,7 @@ var aImg=oDiv.getElementsByTagName('img');
 			oTxt.innerHTML="<h1>"+(this.index+1)+"-activities</h1><p>"+arr[this.index]+"</p>";
 		};
 	}
-setInterval(kick,1000);
-	kick();
+
 };
 </script>
 <div id="tab" class="calendar">
