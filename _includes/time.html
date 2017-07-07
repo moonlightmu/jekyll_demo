@@ -7,7 +7,7 @@ function toDou(n){
 		return ''+n;
 	}
 }
-function beginTime(){
+window.onload=function(){
 var oDiv=document.getElementById('timer');
 var aImg=oDiv.getElementsByTagName('img');
 	function kick(){
@@ -20,7 +20,7 @@ var aImg=oDiv.getElementsByTagName('img');
 	setInterval(kick,1000);
 	kick();
 
-}
+};
 
 
 
