@@ -24,9 +24,14 @@ setInterval("draw()",1000);
 
 function draw()
 {
-
+var oDate=new Date();
+	var img=new Image();
+	var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
+	var p=0;
+	
 fillbackground(dtx);
 dtx.fillStyle="lightpink";
+
 
 for(var i=0;i<20;i++)
 {
@@ -42,11 +47,7 @@ dtx.arc(x,y,w,0,degreesToRadians(360),true);
 dtx.fill();
 }
 
-var oDate=new Date();
-	var img=new Image();
-	var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
-	var p=0;
-	
+
 	for(var j=0;j<6;j++){
 	img.src=str.charAt(j)+".png";
 	p=50*(3*j+2);
