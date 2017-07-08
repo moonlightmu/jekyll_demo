@@ -37,6 +37,7 @@ function init2()
 {
 var i;
 var j;
+var map;
 for(j=0;j<3;j++){
 var preDiv=document.createElement("div");
 preDiv.setAttribute("id","mains");
@@ -65,7 +66,7 @@ section1.setAttribute("id","main");
 }
 
 
-var map;
+
 function displayMap(coords)
 {
 var mapOptions={
@@ -116,7 +117,7 @@ button2.onclick=handleButtonClick2;
 }
 
 
-window.onload=init;
+init();
 
 
 function handleButtonClick(){
