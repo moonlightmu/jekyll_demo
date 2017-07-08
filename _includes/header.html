@@ -27,6 +27,7 @@ function draw()
 
 fillbackground(dtx);
 dtx.fillStyle="lightpink";
+
 for(var i=0;i<20;i++)
 {
 dtx.fillStyle="lightpink";
@@ -40,12 +41,34 @@ dtx.fillStyle=grd;
 dtx.arc(x,y,w,0,degreesToRadians(360),true);
 dtx.fill();
 }
+
+var oDate=new Date();
+	var img=new Image();
+	var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
+	var p=0;
+	dtx.fillStyle="pink";
+	dtx.fillRect(0,0,c.width,c.height);
+	for(var j=0;j<6;j++){
+	img.src=str.charAt(j)+".png";
+	p=50*(3*j+2);
+	dtx.drawImage(img,p,30);
+	}
+}
+function toDou(n)
+{
+	if(n<10){
+			return '0'+n;
+		}
+		else{
+			return ''+n;
+		}
+	
 }
 function degreesToRadians(degrees){
 return (degrees * Math.PI/180);
 }
 function fillbackground(dtx){
-dtx.fillStyle="lightblue";
+dtx.fillStyle="white";
 dtx.fillRect(0,0,c.width,c.height);
 }
 </script>
