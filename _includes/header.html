@@ -46,8 +46,7 @@ var oDate=new Date();
 	var img=new Image();
 	var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
 	var p=0;
-	dtx.fillStyle="pink";
-	dtx.fillRect(0,0,c.width,c.height);
+	
 	for(var j=0;j<6;j++){
 	img.src=str.charAt(j)+".png";
 	p=50*(3*j+2);
