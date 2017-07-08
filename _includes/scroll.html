@@ -16,36 +16,36 @@ overflow:hidden;}
 </style>
 <script>
 
-	var oDiv=document.getElementById('div1');
-	var oUI=oDiv.getElementsByTagName('ul')[0];
-	var aLi=oUI.getElementsByTagName('li');
-	var timer=null;
+	var oDivq=document.getElementById('div1');
+	var oUIq=oDivq.getElementsByTagName('ul')[0];
+	var aLiq=oUIq.getElementsByTagName('li');
+	var timer1=null;
 	var speed;
-	oUI.innerHTML=oUI.innerHTML+oUI.innerHTML;
+	oUIq.innerHTML=oUIq.innerHTML+oUIq.innerHTML;
 	
-	oUI.style.width=aLi[0].offsetWidth*aLi.length+'px';
+	oUIq.style.width=aLiq[0].offsetWidth*aLiq.length+'px';
 	
 	function move()
 	{
-				if(oUI.offsetLeft<-oUI.offsetWidth/2){
-					oUI.style.left='0';
+				if(oUIq.offsetLeft<-oUIq.offsetWidth/2){
+					oUIq.style.left='0';
 				}
-				if(oUI.offsetLeft>0){
-					oUI.style.left=-oUI.offsetWidth/2+'px';
+				if(oUIq.offsetLeft>0){
+					oUIq.style.left=-oUIq.offsetWidth/2+'px';
 				}
 				oUI.style.left=oUI.offsetLeft+speed+'px';	
 	
 	}
-	  timer=setInterval(move,30);
+	  timer1=setInterval(move,30);
        
-	  oDiv.onmouseover=function()
+	  oDivq.onmouseover=function()
 	  {
-	   clearInterval(timer);
+	   clearInterval(timer1);
         };	
         
-      oDiv.onmouseout=function()
+      oDivq.onmouseout=function()
       {
-    	  timer=setInterval(move,30);
+    	  timer1=setInterval(move,30);
       };
       document.getElementsByTagName('a')[0].onmouseover=function(){
     	  speed=-2;
