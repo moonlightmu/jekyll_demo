@@ -17,7 +17,7 @@
 #div15 {left:10px; height:178px; position:relative; background:white;
 overflow:hidden;}
 #div15 ul{position:absolute;left:0px; top:0px; }
-#div15 ul li{float:left; width:178px; height:178px; list-style:none;}
+#div15 ul li{filter:alpha(opacity:30); opacity:0.3; float:left; width:178px; height:178px; list-style:none;}
 #div15 img{
 width:auto;
 max-width:50%;
@@ -63,6 +63,39 @@ max-height:50%;
       document.getElementsByTagName('a')[1].onmouseover=function(){
     	  speed=2;
       };
+var alpha=30;
+var timer=null;
+function startMove(iTarget){
+	
+	var oUIq=oDivq.getElementsByTagName('ul')[0];
+	
+	clearInterval(timer);
+	timer=setInterval(function(){
+		var speed=0;
+		if(alpha>iTarget)
+		{
+			speed=-10;
+		}
+		else
+		{
+			speed=10;
+		}
+		if(alpha==iTarget){
+			clearInterval(timer);
+		}
+		else{
+			alpha=speed+alpha;
+			oUIq.style.filter='alpha(opacity:'+alpha +')';
+				oUIq.style.opacity=alpha/100;
+		}	
+	},30);	
+}
 
+oUIq.onmouseover=function(){
+		startMove(100);
+	};
+	oUIq.onmouseout=function(){
+		startMove(30);
+	};
 
 </script>
