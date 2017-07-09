@@ -50,12 +50,14 @@ max-height:50%;
        
 	  oDivq.onmouseover=function()
 	  {
+ startMove(100);
 	   clearInterval(timer1);
-            startMove(100);
+           
         };	
         
       oDivq.onmouseout=function()
       {
+ startMove(30);
     	  timer1=setInterval(move,30);
       };
       document.getElementsByTagName('a')[0].onmouseover=function(){
@@ -92,11 +94,6 @@ function startMove(iTarget){
 	},30);	
 }
 
-oUIq.onmouseover=function(){
-		startMove(100);
-	};
-	oUIq.onmouseout=function(){
-		startMove(30);
-	};
+
 
 </script>
