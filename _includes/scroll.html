@@ -31,6 +31,8 @@ max-height:50%;
 	var aLiq=oUIq.getElementsByTagName('li');
 	var timer1=null;
 	var speed=2;
+        var alpha=30;
+        var timer15=null;
 	oUIq.innerHTML=oUIq.innerHTML+oUIq.innerHTML;
 	
 	oUIq.style.width=aLiq[0].offsetWidth*aLiq.length+'px';
@@ -50,14 +52,14 @@ max-height:50%;
        
 	  oDivq.onmouseover=function()
 	  {
- startMove(100);
+           startMove(100);
 	   clearInterval(timer1);
            
         };	
         
       oDivq.onmouseout=function()
       {
- startMove(30);
+          startMove(30);
     	  timer1=setInterval(move,30);
       };
       document.getElementsByTagName('a')[0].onmouseover=function(){
@@ -66,8 +68,8 @@ max-height:50%;
       document.getElementsByTagName('a')[1].onmouseover=function(){
     	  speed=2;
       };
-var alpha=30;
-var timer15=null;
+
+
 function startMove(iTarget){
 	
 	var oDivq=document.getElementById('div15');
