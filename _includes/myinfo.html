@@ -1,6 +1,12 @@
 <img id="change" class="img-circle img-responsive" src="{{ site.url }}{{ site.baseurl }}/img/photo.jpg"/>
 <div id="fenxiangdao">
 <span>FXD</span>
+
+<div id="mypost">
+{% for post in site.posts %}	
+<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+{% endfor %}
+</div>
 </div>
 <style>
 #mypost h2{
