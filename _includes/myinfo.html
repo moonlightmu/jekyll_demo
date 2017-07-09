@@ -53,14 +53,14 @@ background:blue; right:-20px; top:70px; }
 
 	var oDivfx=document.getElementById('fenxiangdao');
 	oDivfx.onmouseover=function(){
-		startMove(0);
+		startMoveinfo(0);
 	};
 	oDivfx.onmouseout=function(){
-		startMove(-280);
+		startMoveinfo(-280);
 	}
 
         var timerinfo=null;
-        function startMove(iTarget){
+        function startMoveinfo(iTarget){
 	var speed=0;
 	var oDivfx=document.getElementById('fenxiangdao');
 	if(oDivfx.offsetLeft>iTarget)
