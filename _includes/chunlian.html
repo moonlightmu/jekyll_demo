@@ -1,0 +1,39 @@
+<div id="chunlian"></div>
+<style>
+#chunlian{
+width:100px;height:151px;background:red;position:absolute;right:0;bottom:0;
+}
+</style>
+<script>
+window.onscroll=function(){
+	var oDivcl=document.getElementById('chunlian');
+	var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+	
+	//oDiv.style.top=document.documentElement.clientHeight-oDiv.offsetHeight+scrollTop+'px';
+	startMovechunlian(parseInt((document.documentElement.
+			clientHeight-oDivcl.offsetHeight)/2+scrollTop));
+};
+var timerchunlian=null;
+function startMovechunlian(iTarget){
+	var oDivcl=document.getElementById('chunlian');
+	clearInterval(timerchunlian);
+	timerchunlian=setInterval(function(){
+		
+		var speed=(iTarget-oDivcl.offsetTop)/6;
+		speed=speed>0?Math.ceil(speed):Math.floor(speed);
+		if(oDivcl.offsetTop==iTarget){
+			clearInterval(timerchunlian);
+		}else{
+		
+			oDivcl.style.top=oDivcl.offsetTop+speed+'px';
+	        document.title=iTarget;
+		}
+		
+	},30);
+
+}
+
+
+
+
+</script>
