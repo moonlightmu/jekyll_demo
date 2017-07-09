@@ -67,12 +67,12 @@ max-height:50%;
     	  speed=2;
       };
 var alpha=30;
-var timer=null;
+var timer15=null;
 function startMove(iTarget){
 	
 	var oDivq=document.getElementById('div15');
-	clearInterval(timer);
-	timer=setInterval(function(){
+	clearInterval(timer15);
+	timer15=setInterval(function(){
 		var speed=0;
 		if(alpha>iTarget)
 		{
@@ -83,7 +83,7 @@ function startMove(iTarget){
 			speed=10;
 		}
 		if(alpha==iTarget){
-			clearInterval(timer);
+			clearInterval(timer15);
 		}
 		else{
 			alpha=speed+alpha;
