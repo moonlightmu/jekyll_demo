@@ -59,8 +59,8 @@ background:blue; right:-20px; top:70px; }
 		startMove(-280);
 	}
 
-var timer=null;
-function startMove(iTarget){
+        var timerinfo=null;
+        function startMove(iTarget){
 	var speed=0;
 	var oDivfx=document.getElementById('fenxiangdao');
 	if(oDivfx.offsetLeft>iTarget)
@@ -71,10 +71,10 @@ function startMove(iTarget){
 	{
 		speed=10;
 	}
-	clearInterval(timer);
-	timer=setInterval(function(){
+	clearInterval(timerinfo);
+	timerinfo=setInterval(function(){
 		if(oDivfx.offsetLeft==iTarget){
-			clearInterval(timer);
+			clearInterval(timerinfo);
 		}
 		else{
 			oDivfx.style.left=oDivfx.offsetLeft+speed+'px';
