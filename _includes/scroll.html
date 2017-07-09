@@ -14,9 +14,9 @@
 </div>
 <style>
 * {margin:0px; padding:0;}
-#div15 {left:10px; height:178px; position:relative; background:white;
+#div15 {left:10px; height:178px; filter:alpha(opacity:30); opacity:0.3; position:relative; background:white;
 overflow:hidden;}
-#div15 ul{filter:alpha(opacity:30); opacity:0.3;position:absolute;left:0px; top:0px; }
+#div15 ul{position:absolute;left:0px; top:0px; }
 #div15 ul li{ float:left; width:178px; height:178px; list-style:none;}
 #div15 img{
 width:auto;
@@ -70,8 +70,7 @@ var alpha=30;
 var timer=null;
 function startMove(iTarget){
 	
-	var oUIq=oDivq.getElementsByTagName('ul')[0];
-	
+	var oDivq=document.getElementById('div15');
 	clearInterval(timer);
 	timer=setInterval(function(){
 		var speed=0;
@@ -88,8 +87,8 @@ function startMove(iTarget){
 		}
 		else{
 			alpha=speed+alpha;
-			oUIq.style.filter='alpha(opacity:'+alpha +')';
-				oUIq.style.opacity=alpha/100;
+			oDivq.style.filter='alpha(opacity:'+alpha +')';
+				oDivq.style.opacity=alpha/100;
 		}	
 	},30);	
 }
