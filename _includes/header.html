@@ -12,7 +12,7 @@ background:blue; right:-20px; top:70px; }
 
 </style>
 <script>
-window.onload=function(){
+
 	var oDivfx=document.getElementById('fenxiangdao');
 	oDivfx.onmouseover=function(){
 		startMove(0);
@@ -20,7 +20,7 @@ window.onload=function(){
 	oDivfx.onmouseout=function(){
 		startMove(-150);
 	}
-};
+
 var timer=null;
 function startMove(iTarget){
 	var speed=0;
