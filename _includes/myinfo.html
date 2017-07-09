@@ -1,4 +1,7 @@
 <img id="change" class="img-circle img-responsive" src="{{ site.url }}{{ site.baseurl }}/img/photo.jpg"/>
+<div id="fenxiangdao">
+<span>FXD</span>
+</div>
 <style>
 #mypost h2{
 text-align:center;
@@ -33,6 +36,46 @@ font-size:normal;
 text-decoration:none;
 text-shadow: 0 0 20px red;
 }
+#fenxiangdao{ width:150px; height:200px; background:green; position:absolute;left:-250px;}
+#fenxiangdao span{ position:absolute; width:20px; height:60px; line-height:20px;
+background:blue; right:-20px; top:70px; }
+
+
 
 </style>
+<script>
 
+
+	var oDivfx=document.getElementById('fenxiangdao');
+	oDivfx.onmouseover=function(){
+		startMove(0);
+	};
+	oDivfx.onmouseout=function(){
+		startMove(-150);
+	}
+
+var timer=null;
+function startMove(iTarget){
+	var speed=0;
+	var oDivfx=document.getElementById('fenxiangdao');
+	if(oDivfx.offsetLeft>iTarget)
+	{
+		speed=-10;
+	}
+	else
+	{
+		speed=10;
+	}
+	clearInterval(timer);
+	timer=setInterval(function(){
+		if(oDivfx.offsetLeft==iTarget){
+			clearInterval(timer);
+		}
+		else{
+			oDivfx.style.left=oDivfx.offsetLeft+speed+'px';
+		}	
+	},30);	
+}
+
+
+</script>
