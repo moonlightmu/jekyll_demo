@@ -73,7 +73,15 @@ background:blue; right:-20px; top:70px; }
 			clearInterval(timerinfo);
 		}
 		else{
+                       speed=(iTarget-oDivfx.offsetLeft)/7;
+                                if(speed>0)
+				{speed=Math.ceil(speed);}
+				else
+				{speed=Math.floor(speed);
+				}
 			oDivfx.style.left=oDivfx.offsetLeft+speed+'px';
+			document.title=oDiv.offsetLeft+","+speed;
+
 		}	
 	},30);	
 }
