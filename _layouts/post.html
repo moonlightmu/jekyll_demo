@@ -9,12 +9,20 @@ title: Code Garden
 var oDiv2=document.getElementById('write2');
 var aLi2=oDiv2.getElementsByTagName('p');
 for(var i=0;i<aLi2.length;i++){
-if(i%2==0){aLi2[i].style.background="lightgrey";}
+if(i%2==0){
+aLi2[i].style.background="lightgrey";
+aLi2[i].style.opacity=0;
+}
 else{
-aLi2[i].style.background="lightblue";}
+aLi2[i].style.background="lightblue";
+aLi2[i].style.opacity=0;
 }
 
 
-
+}
+for(var j=0;j<aLi2.length;j++){
+startMove(aLi2[j],'opacity',100);
+}
 
 </script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/startMove.js"></script>
