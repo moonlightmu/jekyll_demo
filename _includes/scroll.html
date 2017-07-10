@@ -53,14 +53,14 @@ max-height:50%;
        
 	  oDivq.onmouseover=function()
 	  {
-           startMove(100);
+           startMove(this,'opacity',100);
 	   clearInterval(timer1);
            
         };	
         
       oDivq.onmouseout=function()
       {
-          startMove(30);
+          startMove(this,'opacity',30);
     	  timer1=setInterval(move,30);
       };
       document.getElementsByTagName('a')[0].onmouseover=function(){
@@ -71,30 +71,6 @@ max-height:50%;
       };
 
 
-function startMove(iTarget){
-	
-	var oDivq=document.getElementById('div15');
-	clearInterval(timer15);
-	timer15=setInterval(function(){
-		var speed=0;
-		if(alpha>iTarget)
-		{
-			speed=-10;
-		}
-		else
-		{
-			speed=10;
-		}
-		if(alpha==iTarget){
-			clearInterval(timer15);
-		}
-		else{
-			alpha=speed+alpha;
-			oDivq.style.filter='alpha(opacity:'+alpha +')';
-				oDivq.style.opacity=alpha/100;
-		}	
-	},30);	
-}
 
 
 
