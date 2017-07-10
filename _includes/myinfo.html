@@ -48,43 +48,16 @@ background:blue; right:-20px; top:70px; }
 
 
 </style>
+<script src="{{ site.url }}{{ site.baseurl }}/js/startMove.js"></script>
 <script>
-
-
 	var oDivfx=document.getElementById('fenxiangdao');
+        oDivfx.timer=null'
 	oDivfx.onmouseover=function(){
-		startMoveinfo(0);
+		startMoveinfo(this,0);
 	};
 	oDivfx.onmouseout=function(){
-		startMoveinfo(-280);
+		startMoveinfo(this,-280);
 	}
-
-        var timerinfo=null;
-        
-        function startMoveinfo(iTarget){
-	var speed;
-	var oDivfx=document.getElementById('fenxiangdao');
-	
-	clearInterval(timerinfo);
-	timerinfo=setInterval(function(){
-        speed=iTarget>0?10:-10;
-
-		if(oDivfx.offsetLeft>0||speed==0){
-			clearInterval(timerinfo);
-		}
-		else{
-                       speed=(iTarget-oDivfx.offsetLeft)/7;
-                                if(speed>0)
-				{speed=Math.ceil(speed);}
-				else
-				{speed=Math.floor(speed);
-				}
-			oDivfx.style.left=oDivfx.offsetLeft+speed+'px';
-			document.title=oDiv.offsetLeft+","+speed;
-
-		}	
-	},30);	
-}
 
 
 </script>

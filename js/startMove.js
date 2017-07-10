@@ -1,11 +1,10 @@
 function startMove(obj,iTarget){	
 	var speed;
-	
-	clearInterval(timer);
-	timer=setInterval(function(){
+	clearInterval(obj.timer);
+	obj.timer=setInterval(function(){
 		speed=iTarget>0?3:-3;
 		if(obj.offsetLeft>=700||speed==0){
-			clearInterval(timer);
+			clearInterval(obj.timer);
 		}
 		else{
 			speed=(iTarget-obj.offsetLeft)/7;
