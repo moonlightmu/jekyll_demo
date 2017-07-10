@@ -1,4 +1,4 @@
-function startMove(obj,iTarget){	
+function startMoveinfo(obj,iTarget){	
 	var speed;
 	clearInterval(obj.timer);
 	obj.timer=setInterval(function(){
