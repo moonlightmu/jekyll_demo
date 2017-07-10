@@ -1,0 +1,55 @@
+<div id="mouse">
+<div id="divs1"></div>
+<div id="divs2"></div>
+<div id="divs3"></div>
+<div id="divs1"></div>
+<div id="divs2"></div>
+<div id="divs3"></div>
+<div id="divs1"></div>
+<div id="divs2"></div>
+<div id="divs3"></div>
+<div id="divs1"></div>
+<div id="divs2"></div>
+<div id="divs3"></div>
+<div id="divs1"></div>
+<div id="divs2"></div>
+<div id="divs3"></div>
+<div id="divs1"></div>
+<div id="divs2"></div>
+<div id="divs3"></div>
+<div id="divs1"></div>
+<div id="divs2"></div>
+<div id="divs3"></div>
+<div id="divs1"></div>
+<div id="divs2"></div>
+<div id="divs3"></div>
+<div id="divs1"></div>
+<div id="divs2"></div>
+<div id="divs3"></div>
+<div id="divs1"></div>
+<div id="divs2"></div>
+<div id="divs3"></div>
+</div>
+<style>
+#divs1 { border-radius:5px; width:15px; height:15px; background:lightblue; position:absolute;}
+#divs2 {  width:10px; height:10px; background:pink; position:absolute;}
+#divs3{  width:6px; height:6px; background:red; position:absolute;}
+</style>
+<script src="{{ site.url }}{{ site.baseurl }}/js/getPos.js"></script>
+<script>
+document.onmousemove=function(ev){
+		var oDivmou=document.getElementById('mouse');
+                var aDivmou=oDivmou.getElementsByTagName('div');		
+                 var oEvent=ev||event;
+		var pos=getPos(oEvent);
+		
+		for(var i=aDivmou.length-1;i>0;i--){
+			aDiv[i]mou.style.left=aDivmou[i-1].offsetLeft+'px';
+			aDiv[i]mou.style.top=aDivmou[i-1].offsetTop+'px';
+		}
+		aDiv[0]mou.style.left=pos.x+'px';
+		aDiv[0]mou.style.top=pos.y+'px';
+
+	};	
+
+</script>
