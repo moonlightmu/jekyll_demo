@@ -60,20 +60,16 @@ background:blue; right:-20px; top:70px; }
 	}
 
         var timerinfo=null;
+        
         function startMoveinfo(iTarget){
-	var speed=0;
+	var speed;
 	var oDivfx=document.getElementById('fenxiangdao');
-	if(oDivfx.offsetLeft>iTarget)
-	{
-		speed=-10;
-	}
-	else
-	{
-		speed=10;
-	}
+	
 	clearInterval(timerinfo);
 	timerinfo=setInterval(function(){
-		if(oDivfx.offsetLeft==iTarget){
+        speed=iTarget>0?10:-10;
+
+		if(oDivfx.offsetLeft>0||speed==0){
 			clearInterval(timerinfo);
 		}
 		else{
