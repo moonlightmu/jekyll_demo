@@ -44,11 +44,11 @@ document.onmousemove=function(ev){
 		var pos=getPos(oEvent);
 		
 		for(var i=aDivmou.length-1;i>0;i--){
-			aDiv[i]mou.style.left=aDivmou[i-1].offsetLeft+'px';
-			aDiv[i]mou.style.top=aDivmou[i-1].offsetTop+'px';
+			aDivmou[i].style.left=aDivmou[i-1].offsetLeft+'px';
+			aDivmou[i].style.top=aDivmou[i-1].offsetTop+'px';
 		}
-		aDiv[0]mou.style.left=pos.x+'px';
-		aDiv[0]mou.style.top=pos.y+'px';
+		aDivmou[0].style.left=pos.x+'px';
+		aDivmou[0].style.top=pos.y+'px';
 
 	};	
 
