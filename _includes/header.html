@@ -11,6 +11,9 @@ background:blue; right:-20px; top:70px; }
 var c=document.getElementById("mycanvas");
 var ctx=c.getContext("2d");
 var dtx=c.getContext("2d");
+var img1=new Image();
+img1.src="{{ site.url }}{{ site.baseurl }}/img/panda.png";
+
 var grd=ctx.createLinearGradient(0,0,600,0);
 
 grd.addColorStop(0,"red");
@@ -27,8 +30,6 @@ ctx.strokeText("code garden",10,50);
 ctx.strokeText("Knowledge & action,go hand in hand",10,110);
 
 setInterval("draw()",1000);
-var img1=new Image();
-img1.src="{{ site.url }}{{ site.baseurl }}/img/panda.png";
 	
 function draw()
 {
