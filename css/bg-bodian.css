@@ -1,0 +1,9 @@
+.bg-bodian{
+background:#655;
+background-image:radial-gradient(
+                rgba(200,0,0,.5) 50%,transparent 0),
+                 radial-gradient(
+                rgba(200,0,0,.5) 50%,transparent 0);
+background-size:30px 30px;
+background-position:0 0,15px 15px;
+}
