@@ -1,6 +1,6 @@
 <div id="mypost" class="border-ants">
 {% for post in site.posts %}	
-<h2 class="bg-gezhi"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 {% endfor %}
 </div>
 <style>
@@ -10,9 +10,7 @@ font-size:normal;
 margin:10px;
 font-size:small;
 }
-#mypost h2:hover{
-box-shadow:0 0 20px red;
-}
+
 #mypost a{
 display:block;
 padding:20px;
