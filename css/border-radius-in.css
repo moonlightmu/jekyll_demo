@@ -1,0 +1,8 @@
+.border-radius-in{
+border-radius:.8em;
+background:tan;
+padding:1em;
+box-shadow:0 0 0 .6em #655;
+outline:.6em dashed #655;
+
+}
