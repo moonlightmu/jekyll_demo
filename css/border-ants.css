@@ -7,7 +7,7 @@ repeating-linear-gradient(45deg,red 0,red 12.5%,white 0,white 25%,
 background-size:30px 30px;
 background-origin:border-box;
 background-clip:padding-box,border-box;
-animation:ants 5s linear infinite;
+animation:ants 2s linear infinite;
 }
 @keyframes ants{
 to{
