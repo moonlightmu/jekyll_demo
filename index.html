@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Code Garden
+title: Code Garden  
 ---
+{% include header.html %}
 <div id="myTabContent" class="tab-content">
 <div id="home" class="tab-pane fade in active">
 {% include paginator.html %}
@@ -13,12 +14,12 @@ title: Code Garden
 {{ post.excerpt | remove: 'cover-content-right' }}	
 <p> 
 <a data-toggle="modal" data-target="#myModal" href="{{ site.baseurl }}{{ post.url }}"><span>&#127808;Read all &raquo; </span></a>
-<button type="button" class="btn btn-info btn-lg" 
-data-toggle="modal" data-target="#myModal"><span>&#127808;Read all &raquo; </span></button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span>&#127808;Read all &raquo; </span></button>
 </p>
 </li>
 {% endfor %}
 </ul>
+</div>
 </div>
 </div>
 <style>
@@ -29,6 +30,3 @@ ul.welcome a:hover{
 text-shadow: 0 0 20px pink;
 }
 </style>
-
-
-
