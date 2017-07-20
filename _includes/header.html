@@ -7,21 +7,17 @@
 background:blue; right:-20px; top:70px; }
 </style>
 <script>
-
 var c=document.getElementById("mycanvas");
 var ctx=c.getContext("2d");
 var dtx=c.getContext("2d");
 var img1=new Image();
 img1.src="{{ site.url }}{{ site.baseurl }}/img/panda.png";
-
 var grd=ctx.createLinearGradient(0,0,600,0);
-
 grd.addColorStop(0,"red");
 grd.addColorStop(0.2,"yellow");
 grd.addColorStop(1,"black");
 grd.addColorStop(0.5,"lightgreen");
 grd.addColorStop(0.7,"lightblue");
-
 ctx.font="50px Arial";
 ctx.fillStyle="lightgreen";
 ctx.strokeStyle=grd;
@@ -30,10 +26,9 @@ ctx.strokeText("code garden",10,50);
 ctx.strokeText("Knowledge & action,go hand in hand",10,110);
 
 setInterval("draw()",1000);
-	
 function draw()
 {
-        var oDate=new Date();
+    var oDate=new Date();
 	var img=new Image();
 	var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
 	var p=0;
@@ -70,7 +65,6 @@ function toDou(n)
 		else{
 			return ''+n;
 		}
-	
 }
 function degreesToRadians(degrees){
 return (degrees * Math.PI/180);

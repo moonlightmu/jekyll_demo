@@ -5,6 +5,7 @@ title: Code Garden
 <div id="myTabContent" class="tab-content">
 <div id="home" class="tab-pane fade in active">
 {% include paginator.html %}
+<div class="list-group">
 <ul class="welcome">
 {% for post in paginator.posts %}
 <li>
@@ -17,6 +18,7 @@ title: Code Garden
 </li>
 {% endfor %}
 </ul>
+</div>
 
 </div>
 {% include list.html %}
