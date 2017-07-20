@@ -13,14 +13,14 @@ title: Code Garden
 {{ post.excerpt | remove: 'cover-content-right' }}	
 <p> 
 <a data-toggle="modal" data-target="#myModal" href="{{ site.baseurl }}{{ post.url }}"><span>&#127808;Read all &raquo; </span></a>
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span>&#127808;Read all &raquo; </span></button>
+<button type="button" class="btn btn-info btn-lg" 
+data-toggle="modal" data-target="#myModal"><span>&#127808;Read all &raquo; </span></button>
 </p>
-</li>
+
 
 
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
     <!-- Modal content-->
     <div class="modal-content border-ants">
       <div class="modal-header">
@@ -35,9 +35,9 @@ title: Code Garden
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
-
   </div>
 </div>
+</li>
 {% endfor %}
 </ul>
 </div>
