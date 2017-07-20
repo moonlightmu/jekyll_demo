@@ -8,7 +8,7 @@ title: Code Garden
 <ul class="welcome list-group">
 {% for post in paginator.posts %}
 <li class="list-group-item">
-<h3>&#9730;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+<h3>&#9730;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ post.content }}</a></h3>
 <span class="date"></span>
 {{ post.excerpt | remove: 'cover-content-right' }}	
 <p> 
@@ -16,27 +16,6 @@ title: Code Garden
 <button type="button" class="btn btn-info btn-lg" 
 data-toggle="modal" data-target="#myModal"><span>&#127808;Read all &raquo; </span></button>
 </p>
-
-
-
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content border-ants">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-        {{ post.content }}
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
 </li>
 {% endfor %}
 </ul>
