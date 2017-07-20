@@ -1,6 +1,6 @@
-<div id="mypost" class="border-radius-in">
+<div id="mypost">
 {% for post in site.posts %}	
-<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+<h2 class="border-radius-in"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 {% endfor %}
 </div>
 <style>
