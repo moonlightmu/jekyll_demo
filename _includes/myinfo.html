@@ -1,4 +1,4 @@
-<div id="mypost">
+<div id="mypost" class="border-radius-in">
 {% for post in site.posts %}	
 <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 {% endfor %}
@@ -8,7 +8,6 @@
 text-align:center;
 font-size:normal;
 margin:10px;
-font-size:small;
 }
 
 #mypost a{
