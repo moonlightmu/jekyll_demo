@@ -12,7 +12,7 @@ title: Code Garden
 <span class="date"></span>
 {{ post.excerpt | remove: 'cover-content-right' }}	
 <p> 
-<a href="{{ site.baseurl }}{{ post.url }}"><span>&#127808;Read all &raquo; </span></a>
+<a data-toggle="modal" data-target="#myModal" href="{{ site.baseurl }}{{ post.url }}"><span>&#127808;Read all &raquo; </span></a>
 </p>
 </li>
 {% endfor %}
