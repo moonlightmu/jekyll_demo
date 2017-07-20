@@ -5,9 +5,9 @@ title: Code Garden
 <div id="myTabContent" class="tab-content">
 <div id="home" class="tab-pane fade in active">
 {% include paginator.html %}
-<ul class="welcome">
+<ul class="welcome list-group">
 {% for post in paginator.posts %}
-<li>
+<li class="list-group-item">
 <h3>&#9730;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 <span class="date"></span>
 {{ post.excerpt | remove: 'cover-content-right' }}	
